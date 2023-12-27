@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Ballina = () => {
+const HomePage = () => {
   return <div>Ballina</div>;
 };
 
-export default Ballina;
+export default HomePage;
