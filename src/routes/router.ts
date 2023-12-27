@@ -6,30 +6,28 @@ import ContantUs from '../pages/ContantUs';
 import Products from '../pages/Products';
 import Projects from '../pages/Projects';
 
-
 const router = createBrowserRouter([
   {
     path: '/',
-    Component: HomePage
+    Component: HomePage,
   },
   {
     path: '/about-us',
-    Component: AboutUs
+    Component: AboutUs,
   },
   {
     path: '/rehau',
-    Component: Rehau
+    Component: Rehau,
   },
   {
-    path:'/contact' ,
-    Component: ContantUs
+    path: '/contact',
+    Component: ContantUs,
   },
   {
-    path:'/products' ,
-    Component: Products
+    path: '/products',
+    Component: Products,
   },
-  {path:'/projects' , 
-    Component: Projects}
+  { path: '/projects', Component: Projects },
 ]);
 
 export default router;
