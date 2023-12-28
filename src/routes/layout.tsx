@@ -5,9 +5,19 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useDrawer } from '../store/DrawerContext';
 import { Language, useTranslations } from '../hooks/useTranslations';
 import { ChangeEvent, useState } from 'react';
+import { LANG_KEY } from '../utils/types';
+
+const getLocalStorageLanguage = () => {
+  const language = localStorage.getItem(LANG_KEY);
+
+  if (language) {
+    return language as Language;
+  }
+  return 'en';
+};
 
 export const Layout = () => {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<any>(getLocalStorageLanguage());
   const { toggleDrawer } = useDrawer();
   const navigate = useNavigate();
   const { t, translations, changeLanguage } = useTranslations();
@@ -46,6 +56,7 @@ export const Layout = () => {
   const handleLanguageChange = (event: ChangeEvent<HTMLSelectElement>) => {
     const selectedLanguage = event.target.value as Language;
     setLanguage(selectedLanguage);
+    localStorage.setItem(LANG_KEY, selectedLanguage);
     changeLanguage(selectedLanguage);
   };
 
@@ -55,7 +66,7 @@ export const Layout = () => {
         actions={
           <>
             {links}
-            <select onChange={handleLanguageChange}>
+            <select value={language} onChange={handleLanguageChange}>
               <option value="en">En</option>
               <option value="shq">Shq</option>
               <option value="de">De</option>
