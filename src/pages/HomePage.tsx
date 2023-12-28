@@ -1,10 +1,11 @@
-import { Button, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
+import { AboutSection } from '../components/homepage/AboutSection';
 
 const HomePage = () => {
   return (
     <>
       <Typography variant="h1">Ballina</Typography>
-      <Button variant="contained">Test</Button>
+      <AboutSection />
     </>
   );
 };
