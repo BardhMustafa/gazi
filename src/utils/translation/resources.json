@@ -1,0 +1,42 @@
+{
+  "shq": {
+    "translation": {
+      "common": {
+        "home": "Ballina",
+        "about": "Rreth Nesh",
+        "aboutUs": "Rreth Nesh",
+        "contact": "Kontakti",
+        "products": "Produktet",
+        "services": "Sherbimet",
+        "projects": "Projektet",
+        "rehau": "Rehau",
+        "synego": "Synego"
+      }
+    }
+  },
+  "en": {
+    "translation": {
+      "common": {
+        "home": "Home",
+        "about": "About",
+        "aboutUs": "About Us",
+        "contact": "Contact",
+        "products": "Products",
+        "services": "Services",
+        "projects": "Projects",
+        "rehau": "Rehau",
+        "synego": "Synego"
+      }
+    }
+  },
+  "de": {
+    "translation": {
+      "common": {}
+    }
+  },
+  "fr": {
+    "translation": {
+      "common": {}
+    }
+  }
+}

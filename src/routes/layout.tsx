@@ -1,20 +1,31 @@
-import { Link, Outlet, generatePath, useNavigate } from 'react-router-dom';
+import { Outlet, generatePath, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { MainHeader } from '../components/layout/MainHeader';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useDrawer } from '../store/DrawerContext';
+import { useTranslation } from 'react-i18next';
+import { translations } from '../utils/translation/translationHelper';
 
 export const Layout = () => {
   const { toggleDrawer } = useDrawer();
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const menuLinks = [
-    { path: '/', label: 'Home' },
-    { path: '/about-us', label: 'About Us' },
-    { path: '/rehau', label: 'Rehau' },
-    { path: '/products', label: 'Products', icon: <ArrowDropDownIcon /> },
-    { path: '/projects', label: 'Projects', icon: <ArrowDropDownIcon /> },
-    { path: '/contact', label: 'Kontakti' },
+    { path: '/', label: t(translations.common.home) },
+    { path: '/about-us', label: t(translations.common.about) },
+    { path: '/rehau', label: t(translations.common.rehau) },
+    {
+      path: '/products',
+      label: t(translations.common.products),
+      icon: <ArrowDropDownIcon />,
+    },
+    {
+      path: '/projects',
+      label: t(translations.common.projects),
+      icon: <ArrowDropDownIcon />,
+    },
+    { path: '/contact', label: t(translations.common.contact) },
   ];
 
   const links = menuLinks.map(link => {

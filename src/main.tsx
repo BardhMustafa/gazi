@@ -4,6 +4,7 @@ import './index.css';
 import Theme from './shared/theme/Theme';
 import App from './App';
 
+import './utils/translation/i18n';
 import 'leaflet/dist/leaflet.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
