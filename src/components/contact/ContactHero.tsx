@@ -7,7 +7,7 @@ export const ContactHero = () => {
 
   return (
     <Container>
-      <ContactHeading>{t(translations.common.contact_us)}</ContactHeading>
+      <ContactHeading>{t(translations.contact.contact_us)}</ContactHeading>
     </Container>
   );
 };

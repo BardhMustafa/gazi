@@ -14,7 +14,22 @@
         "years_of_experience": "Vjet Pervoje",
         "we_build_everything_that_you_need": "Ne ndërtojmë gjithçka që ju nevojitet",
         "read_more": "Më Shumë",
-        "contact_us": "Na Kontaktoni"
+        "is_required": "Duhet te plotesohet",
+        "name": "Emri",
+        "email": "Email",
+        "message": "Mesazhi"
+      },
+      "contact": {
+        "contact_us": "Na Kontaktoni",
+        "do-you-have-any-questions": "Keni ndonje pyetje?",
+        "our-team-will-answer": "Na kontaktoni në çdo kohë, stafi ynë do t'ju përgjigjet sa më shpejt të jetë e mundur",
+        "phone": "Tel",
+        "email": "Email",
+        "street": "Addresa",
+        "your_name": "Emri Juaj",
+        "your_email": "Emaili Juaj",
+        "message": "Mesazhi",
+        "send_message": "Dërgo Mesazhin"
       }
     }
   },
@@ -33,7 +48,22 @@
         "years_of_experience": "Years Of Experience",
         "we_build_everything_that_you_need": "We Build Everything That You Need",
         "read_more": "Read More",
-        "contact_us": "Contact Us"
+        "is_required": "Is Required",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message"
+      },
+      "contact": {
+        "contact_us": "Contact Us",
+        "do-you-have-any-questions": "Do you have any questions?",
+        "our-team-will-answer": "Feel free to contact us anytime, our team will reach you as soon as possible",
+        "phone": "Phone",
+        "email": "Email",
+        "street": "Street",
+        "your_name": "Your Name",
+        "your_email": "Your Email",
+        "message": "Message",
+        "send_message": "Send Message"
       }
     }
   },
@@ -52,7 +82,22 @@
         "years_of_experience": "Jahre Erfahrung",
         "we_build_everything_that_you_need": "Wir bauen alles, was Sie brauchen",
         "read_more": "Mehr lesen",
-        "contact_us": "Kontaktiere uns"
+        "is_required": "Ist erforderlich",
+        "name": "Name",
+        "email": "Email",
+        "message": "Nachricht"
+      },
+      "contact": {
+        "contact_us": "Kontaktiere uns",
+        "do-you-have-any-questions": "Haben Sie Fragen?",
+        "our-team-will-answer": "Zögern Sie nicht, uns jederzeit zu kontaktieren, unser Team wird Sie so schnell wie möglich erreichen",
+        "phone": "Telefon",
+        "email": "Email",
+        "street": "Straße",
+        "your_name": "Dein Name",
+        "your_email": "Deine E-Mail",
+        "message": "Botschaft",
+        "send_message": "Nachricht senden"
       }
     }
   },
@@ -71,7 +116,22 @@
         "years_of_experience": "Années d'expérience",
         "we_build_everything_that_you_need": "Nous construisons tout ce dont vous avez besoin",
         "read_more": "Lire la suite",
-        "contact_us": "Contactez nous"
+        "is_required": "Est requis",
+        "name": "Nom",
+        "email": "Email",
+        "message": "Message"
+      },
+      "contact": {
+        "contact_us": "Contactez nous",
+        "do-you-have-any-questions": "Avez-vous des questions?",
+        "our-team-will-answer": "N'hésitez pas à nous contacter à tout moment, notre équipe vous contactera dès que possible",
+        "phone": "Téléphone",
+        "email": "Email",
+        "street": "Rue",
+        "your_name": "Votre nom",
+        "your_email": "Votre email",
+        "message": "Message",
+        "send_message": "Envoyer le message"
       }
     }
   }
