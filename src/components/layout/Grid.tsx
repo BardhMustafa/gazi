@@ -11,7 +11,7 @@ import {
 
 const GridLayout = ({ title , backgroundColor}: { title?: string , backgroundColor?: string}) => {
   return (
-    <Box bgcolor={backgroundColor}>
+    <Box bgcolor={backgroundColor} padding={10}>
       {title && (
         <Container style={{display:'flex', justifyContent:'center', alignContent:'center'}}>
           <Typography variant="h2" component="div" gutterBottom>
@@ -28,7 +28,7 @@ const GridLayout = ({ title , backgroundColor}: { title?: string , backgroundCol
             columnSpacing={{ xs: 1, sm: 2, md: 10 }}
           >
             <Grid item>
-              <Card sx={{ minWidth: 275 }}>
+              <Card sx={{ minWidth: 300 }}>
                 <CardContent>
                   <Typography
                     sx={{ fontSize: 14 }}
@@ -55,7 +55,7 @@ const GridLayout = ({ title , backgroundColor}: { title?: string , backgroundCol
               </Card>
             </Grid>
             <Grid item>
-              <Card sx={{ minWidth: 275 }}>
+              <Card sx={{ minWidth: 300 }}>
                 <CardContent>
                   <Typography
                     sx={{ fontSize: 14 }}
@@ -82,7 +82,7 @@ const GridLayout = ({ title , backgroundColor}: { title?: string , backgroundCol
               </Card>
             </Grid>
             <Grid item>
-              <Card sx={{ minWidth: 275 }}>
+              <Card sx={{ minWidth: 300 }}>
                 <CardContent>
                   <Typography
                     sx={{ fontSize: 14 }}
