@@ -19,10 +19,9 @@ export const ImagePlusText = ({
 
 const Section = styled.section`
   display: flex;
-  align-items: center;
   padding-top: 3rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
   }
 `;
@@ -33,12 +32,7 @@ const ImageSection = styled.div`
   flex-direction: column;
   margin-bottom: 2rem;
 
-  @media (min-width: 568px) {
-    flex-direction: row;
-    position: relative;
-  }
-
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     flex-basis: 50%;
     flex-direction: row;
     position: relative;
@@ -49,12 +43,15 @@ const ImageSection = styled.div`
 const TextSection = styled.div`
   flex-basis: 50%;
   margin: 0;
+  margin-top: 4rem;
 
   @media (min-width: 768px) {
     padding-left: 2rem;
+    margin-top: 4rem;
   }
 
   @media (min-width: 1024px) {
     padding-left: 0;
+    margin-top: 15rem;
   }
 `;
