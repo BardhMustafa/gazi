@@ -1,1 +1,0 @@
-const helper = 'helper';

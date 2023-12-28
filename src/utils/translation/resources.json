@@ -1,0 +1,74 @@
+{
+  "shq": {
+    "translation": {
+      "common": {
+        "home": "Ballina",
+        "about": "Rreth Nesh",
+        "aboutUs": "Rreth Nesh",
+        "contact": "Kontakti",
+        "products": "Produktet",
+        "services": "Sherbimet",
+        "projects": "Projektet",
+        "rehau": "Rehau",
+        "synego": "Synego",
+        "years_of_experience": "Vjet Pervoje",
+        "we_build_everything_that_you_need": "Ne ndërtojmë gjithçka që ju nevojitet",
+        "read_more": "Më Shumë"
+      }
+    }
+  },
+  "en": {
+    "translation": {
+      "common": {
+        "home": "Home",
+        "about": "About",
+        "aboutUs": "About Us",
+        "contact": "Contact",
+        "products": "Products",
+        "services": "Services",
+        "projects": "Projects",
+        "rehau": "Rehau",
+        "synego": "Synego",
+        "years_of_experience": "Years Of Experience",
+        "we_build_everything_that_you_need": "We Build Everything That You Need",
+        "read_more": "Read More"
+      }
+    }
+  },
+  "de": {
+    "translation": {
+      "common": {
+        "home": "Zuhause",
+        "about": "Über",
+        "aboutUs": "Über uns",
+        "contact": "Kontakt",
+        "products": "Produkte",
+        "services": "Dienstleistungen",
+        "projects": "Projekte",
+        "rehau": "Rehau",
+        "synego": "Synego",
+        "years_of_experience": "Jahre Erfahrung",
+        "we_build_everything_that_you_need": "Wir bauen alles, was Sie brauchen",
+        "read_more": "Mehr lesen"
+      }
+    }
+  },
+  "fr": {
+    "translation": {
+      "common": {
+        "home": "Accueil",
+        "about": "À propos",
+        "aboutUs": "À propos de nous",
+        "contact": "Contact",
+        "products": "Produits",
+        "services": "Services",
+        "projects": "Projets",
+        "rehau": "Rehau",
+        "synego": "Synego",
+        "years_of_experience": "Années d'expérience",
+        "we_build_everything_that_you_need": "Nous construisons tout ce dont vous avez besoin",
+        "read_more": "Lire la suite"
+      }
+    }
+  }
+}
