@@ -125,7 +125,7 @@ const YearsOfExperience = styled.div`
   }
 `;
 
-const TextSection = styled.div`
+export const TextSection = styled.div`
   flex-basis: 50%;
   margin: 0;
 
@@ -138,7 +138,7 @@ const TextSection = styled.div`
   }
 `;
 
-const TextSectionAbout = styled.h3`
+export const TextSectionAbout = styled.h3`
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
