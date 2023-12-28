@@ -1,10 +1,10 @@
+import { useState, ChangeEvent } from 'react';
 import { Outlet, generatePath, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { MainHeader } from '../components/layout/MainHeader';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useDrawer } from '../store/DrawerContext';
 import { Language, useTranslations } from '../hooks/useTranslations';
-import { ChangeEvent, useState } from 'react';
 import { LANG_KEY } from '../utils/types';
 
 const getLocalStorageLanguage = () => {
