@@ -7,11 +7,12 @@ type Props = {
   background: string;
   children: React.ReactNode;
   fontColor:string
+  height?:number;
 }
 
 const HeroSection = (props: Props) => {
   return (
-    <StyledContainer background={props.background}>
+    <StyledContainer background={props.background} height={props.height}>
       {props.children}
     </StyledContainer> 
   );
@@ -32,6 +33,7 @@ const StyledContainer = styled.div<StyledContainerProps>`
   background-repeat: no-repeat;
   display: flex;
   align-items:center;
+  justify-content:center
 `;
 
 
