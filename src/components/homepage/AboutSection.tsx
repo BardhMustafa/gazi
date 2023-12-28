@@ -85,7 +85,7 @@ const YearsOfExperience = styled.div`
 
   & > h3 {
     font-size: 5rem;
-    color: #e91b37;
+    color: #d42539;
     margin: 0;
     margin-top: -1rem;
   }
@@ -136,7 +136,7 @@ const TextSectionAbout = styled.h3`
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #e91b37;
+  color: #d42539;
 
   @media (max-width: 768px) {
     margin-bottom: 1rem;

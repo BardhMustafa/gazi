@@ -80,7 +80,7 @@ const HeaderWrapper = styled.div`
 const Actions = styled.nav`
   a {
     text-decoration: none;
-    color: #e91b37;
+    color: #d42539;
   }
 
   p {
@@ -119,7 +119,7 @@ const ActionList = styled.ul`
 const StyledMenuIcon = styled(MenuIcon)`
   font-family: 'Poppins', sans-serif;
   font-size: 2.6rem;
-  color: #e91b37;
+  color: #d42539;
 `;
 
 const StyledIconButton = styled(IconButton)`

@@ -53,7 +53,7 @@ const ActionListItem = styled.li`
   text-decoration: none;
   font-size: 1.8rem;
   font-weight: 700;
-  color: #e91b37;
+  color: #d42539;
   cursor: pointer;
 
   @media (max-width: 768px) {

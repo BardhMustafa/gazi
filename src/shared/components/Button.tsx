@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Button = styled.button`
-  background-color: #e91b37;
+  background-color: #d42539;
   color: white;
   font-size: 1.6rem;
   font-weight: 500;

@@ -17,7 +17,7 @@ export const InfoSection = ({ title, imageSrc }: InfoSectionProps) => {
 
 const Section = styled.section`
   height: 70rem;
-  color: #e91b37;
+  color: #d42539;
 `;
 
 const InfoSectionImg = styled.img`
