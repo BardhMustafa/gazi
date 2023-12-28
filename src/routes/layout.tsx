@@ -3,13 +3,14 @@ import styled from 'styled-components';
 import { MainHeader } from '../components/layout/MainHeader';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useDrawer } from '../store/DrawerContext';
-import { useTranslation } from 'react-i18next';
-import { translations } from '../utils/translation/translationHelper';
+import { Language, useTranslations } from '../hooks/useTranslations';
+import { ChangeEvent, useState } from 'react';
 
 export const Layout = () => {
+  const [language, setLanguage] = useState<Language>('en');
   const { toggleDrawer } = useDrawer();
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, translations, changeLanguage } = useTranslations();
 
   const menuLinks = [
     { path: '/', label: t(translations.common.home) },
@@ -42,9 +43,27 @@ export const Layout = () => {
     );
   });
 
+  const handleLanguageChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    const selectedLanguage = event.target.value as Language;
+    setLanguage(selectedLanguage);
+    changeLanguage(selectedLanguage);
+  };
+
   return (
     <>
-      <MainHeader actions={links} />
+      <MainHeader
+        actions={
+          <>
+            {links}
+            <select onChange={handleLanguageChange}>
+              <option value="en">En</option>
+              <option value="shq">Shq</option>
+              <option value="de">De</option>
+              <option value="fr">Fr</option>
+            </select>
+          </>
+        }
+      />
       <LayoutContainer>
         <Outlet />
       </LayoutContainer>

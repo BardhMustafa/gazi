@@ -31,12 +31,32 @@
   },
   "de": {
     "translation": {
-      "common": {}
+      "common": {
+        "home": "Zuhause",
+        "about": "Über",
+        "aboutUs": "Über uns",
+        "contact": "Kontakt",
+        "products": "Produkte",
+        "services": "Dienstleistungen",
+        "projects": "Projekte",
+        "rehau": "Rehau",
+        "synego": "Synego"
+      }
     }
   },
   "fr": {
     "translation": {
-      "common": {}
+      "common": {
+        "home": "Accueil",
+        "about": "À propos",
+        "aboutUs": "À propos de nous",
+        "contact": "Contact",
+        "products": "Produits",
+        "services": "Services",
+        "projects": "Projets",
+        "rehau": "Rehau",
+        "synego": "Synego"
+      }
     }
   }
 }
