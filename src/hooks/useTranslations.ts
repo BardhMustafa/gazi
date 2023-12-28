@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { translations } from '../utils/translation/translationHelper';
 
-export type Language = 'en' | 'shq' | 'eng' | 'de' | 'fr';
+export type Language = 'en' | 'shq' | 'de' | 'fr';
 
 export const useTranslations = () => {
   const { t, i18n } = useTranslation();
