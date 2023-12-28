@@ -35,7 +35,6 @@ export const AboutSection = () => {
 const Section = styled.section`
   display: flex;
   align-items: center;
-  margin-bottom: 10rem;
   padding-top: 3rem;
 
   @media (max-width: 768px) {
