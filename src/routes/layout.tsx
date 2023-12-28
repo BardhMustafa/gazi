@@ -1,4 +1,4 @@
-import { Link, Outlet, generatePath } from 'react-router-dom';
+import { Link, Outlet, generatePath, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { MainHeader } from '../components/layout/MainHeader';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
@@ -6,6 +6,7 @@ import { useDrawer } from '../store/DrawerContext';
 
 export const Layout = () => {
   const { toggleDrawer } = useDrawer();
+  const navigate = useNavigate();
 
   const menuLinks = [
     { path: '/', label: 'Home' },
@@ -18,18 +19,21 @@ export const Layout = () => {
 
   const links = menuLinks.map(link => {
     return (
-      <Item key={link.path} onClick={() => toggleDrawer(false)}>
-        <ActionListItem key={link.path}>
-          <Link to={generatePath(link.path)}>{link.label}</Link>
-        </ActionListItem>
-        {link.icon}
-      </Item>
+      <ActionListItem
+        key={link.path}
+        onClick={() => {
+          navigate(generatePath(link.path));
+          toggleDrawer(false);
+        }}
+      >
+        {link.label}
+      </ActionListItem>
     );
   });
 
   return (
     <>
-      <MainHeader  actions={links} />
+      <MainHeader actions={links} />
       <LayoutContainer>
         <Outlet />
       </LayoutContainer>
@@ -39,21 +43,21 @@ export const Layout = () => {
 
 const LayoutContainer = styled.div`
   margin: 0 auto;
-  padding-top: 7rem;
+  padding-top: 7.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
   max-width: 1400px;
 `;
 
-const Item = styled.div`
-  display: flex;
-  align-items: center;
-  color: red;
-`;
-
 const ActionListItem = styled.li`
-  & > a {
-    font-size: 2rem;
-    font-weight: 700;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #e91b37;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    padding: 1rem 0;
+    width: 100%;
   }
 `;

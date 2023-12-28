@@ -45,7 +45,7 @@ export const MainHeader = ({ actions }: MainHeaderProps) => {
               open={drawer}
               onClose={() => toggleDrawer(false)}
             >
-              <DrawerContainer>{actions}</DrawerContainer>
+              <ActionList>{actions}</ActionList>
             </Drawer>
           </Actions>
         </HeaderWrapper>
@@ -62,6 +62,7 @@ const Header = styled.header`
   justify-content: center;
   width: 100%;
   height: 7rem;
+  background-color: #fff;
 `;
 
 const HeaderWrapper = styled.div`
@@ -76,10 +77,10 @@ const HeaderWrapper = styled.div`
   flex-direction: row;
 `;
 
-const Actions = styled.div`
+const Actions = styled.nav`
   a {
     text-decoration: none;
-    color: red;
+    color: #e91b37;
   }
 
   p {
@@ -88,38 +89,40 @@ const Actions = styled.div`
 `;
 
 const LogoWrapper = styled.div`
+  margin-top: 0.7rem;
   a {
     text-decoration: none;
-    text-transform: uppercase;
-    color: red;
-  }
-
-  & h1 {
-    font-size: 3.6rem;
   }
 `;
 
 const ActionList = styled.ul`
-  display: flex;
-  align-items: center;
+  width: 300px;
+  padding: 1rem;
   list-style: none;
-  gap: 5rem;
   margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @media (min-width: 768px) {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5rem;
+    list-style: none;
+  }
 `;
 
 const StyledMenuIcon = styled(MenuIcon)`
   font-family: 'Poppins', sans-serif;
   font-size: 2.6rem;
-  color: red;
+  color: #e91b37;
 `;
 
 const StyledIconButton = styled(IconButton)`
   padding: 0;
   margin: 0;
-`;
-
-const DrawerContainer = styled.div`
-  width: 350px;
-  padding: 1rem;
 `;
