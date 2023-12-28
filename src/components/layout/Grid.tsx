@@ -1,15 +1,12 @@
 import Grid from '@mui/material/Grid';
 import {
-  Card,
-  CardContent,
   Typography,
-  CardActions,
-  Button,
   Container,
   Box
 } from '@mui/material';
+import React from 'react';
 
-const GridLayout = ({ title , backgroundColor}: { title?: string , backgroundColor?: string}) => {
+const GridLayout = ({ title , backgroundColor, items}: { title?: string , backgroundColor?: string, items: React.ReactNode[]}) => {
   return (
     <Box bgcolor={backgroundColor} padding={10}>
       {title && (
@@ -20,94 +17,18 @@ const GridLayout = ({ title , backgroundColor}: { title?: string , backgroundCol
         </Container>
       )}
       <Grid sx={{ flexGrow: 1 }} container>
-        <Grid item xs={12}>
+        <Grid item xs={24}>
           <Grid
             container
             justifyContent="center"
             rowSpacing={1}
             columnSpacing={{ xs: 1, sm: 2, md: 10 }}
           >
-            <Grid item>
-              <Card sx={{ minWidth: 300 }}>
-                <CardContent>
-                  <Typography
-                    sx={{ fontSize: 14 }}
-                    color="text.secondary"
-                    gutterBottom
-                  >
-                    Word of the Day
-                  </Typography>
-                  <Typography variant="h5" component="div">
-                    shjdabs
-                  </Typography>
-                  <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                    adjective
-                  </Typography>
-                  <Typography variant="body2">
-                    well meaning and kindly.
-                    <br />
-                    {'"a benevolent smile"'}
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button size="small">Learn More</Button>
-                </CardActions>
-              </Card>
-            </Grid>
-            <Grid item>
-              <Card sx={{ minWidth: 300 }}>
-                <CardContent>
-                  <Typography
-                    sx={{ fontSize: 14 }}
-                    color="text.secondary"
-                    gutterBottom
-                  >
-                    Word of the Day
-                  </Typography>
-                  <Typography variant="h5" component="div">
-                    shjdabs
-                  </Typography>
-                  <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                    adjective
-                  </Typography>
-                  <Typography variant="body2">
-                    well meaning and kindly.
-                    <br />
-                    {'"a benevolent smile"'}
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button size="small">Learn More</Button>
-                </CardActions>
-              </Card>
-            </Grid>
-            <Grid item>
-              <Card sx={{ minWidth: 300 }}>
-                <CardContent>
-                  <Typography
-                    sx={{ fontSize: 14 }}
-                    color="text.secondary"
-                    gutterBottom
-                  >
-                    Word of the Day
-                  </Typography>
-                  <Typography variant="h5" component="div">
-                    shjdabs
-                  </Typography>
-                  <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                    adjective
-                  </Typography>
-                  <Typography variant="body2">
-                    well meaning and kindly.
-                    <br />
-                    {'"a benevolent smile"'}
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button size="small">Learn More</Button>
-                </CardActions>
-              </Card>
-            </Grid>
+            {items.map((item) => (
+              <Grid item xs={20} sm={6} md={4} key="bardh">
+                {item}
+              </Grid>
+            ))}{}
           </Grid>
         </Grid>
       </Grid>
