@@ -19,6 +19,10 @@
         "email": "Email",
         "message": "Mesazhi"
       },
+      "homepage":{
+        "first-section-content": "Në fabrikat tona mjaft bashkëkohore prodhojmë te gjitha llojet dhe format e dyerve dhe dritareve me profile te cilat jane zbulimet e fundit dhe tejet te persosura. E veçante e kompanise sone shte se ne e bejme vete perpunimin e hamit dhe izolimin e tyre, material i cili vie te ne nga prodhues eminente botrore. Perveç këtyre produkteve, ne gjithashtu prodhojmë edhe fasada strukturale dhe gjysmë-strukturale nga materiali  ALUMIL",
+        "gazi-rehau-section":" Bashkepunimi me Rehau per perdorimin e produkteve si Syngeu, Geneodhe Artego do te ndihmoje ne prodhimin e dritareve me baze PVC.Këto produkte ofrojne nje alternative te mire dhe te gendrueshme per prodhimin e dritareve ge duhet te jene te lehta dhe te gendrueshme nè kushte te ndryshme te motit. Kjo do te nihmoje ne krijimin e nje linje prodhimi efikase dhe te besueshme per kete produkt, duke siguruar që prodhimi t jete i gendrueshem dhe produktet te jene te cilesise se larte. Bashkpunimi do te mundēsoje gjithashtu zhvillimin e teknologjive te reja dhe inovative ne fushen e prodhimit te dritareve PVC."
+      },
       "contact": {
         "contact_us": "Na Kontaktoni",
         "do-you-have-any-questions": "Keni ndonje pyetje?",
@@ -53,6 +57,11 @@
         "email": "Email",
         "message": "Message"
       },
+      "homepage": {
+        "first-section-content": "In our modern factories, we produce all types and formats of doors and windows with profiles that are the latest and highly perfected developments. The unique feature of our company is that we handle the processing and insulation ourselves, using materials sourced from renowned global manufacturers. In addition to these products, we also manufacture structural and semi-structural facades using the material ALUMIL.",
+        "gazi-rehau-section": "Collaboration with Rehau for the use of products such as Syngeu, Geneodhe Artego will facilitate the production of PVC windows. These products offer a good and environmentally friendly alternative for the production of windows that need to be lightweight and durable in various weather conditions. This will help in creating an efficient and reliable production line for this product, ensuring that the production is environmentally friendly and the products are of high quality. The collaboration will also enable the development of new and innovative technologies in the field of PVC window production."
+      },
+      
       "contact": {
         "contact_us": "Contact Us",
         "do-you-have-any-questions": "Do you have any questions?",
@@ -87,6 +96,11 @@
         "email": "Email",
         "message": "Nachricht"
       },
+      "homepage": {
+        "first-section-content": "In unseren modernen Fabriken produzieren wir alle Arten und Formate von Türen und Fenstern mit Profilen, die die neuesten und perfektionierten Entwicklungen darstellen. Das Besondere an unserem Unternehmen ist, dass wir die Herstellung und Isolierung selbst durchführen, wobei das Material von weltweit renommierten Herstellern stammt. Neben diesen Produkten stellen wir auch strukturelle und halbstrukturierte Fassaden aus dem Material ALUMIL her.",
+        "gazi-rehau-section": "Die Zusammenarbeit mit Rehau für die Verwendung von Produkten wie Syngeu, Geneodhe Artego wird die Herstellung von PVC-Fenstern fördern. Diese Produkte bieten eine gute und umweltfreundliche Alternative für die Herstellung von Fenstern, die leicht und umweltfreundlich unter verschiedenen Wetterbedingungen sein müssen. Dies wird dazu beitragen, eine effiziente und zuverlässige Produktionslinie für dieses Produkt zu schaffen, indem sichergestellt wird, dass die Produktion umweltfreundlich ist und die Produkte von hoher Qualität sind. Die Zusammenarbeit wird auch die Entwicklung neuer und innovativer Technologien im Bereich der PVC-Fensterproduktion ermöglichen."
+      },
+      
       "contact": {
         "contact_us": "Kontaktiere uns",
         "do-you-have-any-questions": "Haben Sie Fragen?",
@@ -121,6 +135,11 @@
         "email": "Email",
         "message": "Message"
       },
+      "homepage": {
+        "first-section-content": "Dans nos usines modernes, nous produisons toutes sortes de portes et fenêtres avec des profils qui représentent les dernières avancées et sont très perfectionnés. Ce qui distingue notre entreprise, c'est que nous réalisons nous-mêmes le traitement des profilés et leur isolation, avec des matériaux provenant de fabricants mondialement reconnus. En plus de ces produits, nous fabriquons également des façades structurales et semi-structurales en utilisant le matériau ALUMIL.",
+        "gazi-rehau-section": "La collaboration avec Rehau pour l'utilisation de produits tels que Syngeu, Geneodhe Artego favorisera la production de fenêtres en PVC. Ces produits offrent une alternative de qualité et respectueuse de l'environnement pour la fabrication de fenêtres qui doivent être légères et durables dans des conditions météorologiques variées. Cela contribuera à la création d'une ligne de production efficace et fiable pour ce produit, en veillant à ce que la production soit respectueuse de l'environnement et que les produits soient de haute qualité. La collaboration permettra également le développement de nouvelles technologies innovantes dans le domaine de la production de fenêtres en PVC."
+      },
+      
       "contact": {
         "contact_us": "Contactez nous",
         "do-you-have-any-questions": "Avez-vous des questions?",

@@ -1,17 +1,19 @@
 import Carousel from 'react-material-ui-carousel';
 import styled from 'styled-components';
-
+import { Box } from '@mui/system';
 
 export default function SlideShow() {
   const array = [1, 2, 3];
   return (
-    <Carousel animation="fade" navButtonsAlwaysVisible autoPlay={true}>
-      {array.map(i => (
-        <SlideShowContainer i={i} key={i}>
+    <Box marginBottom={10}> 
+      <Carousel animation="fade" navButtonsAlwaysVisible autoPlay={true}>
+        {array.map(i => (
+          <SlideShowContainer i={i} key={i}>
       
-        </SlideShowContainer>
-      ))}
-    </Carousel>
+          </SlideShowContainer>
+        ))}
+      </Carousel>
+    </Box>
   );
 }
 

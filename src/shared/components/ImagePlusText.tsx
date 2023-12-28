@@ -21,8 +21,8 @@ export const ImagePlusText = ({
 
 const Section = styled.section`
   display: flex;
-  padding-top: 3rem;
-
+  padding: 3rem;
+  background-color: #f2f2f2;
   @media (max-width: 1200px) {
     flex-direction: column;
   }

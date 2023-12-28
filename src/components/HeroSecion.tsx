@@ -1,20 +1,18 @@
 
-import Container, { ContainerProps } from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
+import  { ContainerProps } from '@mui/material/Container';
+
 import styled from 'styled-components';
 
 type Props = {
   background: string;
-  title: string;
+  children: React.ReactNode;
   fontColor:string
 }
 
-const HeroSecion = (props: Props) => {
+const HeroSection = (props: Props) => {
   return (
     <StyledContainer background={props.background}>
-      <Typography variant="h1" component="div" color={props.fontColor} sx={{ flexGrow: 1,display:'flex', justifyContent:'center' }}>
-        {props.title}
-      </Typography>
+      {props.children}
     </StyledContainer> 
   );
 };
@@ -24,8 +22,9 @@ interface StyledContainerProps extends ContainerProps {
   height?:number;
 }
 
-const StyledContainer = styled(Container)<StyledContainerProps>`
+const StyledContainer = styled.div<StyledContainerProps>`
   width: 100%;
+  padding: 2rem 4rem;
   height: ${({ height }) => height ? `${height}px` : '400px'};
   background-image: ${({ background }) =>  `url(${background})`};
   background-size: cover;
@@ -36,4 +35,4 @@ const StyledContainer = styled(Container)<StyledContainerProps>`
 `;
 
 
-export default HeroSecion;
+export default HeroSection;
