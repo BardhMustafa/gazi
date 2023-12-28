@@ -10,7 +10,7 @@ const Theme = ({ children }: { children: React.ReactNode }) => {
       },
     },
     typography: {
-      fontFamily: 'Inter, sans-serif',
+
       h1: {
         fontSize: '3.2rem',
         fontWeight: 700,

@@ -1,23 +1,22 @@
 import styled from 'styled-components';
 import { FixedWrapper } from '../../shared/components/FixedWrapper';
 import { Link } from 'react-router-dom';
-import { IconButton, Typography } from '@mui/material';
+import { IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { MobileWrapper } from '../../shared/components/MobileWrapper';
-
+import logo1 from  '../../assets/gazi-logo.png';
 interface MainHeaderProps {
-  logo: string | React.ReactNode;
   actions: React.ReactNode;
 }
 
-export const MainHeader = ({ logo, actions }: MainHeaderProps) => {
+export const MainHeader = ({  actions }: MainHeaderProps) => {
   return (
     <FixedWrapper>
       <Header>
         <HeaderWrapper>
           <LogoWrapper>
             <Link to="/">
-              <Typography variant="h1">{logo}</Typography>
+              <Logo  src={logo1}/>
             </Link>
           </LogoWrapper>
           <Actions>
@@ -44,8 +43,12 @@ export const MainHeader = ({ logo, actions }: MainHeaderProps) => {
   );
 };
 
+const Logo = styled.img`
+  width:120px;
+`;
 const Header = styled.header`
-  background-color: #fff;
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 7rem;
 `;
@@ -95,6 +98,7 @@ const ActionList = styled.ul`
 `;
 
 const StyledMenuIcon = styled(MenuIcon)`
+font-family: 'Poppins', sans-serif;
   font-size: 2.6rem;
   color: red;
 `;

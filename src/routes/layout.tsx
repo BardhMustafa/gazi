@@ -26,7 +26,7 @@ export const Layout = () => {
 
   return (
     <>
-      <MainHeader logo="Gazi" actions={links} />
+      <MainHeader  actions={links} />
       <LayoutContainer>
         <Outlet />
       </LayoutContainer>
