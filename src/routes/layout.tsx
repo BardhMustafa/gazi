@@ -2,8 +2,11 @@ import { Link, Outlet, generatePath } from 'react-router-dom';
 import styled from 'styled-components';
 import { MainHeader } from '../components/layout/MainHeader';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { useDrawer } from '../store/DrawerContext';
 
 export const Layout = () => {
+  const { toggleDrawer } = useDrawer();
+
   const menuLinks = [
     { path: '/', label: 'Home' },
     { path: '/about-us', label: 'About Us' },
@@ -15,7 +18,7 @@ export const Layout = () => {
 
   const links = menuLinks.map(link => {
     return (
-      <Item key={link.path}>
+      <Item key={link.path} onClick={() => toggleDrawer(false)}>
         <ActionListItem key={link.path}>
           <Link to={generatePath(link.path)}>{link.label}</Link>
         </ActionListItem>

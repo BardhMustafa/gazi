@@ -1,22 +1,26 @@
 import styled from 'styled-components';
 import { FixedWrapper } from '../../shared/components/FixedWrapper';
 import { Link } from 'react-router-dom';
-import { IconButton } from '@mui/material';
+import { Drawer, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { MobileWrapper } from '../../shared/components/MobileWrapper';
-import logo1 from  '../../assets/gazi-logo.png';
+import { useDrawer } from '../../store/DrawerContext';
+import logo1 from '../../assets/gazi-logo.png';
+
 interface MainHeaderProps {
   actions: React.ReactNode;
 }
 
-export const MainHeader = ({  actions }: MainHeaderProps) => {
+export const MainHeader = ({ actions }: MainHeaderProps) => {
+  const { drawer, toggleDrawer } = useDrawer();
+
   return (
     <FixedWrapper>
       <Header>
         <HeaderWrapper>
           <LogoWrapper>
             <Link to="/">
-              <Logo  src={logo1}/>
+              <Logo src={logo1} />
             </Link>
           </LogoWrapper>
           <Actions>
@@ -28,7 +32,7 @@ export const MainHeader = ({  actions }: MainHeaderProps) => {
                   color="inherit"
                   aria-label="menu"
                   sx={{ mr: 2 }}
-                  onClick={() => console.log('click')}
+                  onClick={() => toggleDrawer(true)}
                 >
                   <StyledMenuIcon />
                 </StyledIconButton>
@@ -36,6 +40,13 @@ export const MainHeader = ({  actions }: MainHeaderProps) => {
             >
               <ActionList>{actions}</ActionList>
             </MobileWrapper>
+            <Drawer
+              anchor="right"
+              open={drawer}
+              onClose={() => toggleDrawer(false)}
+            >
+              <DrawerContainer>{actions}</DrawerContainer>
+            </Drawer>
           </Actions>
         </HeaderWrapper>
       </Header>
@@ -44,7 +55,7 @@ export const MainHeader = ({  actions }: MainHeaderProps) => {
 };
 
 const Logo = styled.img`
-  width:120px;
+  width: 120px;
 `;
 const Header = styled.header`
   display: flex;
@@ -98,7 +109,7 @@ const ActionList = styled.ul`
 `;
 
 const StyledMenuIcon = styled(MenuIcon)`
-font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2.6rem;
   color: red;
 `;
@@ -106,4 +117,9 @@ font-family: 'Poppins', sans-serif;
 const StyledIconButton = styled(IconButton)`
   padding: 0;
   margin: 0;
+`;
+
+const DrawerContainer = styled.div`
+  width: 350px;
+  padding: 1rem;
 `;
