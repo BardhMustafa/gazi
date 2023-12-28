@@ -9,6 +9,9 @@ import { Paragraph } from '../shared/components/Paragraph';
 import HeroSection from '../components/HeroSecion';
 import InsideFactory from '../assets/factory/InsideFac.jpg';
 import { TextSectionAbout } from '../components/homepage/AboutSection';
+import GridLayout from '../components/layout/Grid';
+import { Stack } from '@mui/material';
+
 const HomePage = () => {
   const { t, translations } = useTranslations();
 
@@ -34,17 +37,31 @@ const HomePage = () => {
         }
       />
       <HeroSection
+        height={500}
         background={InsideFactory}
         children={
-          <TextSection>
-            <TextSectionAbout>
-              REHAU
-            </TextSectionAbout>
-            <TextSelectionHeading>GAZI & REHAU</TextSelectionHeading>
-            <Paragraph>
-              {t(translations.homepage['gazi-rehau-section'] )}
-            </Paragraph>
-          </TextSection>
+          <Stack spacing={1}>
+            <TextSection>
+              <TextSectionAbout>REHAU</TextSectionAbout>
+              <TextSelectionHeading>GAZI & REHAU</TextSelectionHeading>
+              <Paragraph>
+                {t(translations.homepage['gazi-rehau-section'])}
+              </Paragraph>
+            </TextSection>
+            <GridLayout
+              items={[
+                <Heading2 color="#e91b37" key="1">
+                  Synego
+                </Heading2>,
+                <Heading2 color="#e91b37" key="2">
+                  Geneo
+                </Heading2>,
+                <Heading2 color="#e91b37" key="3">
+                  Artevo
+                </Heading2>,
+              ]}
+            />
+          </Stack>
         }
         fontColor="black"
       />
