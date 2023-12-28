@@ -3,16 +3,18 @@ import styled from 'styled-components';
 interface ImagePlusTextProps {
   imageSection: React.ReactNode;
   textSection: React.ReactNode;
+  order: number;
 }
 
 export const ImagePlusText = ({
   imageSection,
   textSection,
+  order,
 }: ImagePlusTextProps) => {
   return (
     <Section>
-      <ImageSection>{imageSection}</ImageSection>
-      <TextSection>{textSection}</TextSection>
+      <ImageSection order={order}>{imageSection}</ImageSection>
+      <TextSection order={order}>{textSection}</TextSection>
     </Section>
   );
 };
@@ -26,13 +28,15 @@ const Section = styled.section`
   }
 `;
 
-const ImageSection = styled.div`
+const ImageSection = styled.div<{ order: number }>`
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-bottom: 2rem;
+  order: ${({ order }) => (order === 1 ? 1 : 2)};
 
   @media (min-width: 1200px) {
+    order: ${({ order }) => (order === 1 ? 2 : 1)};
     flex-basis: 50%;
     flex-direction: row;
     position: relative;
@@ -40,17 +44,20 @@ const ImageSection = styled.div`
   }
 `;
 
-const TextSection = styled.div`
+const TextSection = styled.div<{ order: number }>`
   flex-basis: 50%;
   margin: 0;
   margin-top: 4rem;
+  order: ${({ order }) => (order === 1 ? 2 : 1)};
 
   @media (min-width: 768px) {
+    order: ${({ order }) => (order === 1 ? 1 : 2)};
     padding-left: 2rem;
     margin-top: 4rem;
   }
 
   @media (min-width: 1024px) {
+    order: ${({ order }) => (order === 1 ? 1 : 2)};
     padding-left: 0;
     margin-top: 15rem;
   }

@@ -9,7 +9,6 @@ import {
   TextSection,
   TextSectionAbout,
 } from '../components/homepage/AboutSection';
-import { Heading2 } from '../shared/components/Heading2';
 import { Paragraph } from '../shared/components/Paragraph';
 
 const Rehau = () => {
@@ -23,6 +22,7 @@ const Rehau = () => {
       />
 
       <ImagePlusText
+        order={2}
         imageSection={
           <ImageSection>
             <Image src={Rehau2Image} alt="rehau-image" />
