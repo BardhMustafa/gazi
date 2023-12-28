@@ -3,8 +3,10 @@ import styled from 'styled-components';
 import { Button } from '../../shared/components/Button';
 import { Heading2 } from '../../shared/components/Heading2';
 import { Paragraph } from '../../shared/components/Paragraph';
+import { useTranslations } from '../../hooks/useTranslations';
 
 export const AboutSection = () => {
+  const { t, translations } = useTranslations();
   return (
     <Section>
       <ImageSection>
@@ -14,19 +16,23 @@ export const AboutSection = () => {
         />
         <YearsOfExperience>
           <h3>20</h3>
-          <p>Years Of Experience</p>
+          <p>{t(translations.common.years_of_experience)}</p>
         </YearsOfExperience>
       </ImageSection>
       <TextSection>
-        <TextSectionAbout>About us</TextSectionAbout>
-        <Heading2>We Build Everything That You Need.</Heading2>
+        <TextSectionAbout>{t(translations.common.aboutUs)}</TextSectionAbout>
+        <Heading2>
+          {t(translations.common.we_build_everything_that_you_need)}
+        </Heading2>
         <Paragraph>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea voluptas
           enim reprehenderit perspiciatis! Corrupti facilis sed cum enim
           quisquam sunt alias. Obcaecati delectus, dolorem in quas molestias id.
           Cumque, impedit.
         </Paragraph>
-        <Button onClick={() => generatePath('/about-us')}>Read More</Button>
+        <Button onClick={() => generatePath('/about-us')}>
+          {t(translations.common.read_more)}
+        </Button>
       </TextSection>
     </Section>
   );

@@ -10,7 +10,10 @@
         "services": "Sherbimet",
         "projects": "Projektet",
         "rehau": "Rehau",
-        "synego": "Synego"
+        "synego": "Synego",
+        "years_of_experience": "Vjet Pervoje",
+        "we_build_everything_that_you_need": "Ne ndërtojmë gjithçka që ju nevojitet",
+        "read_more": "Më Shumë"
       }
     }
   },
@@ -25,7 +28,10 @@
         "services": "Services",
         "projects": "Projects",
         "rehau": "Rehau",
-        "synego": "Synego"
+        "synego": "Synego",
+        "years_of_experience": "Years Of Experience",
+        "we_build_everything_that_you_need": "We Build Everything That You Need",
+        "read_more": "Read More"
       }
     }
   },
@@ -40,7 +46,10 @@
         "services": "Dienstleistungen",
         "projects": "Projekte",
         "rehau": "Rehau",
-        "synego": "Synego"
+        "synego": "Synego",
+        "years_of_experience": "Jahre Erfahrung",
+        "we_build_everything_that_you_need": "Wir bauen alles, was Sie brauchen",
+        "read_more": "Mehr lesen"
       }
     }
   },
@@ -55,7 +64,10 @@
         "services": "Services",
         "projects": "Projets",
         "rehau": "Rehau",
-        "synego": "Synego"
+        "synego": "Synego",
+        "years_of_experience": "Années d'expérience",
+        "we_build_everything_that_you_need": "Nous construisons tout ce dont vous avez besoin",
+        "read_more": "Lire la suite"
       }
     }
   }
