@@ -4,6 +4,8 @@ import './index.css';
 import Theme from './shared/theme/Theme';
 import App from './App';
 
+import 'leaflet/dist/leaflet.css';
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Theme>
