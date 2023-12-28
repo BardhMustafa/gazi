@@ -104,7 +104,15 @@ const YearsOfExperience = styled.div`
     width: 24rem;
   }
 
-  @media (min-width: 758px) {
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 52%;
+    right: 18%;
+    translate: translateX(50%);
+    width: 24rem;
+  }
+
+  @media (min-width: 1024px) {
     position: absolute;
     top: 52%;
     right: 12%;
@@ -114,6 +122,15 @@ const YearsOfExperience = styled.div`
 
 const TextSection = styled.div`
   flex-basis: 50%;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    padding-left: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: 0;
+  }
 `;
 
 const TextSectionAbout = styled.h3`
