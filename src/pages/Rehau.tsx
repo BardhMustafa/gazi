@@ -3,6 +3,7 @@ import { PageHero } from '../shared/components/PageHero';
 import RehauHeroImage from '../assets/images/rehau2.jpg';
 import RehauImage from '../assets/images/rehau.jpg';
 import Rehau2Image from '../assets/images/rehau_3.jpg';
+import Rehau4Image from '../assets/images/rehau4.jpg';
 import styled from 'styled-components';
 import { ImagePlusText } from '../shared/components/ImagePlusText';
 import {
@@ -10,9 +11,37 @@ import {
   TextSectionAbout,
 } from '../components/homepage/AboutSection';
 import { Paragraph } from '../shared/components/Paragraph';
+import { CardsWithBackground } from '../shared/components/CardsWithBackground';
 
 const Rehau = () => {
   const { t, translations } = useTranslations();
+
+  const boxes = [
+    {
+      id: 1,
+      title: 'Ne meritojmë besim',
+      description:
+        'jfk sdahkjfhdjfhskjdsah kdlfsdjfkh lsadfhjksdlhsdkjlfh akjdlfh hsakjlhlsadhf jlsdahkfldsahkljfhsad jkhsad klhasdjhfklhakjhf kjlas fhakjdslf hsajl hfsda kfdajlfhdsak kjdshfsdafhlkas hl',
+      imagePath: RehauHeroImage,
+      imageAlt: 'imageAlt',
+    },
+    {
+      id: 2,
+      title: 'Ne jemi inovatorë',
+      description:
+        'jfk sdahkjfhdjfhskjdsah kdlfsdjfkh lsadfhjksdlhsdkjlfh akjdlfh hsakjlhlsadhf jlsdahkfldsahkljfhsad jkhsad klhasdjhfklhakjhf kjlas fhakjdslf hsajl hfsda kfdajlfhdsak kjdshfsdafhlkas hl',
+      imagePath: Rehau2Image,
+      imageAlt: 'imageAlt',
+    },
+    {
+      id: 3,
+      title: 'Ne jemi te besueshem',
+      description:
+        'jfk sdahkjfhdjfhskjdsah kdlfsdjfkh lsadfhjksdlhsdkjlfh akjdlfh hsakjlhlsadhf jlsdahkfldsahkljfhsad jkhsad klhasdjhfklhakjhf kjlas fhakjdslf hsajl hfsda kfdajlfhdsak kjdshfsdafhlkas hl',
+      imagePath: RehauImage,
+      imageAlt: 'imageAlt',
+    },
+  ];
 
   return (
     <>
@@ -46,6 +75,14 @@ const Rehau = () => {
             </Paragraph>
           </TextSection>
         }
+      />
+
+      <CardsWithBackground
+        title="Vlerat REHAU"
+        subtitle="Vlerat e shoqërisë sonë i japin formë punës, kulturës dhe sjelljeve tona. Ne i inkurajojmë të gjithë punonjësit dhe partnerët tanë të ndajnë këto vlera dhe t'i
+        dëshmojnë ato vazhdimisht në punën e tyre."
+        boxes={boxes}
+        sectionImage={Rehau4Image}
       />
     </>
   );

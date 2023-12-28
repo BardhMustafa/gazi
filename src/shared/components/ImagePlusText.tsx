@@ -21,8 +21,9 @@ export const ImagePlusText = ({
 
 const Section = styled.section`
   display: flex;
-  padding: 3rem;
-  background-color: #f2f2f2;
+  padding-top: 3rem;
+  margin-bottom: 0;
+
   @media (max-width: 1200px) {
     flex-direction: column;
   }
@@ -32,7 +33,6 @@ const ImageSection = styled.div<{ order: number }>`
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 2rem;
   order: ${({ order }) => (order === 1 ? 1 : 2)};
 
   @media (min-width: 1200px) {
