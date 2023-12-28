@@ -13,7 +13,8 @@
         "synego": "Synego",
         "years_of_experience": "Vjet Pervoje",
         "we_build_everything_that_you_need": "Ne ndërtojmë gjithçka që ju nevojitet",
-        "read_more": "Më Shumë"
+        "read_more": "Më Shumë",
+        "contact_us": "Na Kontaktoni"
       }
     }
   },
@@ -31,7 +32,8 @@
         "synego": "Synego",
         "years_of_experience": "Years Of Experience",
         "we_build_everything_that_you_need": "We Build Everything That You Need",
-        "read_more": "Read More"
+        "read_more": "Read More",
+        "contact_us": "Contact Us"
       }
     }
   },
@@ -49,7 +51,8 @@
         "synego": "Synego",
         "years_of_experience": "Jahre Erfahrung",
         "we_build_everything_that_you_need": "Wir bauen alles, was Sie brauchen",
-        "read_more": "Mehr lesen"
+        "read_more": "Mehr lesen",
+        "contact_us": "Kontaktiere uns"
       }
     }
   },
@@ -67,7 +70,8 @@
         "synego": "Synego",
         "years_of_experience": "Années d'expérience",
         "we_build_everything_that_you_need": "Nous construisons tout ce dont vous avez besoin",
-        "read_more": "Lire la suite"
+        "read_more": "Lire la suite",
+        "contact_us": "Contactez nous"
       }
     }
   }
