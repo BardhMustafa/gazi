@@ -50,6 +50,7 @@ const Section = styled.section<{ sectionImage: string }>`
     linear-gradient(rgba(8, 33, 90, 0.8), rgba(8, 33, 90)),
     url(${({ sectionImage }) => sectionImage}) no-repeat center center/cover;
   height: 50rem;
+  margin-bottom: 30rem;
 `;
 
 const InfoSection = styled.div`
@@ -95,16 +96,12 @@ const Boxes = styled.div`
 `;
 
 const Box = styled.div`
-  min-height: 45rem;
+  height: 50rem;
   width: 35rem;
   background-color: white;
   border: 1px solid #ddd;
   display: flex;
   flex-direction: column;
-
-  @media (min-width: 768px) {
-    margin-bottom: 10rem;
-  }
 `;
 
 const BoxImage = styled.div`

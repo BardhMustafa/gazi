@@ -19,27 +19,24 @@ const Rehau = () => {
   const boxes = [
     {
       id: 1,
-      title: 'Ne meritojmë besim',
-      description:
-        'jfk sdahkjfhdjfhskjdsah kdlfsdjfkh lsadfhjksdlhsdkjlfh akjdlfh hsakjlhlsadhf jlsdahkfldsahkljfhsad jkhsad klhasdjhfklhakjhf kjlas fhakjdslf hsajl hfsda kfdajlfhdsak kjdshfsdafhlkas hl',
+      title: t(translations.rehau['we-deserve-trust']),
+      description: t(translations.rehau['we-deserve-trust-content']),
       imagePath: RehauHeroImage,
-      imageAlt: 'imageAlt',
+      imageAlt: t(translations.rehau['we-deserve-trust']),
     },
     {
       id: 2,
-      title: 'Ne jemi inovatorë',
-      description:
-        'jfk sdahkjfhdjfhskjdsah kdlfsdjfkh lsadfhjksdlhsdkjlfh akjdlfh hsakjlhlsadhf jlsdahkfldsahkljfhsad jkhsad klhasdjhfklhakjhf kjlas fhakjdslf hsajl hfsda kfdajlfhdsak kjdshfsdafhlkas hl',
+      title: t(translations.rehau['we-are-creators']),
+      description: t(translations.rehau['we-are-creators-content']),
       imagePath: Rehau2Image,
-      imageAlt: 'imageAlt',
+      imageAlt: t(translations.rehau['we-are-creators']),
     },
     {
       id: 3,
-      title: 'Ne jemi te besueshem',
-      description:
-        'jfk sdahkjfhdjfhskjdsah kdlfsdjfkh lsadfhjksdlhsdkjlfh akjdlfh hsakjlhlsadhf jlsdahkfldsahkljfhsad jkhsad klhasdjhfklhakjhf kjlas fhakjdslf hsajl hfsda kfdajlfhdsak kjdshfsdafhlkas hl',
+      title: t(translations.rehau['we-are-loyal']),
+      description: t(translations.rehau['we-are-loyal-content']),
       imagePath: RehauImage,
-      imageAlt: 'imageAlt',
+      imageAlt: t(translations.rehau['we-are-loyal']),
     },
   ];
 
@@ -60,27 +57,18 @@ const Rehau = () => {
         }
         textSection={
           <TextSection>
-            <TextSectionAbout>
-              {t(translations.common.aboutUs)}
-            </TextSectionAbout>
-            <TextSelectionHeading>Why Rehau</TextSelectionHeading>
-            <Paragraph>
-              Një nga markat lider dhe kryesor për zgjidhje, e bazuar në
-              polimere në sektorin e ndërtimit, atë automobilistik dhe në
-              sektorin industrial, me më shumë se 20.000 të punësuar në mbarë
-              botën. Inovacione dhe përparim në kohëra të mira dhe me shumë
-              sfida: Mësoni fakte interesante për historinë tonë të suksesit dhe
-              rrugëtimin që po e ndjekim, duke u fokusuar në qëndrueshmëri dhe
-              në kërkesat e brezave të ardhshëm.
-            </Paragraph>
+            <TextSectionAbout>{t(translations.common.rehau)}</TextSectionAbout>
+            <TextSelectionHeading>
+              {t(translations.rehau['why_rehau'])}
+            </TextSelectionHeading>
+            <Paragraph>{t(translations.rehau['why_rehau_content'])}</Paragraph>
           </TextSection>
         }
       />
 
       <CardsWithBackground
-        title="Vlerat REHAU"
-        subtitle="Vlerat e shoqërisë sonë i japin formë punës, kulturës dhe sjelljeve tona. Ne i inkurajojmë të gjithë punonjësit dhe partnerët tanë të ndajnë këto vlera dhe t'i
-        dëshmojnë ato vazhdimisht në punën e tyre."
+        title={t(translations.rehau['rehau_values'])}
+        subtitle={t(translations.rehau['rehau_values_desc'])}
         boxes={boxes}
         sectionImage={Rehau4Image}
       />

@@ -6,6 +6,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useDrawer } from '../store/DrawerContext';
 import { Language, useTranslations } from '../hooks/useTranslations';
 import { LANG_KEY } from '../utils/types';
+import { Footer } from '../components/Footer';
 
 const getLocalStorageLanguage = () => {
   const language = localStorage.getItem(LANG_KEY);
@@ -17,7 +18,7 @@ const getLocalStorageLanguage = () => {
 };
 
 export const Layout = () => {
-  const [language, setLanguage] = useState<any>(getLocalStorageLanguage());
+  const [language, setLanguage] = useState<Language>(getLocalStorageLanguage());
   const { toggleDrawer } = useDrawer();
   const navigate = useNavigate();
   const { t, translations, changeLanguage } = useTranslations();
@@ -78,6 +79,7 @@ export const Layout = () => {
       <LayoutContainer>
         <Outlet />
       </LayoutContainer>
+      <Footer />
     </>
   );
 };

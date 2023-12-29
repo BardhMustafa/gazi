@@ -19,9 +19,9 @@
         "email": "Email",
         "message": "Mesazhi"
       },
-      "homepage":{
+      "homepage": {
         "first-section-content": "Në fabrikat tona mjaft bashkëkohore prodhojmë te gjitha llojet dhe format e dyerve dhe dritareve me profile te cilat jane zbulimet e fundit dhe tejet te persosura. E veçante e kompanise sone shte se ne e bejme vete perpunimin e hamit dhe izolimin e tyre, material i cili vie te ne nga prodhues eminente botrore. Perveç këtyre produkteve, ne gjithashtu prodhojmë edhe fasada strukturale dhe gjysmë-strukturale nga materiali  ALUMIL",
-        "gazi-rehau-section":" Bashkepunimi me Rehau per perdorimin e produkteve si Syngeu, Geneodhe Artego do te ndihmoje ne prodhimin e dritareve me baze PVC.Këto produkte ofrojne nje alternative te mire dhe te gendrueshme per prodhimin e dritareve ge duhet te jene te lehta dhe te gendrueshme nè kushte te ndryshme te motit. Kjo do te nihmoje ne krijimin e nje linje prodhimi efikase dhe te besueshme per kete produkt, duke siguruar që prodhimi t jete i gendrueshem dhe produktet te jene te cilesise se larte. Bashkpunimi do te mundēsoje gjithashtu zhvillimin e teknologjive te reja dhe inovative ne fushen e prodhimit te dritareve PVC."
+        "gazi-rehau-section": " Bashkepunimi me Rehau per perdorimin e produkteve si Syngeu, Geneodhe Artego do te ndihmoje ne prodhimin e dritareve me baze PVC.Këto produkte ofrojne nje alternative te mire dhe te gendrueshme per prodhimin e dritareve ge duhet te jene te lehta dhe te gendrueshme nè kushte te ndryshme te motit. Kjo do te nihmoje ne krijimin e nje linje prodhimi efikase dhe te besueshme per kete produkt, duke siguruar që prodhimi t jete i gendrueshem dhe produktet te jene te cilesise se larte. Bashkpunimi do te mundēsoje gjithashtu zhvillimin e teknologjive te reja dhe inovative ne fushen e prodhimit te dritareve PVC."
       },
       "contact": {
         "contact_us": "Na Kontaktoni",
@@ -34,6 +34,18 @@
         "your_email": "Emaili Juaj",
         "message": "Mesazhi",
         "send_message": "Dërgo Mesazhin"
+      },
+      "rehau": {
+        "we-deserve-trust": "Ne meritojmë besim",
+        "we-deserve-trust-content": "Besimin dhe të qenit i besueshem i ndan nje det i tërë. Në REHAU, çdo ditë ne përpiqemi të fitojmë dhe shpërblejmë besimin e klientit dhe besimin e punonjësve tanë, sepse së bashku mund të krijojmë gjëra të mëdha.",
+        "we-are-creators": "Ne jemi inovatorë",
+        "we-are-creators-content": "Idetë dhe krijimtaria në zgjidhjen e problemeve janë në ADN-në, tonë. Në zhvillimin e produkteve dhe dizejnimin e shërbimeve, pasioni ynë për të menduar në mënyrë moderne dhe guximi per te marre përsipër rreziqe të llogaritura, lejon REHAU të shtrojë rrugën dhe të tjerët të na ndjekin.",
+        "we-are-loyal": "Ne jemi të besueshëm",
+        "we-are-loyal-content": "Kredibiliteti ynë varet nga besueshmëria jonë, dhe ne bëjmë atë që themi. Ne veprojmë në mënyrë transparente dhe gjithmonë përpiqemi të mbajmë premtimet tona.",
+        "why_rehau": "Pse REHAU",
+        "why_rehau_content": "Një nga markat lider dhe kryesor për zgjidhje, e bazuar në polimere në sektorin e ndërtimit, atë automobilistik dhe në sektorin industrial, me më shumë se 20.000 të punësuar në mbarë botën. Inovacione dhe përparim në kohëra të mira dhe me shumë sfida: Mësoni fakte interesante për historinë tonë të suksesit dhe rrugëtimin që po e ndjekim, duke u fokusuar në qëndrueshmëri dhe në kërkesat e brezave të ardhshëm.",
+        "rehau_values": "Vlerat REHAU",
+        "rehau_values_desc": "Vlerat e shoqërisë sonë i japin formë punës, kulturës dhe sjelljeve tona. Ne i inkurajojmë të gjithë punonjësit dhe partnerët tanë të ndajnë këto vlera dhe t'i dëshmojnë ato vazhdimisht në punën e tyre."
       }
     }
   },
@@ -61,7 +73,7 @@
         "first-section-content": "In our modern factories, we produce all types and formats of doors and windows with profiles that are the latest and highly perfected developments. The unique feature of our company is that we handle the processing and insulation ourselves, using materials sourced from renowned global manufacturers. In addition to these products, we also manufacture structural and semi-structural facades using the material ALUMIL.",
         "gazi-rehau-section": "Collaboration with Rehau for the use of products such as Syngeu, Geneodhe Artego will facilitate the production of PVC windows. These products offer a good and environmentally friendly alternative for the production of windows that need to be lightweight and durable in various weather conditions. This will help in creating an efficient and reliable production line for this product, ensuring that the production is environmentally friendly and the products are of high quality. The collaboration will also enable the development of new and innovative technologies in the field of PVC window production."
       },
-      
+
       "contact": {
         "contact_us": "Contact Us",
         "do-you-have-any-questions": "Do you have any questions?",
@@ -73,6 +85,18 @@
         "your_email": "Your Email",
         "message": "Message",
         "send_message": "Send Message"
+      },
+      "rehau": {
+        "we-deserve-trust": "We deserve trust",
+        "we-deserve-trust-content": "Trust and being trustworthy separates an entire ocean. At REHAU, every day we strive to earn and reward the trust of the customer and the trust of our employees, because together we can create great things.",
+        "we-are-creators": "We are creators",
+        "we-are-creators-content": "Ideas and creativity in problem solving are in our DNA. In product development and service design, our passion for thinking in a modern way and the courage to take calculated risks, allows REHAU to pave the way and others to follow us.",
+        "we-are-loyal": "We are loyal",
+        "we-are-loyal-content": "Our credibility depends on our trustworthiness, and we do what we say. We act transparently and always strive to keep our promises.",
+        "why_rehau": "Why REHAU",
+        "why_rehau_content": "One of the leading and primary brands for solutions, based on polymers in the construction sector, the automotive sector, and the industrial sector, with more than 20,000 employees worldwide. Innovations and progress in good times and with many challenges: Learn interesting facts about our success story and the journey we are following, focusing on sustainability and the demands of future generations.",
+        "rehau_values": "REHAU Values",
+        "rehau_values_desc": "The values of our society shape our work, culture, and behaviors. We encourage all employees and our partners to share these values and to continuously demonstrate them in their work."
       }
     }
   },
@@ -100,7 +124,7 @@
         "first-section-content": "In unseren modernen Fabriken produzieren wir alle Arten und Formate von Türen und Fenstern mit Profilen, die die neuesten und perfektionierten Entwicklungen darstellen. Das Besondere an unserem Unternehmen ist, dass wir die Herstellung und Isolierung selbst durchführen, wobei das Material von weltweit renommierten Herstellern stammt. Neben diesen Produkten stellen wir auch strukturelle und halbstrukturierte Fassaden aus dem Material ALUMIL her.",
         "gazi-rehau-section": "Die Zusammenarbeit mit Rehau für die Verwendung von Produkten wie Syngeu, Geneodhe Artego wird die Herstellung von PVC-Fenstern fördern. Diese Produkte bieten eine gute und umweltfreundliche Alternative für die Herstellung von Fenstern, die leicht und umweltfreundlich unter verschiedenen Wetterbedingungen sein müssen. Dies wird dazu beitragen, eine effiziente und zuverlässige Produktionslinie für dieses Produkt zu schaffen, indem sichergestellt wird, dass die Produktion umweltfreundlich ist und die Produkte von hoher Qualität sind. Die Zusammenarbeit wird auch die Entwicklung neuer und innovativer Technologien im Bereich der PVC-Fensterproduktion ermöglichen."
       },
-      
+
       "contact": {
         "contact_us": "Kontaktiere uns",
         "do-you-have-any-questions": "Haben Sie Fragen?",
@@ -112,6 +136,18 @@
         "your_email": "Deine E-Mail",
         "message": "Botschaft",
         "send_message": "Nachricht senden"
+      },
+      "rehau": {
+        "we-deserve-trust": "Wir verdienen Vertrauen",
+        "we-deserve-trust-content": "Vertrauen und Vertrauenswürdigkeit trennen einen ganzen Ozean. Bei REHAU bemühen wir uns jeden Tag, das Vertrauen des Kunden und das Vertrauen unserer Mitarbeiter zu verdienen und zu belohnen, denn zusammen können wir Großes schaffen.",
+        "we-are-creators": "Wir sind Schöpfer",
+        "we-are-creators-content": "Ideen und Kreativität bei der Problemlösung liegen in unserer DNA. Bei der Produktentwicklung und der Gestaltung von Dienstleistungen ermöglicht unsere Leidenschaft für das Denken auf moderne Weise und der Mut, kalkulierte Risiken einzugehen, REHAU den Weg zu ebnen und andere uns zu folgen.",
+        "we-are-loyal": "Wir sind loyal",
+        "we-are-loyal-content": "Unsere Glaubwürdigkeit hängt von unserer Vertrauenswürdigkeit ab, und wir tun, was wir sagen. Wir handeln transparent und bemühen uns immer, unsere Versprechen zu halten.",
+        "why_rehau": "Warum REHAU",
+        "why_rehau_content": "Eine der führenden und wichtigsten Marken für Lösungen auf Polymerbasis in den Bereichen Bauwesen, Automobilbau und Industrie mit mehr als 20.000 Mitarbeitern weltweit. Innovationen und Fortschritte in guten Zeiten und mit vielen Herausforderungen: Erfahren Sie interessante Fakten über unsere Erfolgsgeschichte und den Weg, den wir beschreiten, mit dem Schwerpunkt auf Nachhaltigkeit und den Anforderungen zukünftiger Generationen.",
+        "rehau_values": "REHAU Werte",
+        "rehau_values_desc": "Die Werte unserer Gesellschaft prägen unsere Arbeit, Kultur und unser Verhalten. Wir ermutigen alle Mitarbeiter und unsere Partner, diese Werte zu teilen und sie in ihrer Arbeit kontinuierlich zu demonstrieren."
       }
     }
   },
@@ -139,7 +175,7 @@
         "first-section-content": "Dans nos usines modernes, nous produisons toutes sortes de portes et fenêtres avec des profils qui représentent les dernières avancées et sont très perfectionnés. Ce qui distingue notre entreprise, c'est que nous réalisons nous-mêmes le traitement des profilés et leur isolation, avec des matériaux provenant de fabricants mondialement reconnus. En plus de ces produits, nous fabriquons également des façades structurales et semi-structurales en utilisant le matériau ALUMIL.",
         "gazi-rehau-section": "La collaboration avec Rehau pour l'utilisation de produits tels que Syngeu, Geneodhe Artego favorisera la production de fenêtres en PVC. Ces produits offrent une alternative de qualité et respectueuse de l'environnement pour la fabrication de fenêtres qui doivent être légères et durables dans des conditions météorologiques variées. Cela contribuera à la création d'une ligne de production efficace et fiable pour ce produit, en veillant à ce que la production soit respectueuse de l'environnement et que les produits soient de haute qualité. La collaboration permettra également le développement de nouvelles technologies innovantes dans le domaine de la production de fenêtres en PVC."
       },
-      
+
       "contact": {
         "contact_us": "Contactez nous",
         "do-you-have-any-questions": "Avez-vous des questions?",
@@ -151,6 +187,18 @@
         "your_email": "Votre email",
         "message": "Message",
         "send_message": "Envoyer le message"
+      },
+      "rehau": {
+        "we-deserve-trust": "Nous méritons la confiance",
+        "we-deserve-trust-content": "La confiance et la fiabilité séparent tout un océan. Chez REHAU, nous nous efforçons chaque jour de gagner et de récompenser la confiance du client et la confiance de nos employés, car ensemble nous pouvons créer de grandes choses.",
+        "we-are-creators": "Nous sommes des créateurs",
+        "we-are-creators-content": "Les idées et la créativité dans la résolution de problèmes sont dans notre ADN. Dans le développement de produits et la conception de services, notre passion pour la pensée moderne et le courage de prendre des risques calculés, permet à REHAU de montrer la voie et aux autres de nous suivre.",
+        "we-are-loyal": "Nous sommes loyaux",
+        "we-are-loyal-content": "Notre crédibilité dépend de notre fiabilité, et nous faisons ce que nous disons. Nous agissons de manière transparente et nous nous efforçons toujours de tenir nos promesses.",
+        "why_rehau": "Pourquoi REHAU",
+        "why_rehau_content": "Une des marques leader et principale pour les solutions, basée sur les polymères dans le secteur de la construction, celui de l'automobile et dans le secteur industriel, avec plus de 20 000 employés dans le monde entier. Innovations et progrès en temps de prospérité et face à de nombreux défis : Découvrez des faits intéressants sur notre histoire de succès et le chemin que nous suivons, en mettant l'accent sur la durabilité et les exigences des générations futures.",
+        "rehau_values": "Valeurs REHAU",
+        "rehau_values_desc": "Les valeurs de notre société donnent forme à notre travail, notre culture et nos comportements. Nous encourageons tous les employés et nos partenaires à partager ces valeurs et à les démontrer constamment dans leur travail."
       }
     }
   }
