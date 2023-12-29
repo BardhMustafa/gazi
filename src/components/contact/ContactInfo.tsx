@@ -18,11 +18,11 @@ export const ContactInfo = ({ phone, email, address }: ContactInfoProps) => {
     <Section>
       <InfoSection>
         <InfoSectionHeading>
-          {t(translations.contact['do-you-have-any-questions'])}
+          {t(translations.contact.do_you_have_any_questions)}
         </InfoSectionHeading>
         <Divider />
         <InfoSectionDescription>
-          {t(translations.contact['our-team-will-answer'])}
+          {t(translations.contact.our_team_will_answer)}
         </InfoSectionDescription>
 
         <InfoSectionBoxes>
@@ -116,7 +116,7 @@ const BoxInfo = styled.div`
 `;
 
 const createStyledIcon = (
-  Icon: OverridableComponent<SvgIconTypeMap<{}, 'svg'>> & {
+  Icon: OverridableComponent<SvgIconTypeMap<object, 'svg'>> & {
     muiName: string;
   }
 ) => styled(Icon)`
