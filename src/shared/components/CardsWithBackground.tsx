@@ -21,7 +21,6 @@ export const CardsWithBackground = ({
   boxes,
   sectionImage,
 }: CardsWithBackgroundProps) => {
-  console.log('sectionImage', sectionImage);
   return (
     <Section sectionImage={sectionImage}>
       <InfoSection>
