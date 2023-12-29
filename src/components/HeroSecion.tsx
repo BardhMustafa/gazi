@@ -1,20 +1,19 @@
 
-import Container, { ContainerProps } from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
+import  { ContainerProps } from '@mui/material/Container';
+
 import styled from 'styled-components';
 
 type Props = {
   background: string;
-  title: string;
+  children: React.ReactNode;
   fontColor:string
+  height?:number;
 }
 
-const HeroSecion = (props: Props) => {
+const HeroSection = (props: Props) => {
   return (
-    <StyledContainer background={props.background}>
-      <Typography variant="h1" component="div" color={props.fontColor} sx={{ flexGrow: 1,display:'flex', justifyContent:'center' }}>
-        {props.title}
-      </Typography>
+    <StyledContainer background={props.background} height={props.height}>
+      {props.children}
     </StyledContainer> 
   );
 };
@@ -24,16 +23,22 @@ interface StyledContainerProps extends ContainerProps {
   height?:number;
 }
 
-const StyledContainer = styled(Container)<StyledContainerProps>`
+const StyledContainer = styled.div<StyledContainerProps>`
   width: 100%;
   height: ${({ height }) => height ? `${height}px` : '400px'};
-  background-image: ${({ background }) =>  `url(${background})`};
+  background: ${({ background }) =>    `linear-gradient(0deg, rgba(38,28,29,1) 14%, rgba(126,109,112,0.517266281512605) 87%, rgba(237,230,230,0.2539609593837535) 98%), url(${background})  no-repeat center center/cover`};
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items:center;
+  justify-content:center;
+  padding:20rem 10rem;
+  margin-bottom: 5rem;
+  @media (max-width: 768px) {
+    height:85%;
+  }
 `;
 
 
-export default HeroSecion;
+export default HeroSection;

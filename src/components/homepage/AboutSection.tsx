@@ -1,38 +1,24 @@
-import { generatePath } from 'react-router';
 import styled from 'styled-components';
-import { Button } from '../../shared/components/Button';
 import { Heading2 } from '../../shared/components/Heading2';
 import { Paragraph } from '../../shared/components/Paragraph';
 import { useTranslations } from '../../hooks/useTranslations';
+import AboutImage from '../../assets/images/about_1.jpg';
 
 export const AboutSection = () => {
   const { t, translations } = useTranslations();
   return (
     <Section>
       <ImageSection>
-        <Image
-          src="https://23july.hostlin.com/constech/wp-content/uploads/2022/08/about-8.jpg"
-          alt="worker"
-        />
+        <Image src={AboutImage} alt="worker" />
         <YearsOfExperience>
-          <h3>20</h3>
+          <h3>28</h3>
           <p>{t(translations.common.years_of_experience)}</p>
         </YearsOfExperience>
       </ImageSection>
       <TextSection>
         <TextSectionAbout>{t(translations.common.aboutUs)}</TextSectionAbout>
-        <Heading2>
-          {t(translations.common.we_build_everything_that_you_need)}
-        </Heading2>
-        <Paragraph>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea voluptas
-          enim reprehenderit perspiciatis! Corrupti facilis sed cum enim
-          quisquam sunt alias. Obcaecati delectus, dolorem in quas molestias id.
-          Cumque, impedit.
-        </Paragraph>
-        <Button onClick={() => generatePath('/about-us')}>
-          {t(translations.common.read_more)}
-        </Button>
+        <Heading2>{t(translations.about.who_are_we)}</Heading2>
+        <Paragraph>{t(translations.about.who_are_we_desc)}</Paragraph>
       </TextSection>
     </Section>
   );
@@ -41,7 +27,8 @@ export const AboutSection = () => {
 const Section = styled.section`
   display: flex;
   align-items: center;
-  padding-top: 3rem;
+  padding-top: 10rem;
+  margin-bottom: 0;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -68,7 +55,9 @@ const ImageSection = styled.div`
 `;
 
 const Image = styled.img`
-  object-fit: contain;
+  object-fit: cover;
+  width: 40rem;
+  height: 50rem;
 
   @media (max-width: 768px) {
     margin-bottom: 1rem;
@@ -125,7 +114,7 @@ const YearsOfExperience = styled.div`
   }
 `;
 
-const TextSection = styled.div`
+export const TextSection = styled.div`
   flex-basis: 50%;
   margin: 0;
 
@@ -136,9 +125,17 @@ const TextSection = styled.div`
   @media (min-width: 1024px) {
     padding-left: 0;
   }
+
+  & > p {
+    width: 100%;
+
+    @media (min-width: 768px) {
+      width: 80%;
+    }
+  }
 `;
 
-const TextSectionAbout = styled.h3`
+export const TextSectionAbout = styled.h3`
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;

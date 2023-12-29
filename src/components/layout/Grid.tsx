@@ -1,19 +1,17 @@
 import Grid from '@mui/material/Grid';
 import {
-  Typography,
   Container,
   Box
 } from '@mui/material';
 import React from 'react';
+import { Heading2 } from '../../shared/components/Heading2';
 
 const GridLayout = ({ title , backgroundColor, items}: { title?: string , backgroundColor?: string, items: React.ReactNode[]}) => {
   return (
     <Box bgcolor={backgroundColor} padding={10}>
       {title && (
         <Container style={{display:'flex', justifyContent:'center', alignContent:'center'}}>
-          <Typography variant="h2" component="div" gutterBottom>
-            {title}
-          </Typography>
+          <Heading2>{title}</Heading2>
         </Container>
       )}
       <Grid sx={{ flexGrow: 1 }} container>

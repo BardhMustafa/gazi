@@ -1,10 +1,10 @@
+import { useState, ChangeEvent } from 'react';
 import { Outlet, generatePath, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { MainHeader } from '../components/layout/MainHeader';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useDrawer } from '../store/DrawerContext';
 import { Language, useTranslations } from '../hooks/useTranslations';
-import { ChangeEvent, useState } from 'react';
 import { LANG_KEY } from '../utils/types';
 
 const getLocalStorageLanguage = () => {
@@ -16,8 +16,8 @@ const getLocalStorageLanguage = () => {
   return 'en';
 };
 
-export const Layout = () => {
-  const [language, setLanguage] = useState<any>(getLocalStorageLanguage());
+export const Layout = ({ children }: { children?: React.ReactNode }) => {
+  const [language, setLanguage] = useState<Language>(getLocalStorageLanguage());
   const { toggleDrawer } = useDrawer();
   const navigate = useNavigate();
   const { t, translations, changeLanguage } = useTranslations();
@@ -67,17 +67,16 @@ export const Layout = () => {
           <>
             {links}
             <select value={language} onChange={handleLanguageChange}>
-              <option value="en">En</option>
-              <option value="shq">Shq</option>
-              <option value="de">De</option>
-              <option value="fr">Fr</option>
+              <option value="en">🇺🇸 En</option>
+              <option value="shq">🇦🇱 Shq</option>
+              <option value="de">🇩🇪 De</option>
+              <option value="fr">🇫🇷 Fr</option>
             </select>
           </>
         }
       />
-      <LayoutContainer>
-        <Outlet />
-      </LayoutContainer>
+      <div id="page-hero-container" />
+      <LayoutContainer>{children ? children : <Outlet />}</LayoutContainer>
     </>
   );
 };

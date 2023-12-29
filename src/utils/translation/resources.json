@@ -13,10 +13,56 @@
         "synego": "Synego",
         "years_of_experience": "Vjet Pervoje",
         "we_build_everything_that_you_need": "Ne ndërtojmë gjithçka që ju nevojitet",
-        "read_more": "Më Shumë"
+        "read_more": "Më Shumë",
+        "is_required": "Duhet te plotesohet",
+        "name": "Emri",
+        "email": "Email",
+        "message": "Mesazhi",
+        "window": "Dritare",
+        "door": "Dyer",
+        "facade": "Fasada",
+        "blinds": "Rolete"
+      },
+      "homepage": {
+        "first_section_content": "Në fabrikat tona mjaft bashkëkohore prodhojmë te gjitha llojet dhe format e dyerve dhe dritareve me profile te cilat jane zbulimet e fundit dhe tejet te persosura. E veçante e kompanise sone shte se ne e bejme vete perpunimin e hamit dhe izolimin e tyre, material i cili vie te ne nga prodhues eminente botrore. Perveç këtyre produkteve, ne gjithashtu prodhojmë edhe fasada strukturale dhe gjysmë-strukturale nga materiali  ALUMIL",
+        "gazi_rehau_section": " Bashkepunimi me Rehau per perdorimin e produkteve si Syngeu, Geneodhe Artego do te ndihmoje ne prodhimin e dritareve me baze PVC.Këto produkte ofrojne nje alternative te mire dhe te gendrueshme per prodhimin e dritareve ge duhet te jene te lehta dhe te gendrueshme nè kushte te ndryshme te motit. Kjo do te nihmoje ne krijimin e nje linje prodhimi efikase dhe te besueshme per kete produkt, duke siguruar që prodhimi t jete i gendrueshem dhe produktet te jene te cilesise se larte. Bashkpunimi do te mundēsoje gjithashtu zhvillimin e teknologjive te reja dhe inovative ne fushen e prodhimit te dritareve PVC.",
+        "our-partners": "Partnerët tonë"
+      },
+      "contact": {
+        "contact_us": "Na Kontaktoni",
+        "do_you_have_any_questions": "Keni ndonje pyetje?",
+        "our_team_will_answer": "Na kontaktoni në çdo kohë, stafi ynë do t'ju përgjigjet sa më shpejt të jetë e mundur",
+        "phone": "Tel",
+        "email": "Email",
+        "street": "Addresa",
+        "your_name": "Emri Juaj",
+        "your_email": "Emaili Juaj",
+        "message": "Mesazhi",
+        "send_message": "Dërgo Mesazhin"
+      },
+      "rehau": {
+        "we_deserve_trust": "Ne meritojmë besim",
+        "we_deserve_trust_content": "Besimin dhe të qenit i besueshem i ndan nje det i tërë. Në REHAU, çdo ditë ne përpiqemi të fitojmë dhe shpërblejmë besimin e klientit dhe besimin e punonjësve tanë, sepse së bashku mund të krijojmë gjëra të mëdha.",
+        "we_are_creators": "Ne jemi inovatorë",
+        "we_are_creators_content": "Idetë dhe krijimtaria në zgjidhjen e problemeve janë në ADN-në, tonë. Në zhvillimin e produkteve dhe dizejnimin e shërbimeve, pasioni ynë për të menduar në mënyrë moderne dhe guximi per te marre përsipër rreziqe të llogaritura, lejon REHAU të shtrojë rrugën dhe të tjerët të na ndjekin.",
+        "we_are_loyal": "Ne jemi të besueshëm",
+        "we_are_loyal_content": "Kredibiliteti ynë varet nga besueshmëria jonë, dhe ne bëjmë atë që themi. Ne veprojmë në mënyrë transparente dhe gjithmonë përpiqemi të mbajmë premtimet tona.",
+        "why_rehau": "Pse REHAU",
+        "why_rehau_content": "Një nga markat lider dhe kryesor për zgjidhje, e bazuar në polimere në sektorin e ndërtimit, atë automobilistik dhe në sektorin industrial, me më shumë se 20.000 të punësuar në mbarë botën. Inovacione dhe përparim në kohëra të mira dhe me shumë sfida: Mësoni fakte interesante për historinë tonë të suksesit dhe rrugëtimin që po e ndjekim, duke u fokusuar në qëndrueshmëri dhe në kërkesat e brezave të ardhshëm.",
+        "rehau_values": "Vlerat REHAU",
+        "rehau_values_desc": "Vlerat e shoqërisë sonë i japin formë punës, kulturës dhe sjelljeve tona. Ne i inkurajojmë të gjithë punonjësit dhe partnerët tanë të ndajnë këto vlera dhe t'i dëshmojnë ato vazhdimisht në punën e tyre."
+      },
+      "about": {
+        "our_services": "Sherbimet Tona",
+        "our_services_desc": "Kopmania GAZI ofron produkte te prodhuara nga materiali/profili gjerman me unik dhe me i persosur ne treg - REHAU, ku prej me shume se dy dekadave jemi partnere zyrtare dhe te afirmuar te ketij brendi. Kompania jone karakterizohet me veçorinë kualitet, besueshmëri dhe sinqiritet, këto virtyte që na kanë mbajtur kaq gjatë ne treg.",
+        "who_are_we": "Kush jemi ne",
+        "who_are_we_desc": "Kompania e specializuar per prodhimin e dyerve, dritareve dhe fasadave Gazi, në Gjilan, është kompani e cila eshte themeluar në vitin 1995 dhe si e till operon suksesëshëm prej 25 viteve me një staf profesional dhe me makineritë me moderne.",
+        "our_products": "Produktet Tona",
+        "our_products_desc": "Në fabrikat tona mjaftë bashkëkohore prodhojmë të gjitha llojet dhe format e dyerve dhe me profile të cilat janë zbulimet e fundit dhe tejet të përsosura. E veqantë e kompanisë sonë është se ne  bëjmë vetë përpunimin e xhamit dhe izolimin e tyre,material i cili vie te ne nga prodhues eminentë botërorë.  këtyre produkteve, ne bëjmë edhe prodhimin e fasadave strukturale dhe gjysëmstrukturale nga materiali ALUMIL. Te ne mund të gjeni poashtu edhe gilindera të të gjitha llojeve si dhe pikore shiu të kualitetit më të lartë."
       }
     }
   },
+  
   "en": {
     "translation": {
       "common": {
@@ -31,7 +77,53 @@
         "synego": "Synego",
         "years_of_experience": "Years Of Experience",
         "we_build_everything_that_you_need": "We Build Everything That You Need",
-        "read_more": "Read More"
+        "read_more": "Read More",
+        "is_required": "Is Required",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "window": "Window",
+        "door": "Door",
+        "facade": "Facade",
+        "blinds": "Blinds"
+      },
+      "homepage": {
+        "first_section_content": "In our modern factories, we produce all types and formats of doors and windows with profiles that are the latest and highly perfected developments. The unique feature of our company is that we handle the processing and insulation ourselves, using materials sourced from renowned global manufacturers. In addition to these products, we also manufacture structural and semi_structural facades using the material ALUMIL.",
+        "gazi_rehau_section": "Collaboration with Rehau for the use of products such as Syngeu, Geneodhe Artego will facilitate the production of PVC windows. These products offer a good and environmentally friendly alternative for the production of windows that need to be lightweight and durable in various weather conditions. This will help in creating an efficient and reliable production line for this product, ensuring that the production is environmentally friendly and the products are of high quality. The collaboration will also enable the development of new and innovative technologies in the field of PVC window production.",
+        "our-partners": "Our Partners"
+      },
+
+      "contact": {
+        "contact_us": "Contact Us",
+        "do_you_have_any_questions": "Do you have any questions?",
+        "our_team_will_answer": "Feel free to contact us anytime, our team will reach you as soon as possible",
+        "phone": "Phone",
+        "email": "Email",
+        "street": "Street",
+        "your_name": "Your Name",
+        "your_email": "Your Email",
+        "message": "Message",
+        "send_message": "Send Message"
+      },
+      "rehau": {
+        "we_deserve_trust": "We deserve trust",
+        "we_deserve_trust_content": "Trust and being trustworthy separates an entire ocean. At REHAU, every day we strive to earn and reward the trust of the customer and the trust of our employees, because together we can create great things.",
+        "we_are_creators": "We are creators",
+        "we_are_creators_content": "Ideas and creativity in problem solving are in our DNA. In product development and service design, our passion for thinking in a modern way and the courage to take calculated risks, allows REHAU to pave the way and others to follow us.",
+        "we_are_loyal": "We are loyal",
+        "we_are_loyal_content": "Our credibility depends on our trustworthiness, and we do what we say. We act transparently and always strive to keep our promises.",
+        "why_rehau": "Why REHAU",
+        "why_rehau_content": "One of the leading and primary brands for solutions, based on polymers in the construction sector, the automotive sector, and the industrial sector, with more than 20,000 employees worldwide. Innovations and progress in good times and with many challenges: Learn interesting facts about our success story and the journey we are following, focusing on sustainability and the demands of future generations.",
+        "rehau_values": "REHAU Values",
+        "rehau_values_desc": "The values of our society shape our work, culture, and behaviors. We encourage all employees and our partners to share these values and to continuously demonstrate them in their work."
+      },
+      "about": {
+        "our_services": "Our Services",
+        "our_services_desc": "Gazi Company offers products produced from German material/profile with unique and most perfected in the market - REHAU, where for more than two decades we have been official and established partners of this brand. Our company is characterized by the quality, reliability, and sincerity, these virtues that have kept us in the market for so long.",
+        "who_are_we": "Who are we",
+        "who_are_we_desc": "The specialized company for the production of doors, windows, and facades Gazi, in Gjilan, is a company that was founded in 1995 and as such has been operating successfully for 25 years with a professional staff and the most modern machinery.",
+        "our_products": "Our Products",
+        "our_products_desc": "In our modern factories, we produce all types and formats of doors and windows with profiles that are the latest and highly perfected developments. The unique feature of our company is that we handle the processing and insulation ourselves, using materials sourced from renowned global manufacturers. In addition to these products, we also manufacture structural and semi_structural facades using the material ALUMIL. With us, you can also find cylinders of all kinds as well as the highest quality rainwater."
       }
     }
   },
@@ -49,7 +141,53 @@
         "synego": "Synego",
         "years_of_experience": "Jahre Erfahrung",
         "we_build_everything_that_you_need": "Wir bauen alles, was Sie brauchen",
-        "read_more": "Mehr lesen"
+        "read_more": "Mehr lesen",
+        "is_required": "Ist erforderlich",
+        "name": "Name",
+        "email": "Email",
+        "message": "Nachricht",
+        "window": "Fenster",
+        "door": "Tür",
+        "facade": "Fassade",
+        "blinds": "Rollos"
+      },
+      "homepage": {
+        "first_section_content": "In unseren modernen Fabriken produzieren wir alle Arten und Formate von Türen und Fenstern mit Profilen, die die neuesten und perfektionierten Entwicklungen darstellen. Das Besondere an unserem Unternehmen ist, dass wir die Herstellung und Isolierung selbst durchführen, wobei das Material von weltweit renommierten Herstellern stammt. Neben diesen Produkten stellen wir auch strukturelle und halbstrukturierte Fassaden aus dem Material ALUMIL her.",
+        "gazi_rehau_section": "Die Zusammenarbeit mit Rehau für die Verwendung von Produkten wie Syngeu, Geneodhe Artego wird die Herstellung von PVC_Fenstern fördern. Diese Produkte bieten eine gute und umweltfreundliche Alternative für die Herstellung von Fenstern, die leicht und umweltfreundlich unter verschiedenen Wetterbedingungen sein müssen. Dies wird dazu beitragen, eine effiziente und zuverlässige Produktionslinie für dieses Produkt zu schaffen, indem sichergestellt wird, dass die Produktion umweltfreundlich ist und die Produkte von hoher Qualität sind. Die Zusammenarbeit wird auch die Entwicklung neuer und innovativer Technologien im Bereich der PVC_Fensterproduktion ermöglichen.",
+        "our-partners": "Unsere Partner"
+      },
+
+      "contact": {
+        "contact_us": "Kontaktiere uns",
+        "do_you_have_any_questions": "Haben Sie Fragen?",
+        "our_team_will_answer": "Zögern Sie nicht, uns jederzeit zu kontaktieren, unser Team wird Sie so schnell wie möglich erreichen",
+        "phone": "Telefon",
+        "email": "Email",
+        "street": "Straße",
+        "your_name": "Dein Name",
+        "your_email": "Deine E_Mail",
+        "message": "Botschaft",
+        "send_message": "Nachricht senden"
+      },
+      "rehau": {
+        "we_deserve_trust": "Wir verdienen Vertrauen",
+        "we_deserve_trust_content": "Vertrauen und Vertrauenswürdigkeit trennen einen ganzen Ozean. Bei REHAU bemühen wir uns jeden Tag, das Vertrauen des Kunden und das Vertrauen unserer Mitarbeiter zu verdienen und zu belohnen, denn zusammen können wir Großes schaffen.",
+        "we_are_creators": "Wir sind Schöpfer",
+        "we_are_creators_content": "Ideen und Kreativität bei der Problemlösung liegen in unserer DNA. Bei der Produktentwicklung und der Gestaltung von Dienstleistungen ermöglicht unsere Leidenschaft für das Denken auf moderne Weise und der Mut, kalkulierte Risiken einzugehen, REHAU den Weg zu ebnen und andere uns zu folgen.",
+        "we_are_loyal": "Wir sind loyal",
+        "we_are_loyal_content": "Unsere Glaubwürdigkeit hängt von unserer Vertrauenswürdigkeit ab, und wir tun, was wir sagen. Wir handeln transparent und bemühen uns immer, unsere Versprechen zu halten.",
+        "why_rehau": "Warum REHAU",
+        "why_rehau_content": "Eine der führenden und wichtigsten Marken für Lösungen auf Polymerbasis in den Bereichen Bauwesen, Automobilbau und Industrie mit mehr als 20.000 Mitarbeitern weltweit. Innovationen und Fortschritte in guten Zeiten und mit vielen Herausforderungen: Erfahren Sie interessante Fakten über unsere Erfolgsgeschichte und den Weg, den wir beschreiten, mit dem Schwerpunkt auf Nachhaltigkeit und den Anforderungen zukünftiger Generationen.",
+        "rehau_values": "REHAU Werte",
+        "rehau_values_desc": "Die Werte unserer Gesellschaft prägen unsere Arbeit, Kultur und unser Verhalten. Wir ermutigen alle Mitarbeiter und unsere Partner, diese Werte zu teilen und sie in ihrer Arbeit kontinuierlich zu demonstrieren."
+      },
+      "about": {
+        "our_services": "Unsere Dienstleistungen",
+        "our_services_desc": "Die Gazi Company bietet Produkte aus deutschem Material/Profil mit einzigartigem und am meisten perfektioniertem auf dem Markt - REHAU, wo wir seit mehr als zwei Jahrzehnten offizielle und etablierte Partner dieser Marke sind. Unser Unternehmen zeichnet sich durch Qualität, Zuverlässigkeit und Aufrichtigkeit aus, diese Tugenden, die uns so lange auf dem Markt gehalten haben.",
+        "who_are_we": "Wer sind wir",
+        "who_are_we_desc": "Das spezialisierte Unternehmen für die Herstellung von Türen, Fenstern und Fassaden Gazi, in Gjilan, ist ein Unternehmen, das 1995 gegründet wurde und als solches seit 25 Jahren erfolgreich mit einem professionellen Personal und den modernsten Maschinen tätig ist.",
+        "our_products": "Unsere Produkte",
+        "our_products_desc": "In unseren modernen Fabriken produzieren wir alle Arten und Formate von Türen und Fenstern mit Profilen, die die neuesten und hochentwickelten Entwicklungen darstellen. Das Besondere an unserem Unternehmen ist, dass wir die Herstellung und Isolierung selbst durchführen, wobei das Material von weltweit renommierten Herstellern stammt. Neben diesen Produkten stellen wir auch strukturelle und halbstrukturierte Fassaden aus dem Material ALUMIL her. Bei uns finden Sie auch Zylinder aller Art sowie hochwertigste Regenwasser."
       }
     }
   },
@@ -67,7 +205,53 @@
         "synego": "Synego",
         "years_of_experience": "Années d'expérience",
         "we_build_everything_that_you_need": "Nous construisons tout ce dont vous avez besoin",
-        "read_more": "Lire la suite"
+        "read_more": "Lire la suite",
+        "is_required": "Est requis",
+        "name": "Nom",
+        "email": "Email",
+        "message": "Message",
+        "window": "Fenêtre",
+        "door": "Porte",
+        "facade": "Façade",
+        "blinds": "Stores"
+      },
+      "homepage": {
+        "first_section_content": "Dans nos usines modernes, nous produisons toutes sortes de portes et fenêtres avec des profils qui représentent les dernières avancées et sont très perfectionnés. Ce qui distingue notre entreprise, c'est que nous réalisons nous_mêmes le traitement des profilés et leur isolation, avec des matériaux provenant de fabricants mondialement reconnus. En plus de ces produits, nous fabriquons également des façades structurales et semi_structurales en utilisant le matériau ALUMIL.",
+        "gazi_rehau_section": "La collaboration avec Rehau pour l'utilisation de produits tels que Syngeu, Geneodhe Artego favorisera la production de fenêtres en PVC. Ces produits offrent une alternative de qualité et respectueuse de l'environnement pour la fabrication de fenêtres qui doivent être légères et durables dans des conditions météorologiques variées. Cela contribuera à la création d'une ligne de production efficace et fiable pour ce produit, en veillant à ce que la production soit respectueuse de l'environnement et que les produits soient de haute qualité. La collaboration permettra également le développement de nouvelles technologies innovantes dans le domaine de la production de fenêtres en PVC.",
+        "our-partners": "Nos partenaires"
+      },
+
+      "contact": {
+        "contact_us": "Contactez nous",
+        "do_you_have_any_questions": "Avez-vous des questions?",
+        "our_team_will_answer": "N'hésitez pas à nous contacter à tout moment, notre équipe vous contactera dès que possible",
+        "phone": "Téléphone",
+        "email": "Email",
+        "street": "Rue",
+        "your_name": "Votre nom",
+        "your_email": "Votre email",
+        "message": "Message",
+        "send_message": "Envoyer le message"
+      },
+      "rehau": {
+        "we_deserve_trust": "Nous méritons la confiance",
+        "we_deserve_trust_content": "La confiance et la fiabilité séparent tout un océan. Chez REHAU, nous nous efforçons chaque jour de gagner et de récompenser la confiance du client et la confiance de nos employés, car ensemble nous pouvons créer de grandes choses.",
+        "we_are_creators": "Nous sommes des créateurs",
+        "we_are_creators_content": "Les idées et la créativité dans la résolution de problèmes sont dans notre ADN. Dans le développement de produits et la conception de services, notre passion pour la pensée moderne et le courage de prendre des risques calculés, permet à REHAU de montrer la voie et aux autres de nous suivre.",
+        "we_are_loyal": "Nous sommes loyaux",
+        "we_are_loyal_content": "Notre crédibilité dépend de notre fiabilité, et nous faisons ce que nous disons. Nous agissons de manière transparente et nous nous efforçons toujours de tenir nos promesses.",
+        "why_rehau": "Pourquoi REHAU",
+        "why_rehau_content": "Une des marques leader et principale pour les solutions, basée sur les polymères dans le secteur de la construction, celui de l'automobile et dans le secteur industriel, avec plus de 20 000 employés dans le monde entier. Innovations et progrès en temps de prospérité et face à de nombreux défis : Découvrez des faits intéressants sur notre histoire de succès et le chemin que nous suivons, en mettant l'accent sur la durabilité et les exigences des générations futures.",
+        "rehau_values": "Valeurs REHAU",
+        "rehau_values_desc": "Les valeurs de notre société donnent forme à notre travail, notre culture et nos comportements. Nous encourageons tous les employés et nos partenaires à partager ces valeurs et à les démontrer constamment dans leur travail."
+      },
+      "about": {
+        "our_services": "Nos services",
+        "our_services_desc": "La société Gazi propose des produits fabriqués à partir de matériaux/profils allemands uniques et les plus perfectionnés du marché - REHAU, où nous sommes depuis plus de deux décennies des partenaires officiels et établis de cette marque. Notre entreprise se caractérise par la qualité, la fiabilité et la sincérité, ces vertus qui nous ont maintenus sur le marché si longtemps.",
+        "who_are_we": "Qui sommes nous",
+        "who_are_we_desc": "La société spécialisée dans la production de portes, fenêtres et façades Gazi, à Gjilan, est une société fondée en 1995 et qui, en tant que telle, opère avec succès depuis 25 ans avec un personnel professionnel et les machines les plus modernes.",
+        "our_products": "Nos produits",
+        "our_products_desc": "Dans nos usines modernes, nous produisons toutes sortes de portes et fenêtres avec des profils qui représentent les dernières avancées et sont très perfectionnés. Ce qui distingue notre entreprise, c'est que nous réalisons nous_mêmes le traitement des profilés et leur isolation, avec des matériaux provenant de fabricants mondialement reconnus. En plus de ces produits, nous fabriquons également des façades structurales et semi_structurales en utilisant le matériau ALUMIL. Chez nous, vous trouverez également des cylindres de toutes sortes ainsi que des eaux pluviales de la plus haute qualité."
       }
     }
   }
