@@ -1,16 +1,28 @@
 import Grid from '@mui/material/Grid';
-import {
-  Container,
-  Box
-} from '@mui/material';
+import { Container, Box } from '@mui/material';
 import React from 'react';
 import { Heading2 } from '../../shared/components/Heading2';
 
-const GridLayout = ({ title , backgroundColor, items}: { title?: string , backgroundColor?: string, items: React.ReactNode[]}) => {
+const GridLayout = ({
+  title,
+  backgroundColor,
+  items,
+}: {
+  title?: string;
+  backgroundColor?: string;
+  items: React.ReactNode[];
+}) => {
   return (
     <Box bgcolor={backgroundColor} padding={10}>
       {title && (
-        <Container style={{display:'flex', justifyContent:'center', alignContent:'center'}}>
+        <Container
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignContent: 'center',
+            marginBottom: '3rem',
+          }}
+        >
           <Heading2>{title}</Heading2>
         </Container>
       )}
@@ -22,11 +34,12 @@ const GridLayout = ({ title , backgroundColor, items}: { title?: string , backgr
             rowSpacing={1}
             columnSpacing={{ xs: 1, sm: 2, md: 10 }}
           >
-            {items.map((item) => (
-              <Grid item xs={20} sm={6} md={4} key="bardh">
+            {items.map((item, index) => (
+              <Grid item xs={20} sm={6} md={4} key={index}>
                 {item}
               </Grid>
-            ))}{}
+            ))}
+            {}
           </Grid>
         </Grid>
       </Grid>

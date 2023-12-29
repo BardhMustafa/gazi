@@ -30,7 +30,7 @@ export const PageHero = ({ title, backgroundImagePath }: PageHeroProps) => {
 export const Container = styled.div<{ bgImage: string }>`
   width: 100%;
   height: 40rem;
-  padding-top: 7.5rem;
+  margin-top: 7.5rem;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5)),
     url(${props => props.bgImage});
   background-position: center 30%;
