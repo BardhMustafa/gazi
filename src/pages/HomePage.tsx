@@ -11,6 +11,8 @@ import InsideFactory from '../assets/factory/InsideFac.jpg';
 import { TextSectionAbout } from '../components/homepage/AboutSection';
 import GridLayout from '../components/layout/Grid';
 import { Stack , Typography} from '@mui/material';
+import { Button } from '../shared/components/Button';
+import { generatePath } from 'react-router';
 
 const HomePage = () => {
   const { t, translations } = useTranslations();
@@ -21,11 +23,13 @@ const HomePage = () => {
 
       <ImagePlusText
         order={2}
+        bgColor='#f2f2f2'
         imageSection={
           <ImageSection>
             <Image src={GaziRehau} alt="rehau-image" />
             <Image2 src={GaziFront} alt="rehau-image" />
           </ImageSection>
+
         }
         textSection={
           <>
@@ -33,6 +37,9 @@ const HomePage = () => {
             <Paragraph>
               {t(translations.homepage['first-section-content'])}
             </Paragraph>
+            <Button onClick={() => generatePath('/about-us')}>
+              {t(translations.common.read_more)}
+            </Button>
           </>
         }
       />
@@ -54,13 +61,13 @@ const HomePage = () => {
             </TextSection>
             <GridLayout
               items={[
-                <Typography variant='h1' align='center'  style={{alignContent:'center'}} color='white' fontFamily='Poppins' fontWeight='900' key="1">
+                <Typography variant='h1' align='center'  style={{alignContent:'center'}} color='#e91b37' fontFamily='Poppins' fontWeight='900' key="1">
                   Synego
                 </Typography>,
-                <Typography variant='h1' align='center' style={{alignContent:'center'}}  color='white' fontFamily='Poppins' fontWeight='900' key="2">
+                <Typography variant='h1' align='center' style={{alignContent:'center'}}  color='#e91b37' fontFamily='Poppins' fontWeight='900' key="2">
                   Geneo
                 </Typography>,
-                <Typography variant='h1' align='center' style={{alignContent:'center'}} color='white' fontFamily='Poppins' fontWeight='900'   key="3">
+                <Typography variant='h1' align='center' style={{alignContent:'center'}} color='#e91b37' fontFamily='Poppins' fontWeight='900'   key="3">
                   Artevo
                 </Typography>,
               ]}

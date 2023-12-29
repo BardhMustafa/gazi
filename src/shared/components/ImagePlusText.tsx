@@ -4,26 +4,27 @@ interface ImagePlusTextProps {
   imageSection: React.ReactNode;
   textSection: React.ReactNode;
   order: number;
+  bgColor?: string;
 }
 
 export const ImagePlusText = ({
   imageSection,
   textSection,
   order,
+  bgColor,
 }: ImagePlusTextProps) => {
   return (
-    <Section>
+    <Section bgColor={bgColor}>
       <ImageSection order={order}>{imageSection}</ImageSection>
       <TextSection order={order}>{textSection}</TextSection>
     </Section>
   );
 };
 
-const Section = styled.section`
+const Section = styled.section<{bgColor : string | undefined}>`
   display: flex;
-  padding-top: 3rem;
-  margin-bottom: 0;
-
+  padding: 3rem;
+  background-color: ${({bgColor}) => bgColor ? bgColor : 'white'};
   @media (max-width: 1200px) {
     flex-direction: column;
   }
@@ -33,6 +34,7 @@ const ImageSection = styled.div<{ order: number }>`
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 2rem;
   order: ${({ order }) => (order === 1 ? 1 : 2)};
 
   @media (min-width: 1200px) {
