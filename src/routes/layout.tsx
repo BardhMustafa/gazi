@@ -16,7 +16,7 @@ const getLocalStorageLanguage = () => {
   return 'en';
 };
 
-export const Layout = () => {
+export const Layout = ({ children }: { children?: React.ReactNode }) => {
   const [language, setLanguage] = useState<Language>(getLocalStorageLanguage());
   const { toggleDrawer } = useDrawer();
   const navigate = useNavigate();
@@ -75,9 +75,7 @@ export const Layout = () => {
           </>
         }
       />
-      <LayoutContainer>
-        <Outlet />
-      </LayoutContainer>
+      <LayoutContainer>{children ? children : <Outlet />}</LayoutContainer>
     </>
   );
 };

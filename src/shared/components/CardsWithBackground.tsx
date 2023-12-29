@@ -21,15 +21,11 @@ export const CardsWithBackground = ({
   boxes,
   sectionImage,
 }: CardsWithBackgroundProps) => {
-
   return (
     <Section sectionImage={sectionImage}>
       <InfoSection>
         <InfoSectionHeading>{title}</InfoSectionHeading>
-        {
-          subtitle &&
-          <InfoSectionDesc>{subtitle}</InfoSectionDesc>
-        } 
+        {subtitle && <InfoSectionDesc>{subtitle}</InfoSectionDesc>}
       </InfoSection>
       <Boxes>
         {boxes?.map(box => (
@@ -54,9 +50,6 @@ const Section = styled.section<{ sectionImage: string }>`
     url(${({ sectionImage }) => sectionImage}) no-repeat center center/cover;
   height: 50rem;
   margin-bottom: 40rem;
-  @media (max-width: 768px) {
-    height: 100%;
-  }
 `;
 
 const InfoSection = styled.div`
@@ -101,9 +94,9 @@ const Boxes = styled.div`
   }
 `;
 
-const Box = styled.div<{description : boolean}>`
-  height: ${props => props.description ? '50rem' : '30rem'};
-  
+const Box = styled.div<{ description: boolean }>`
+  height: ${props => (props.description ? '50rem' : '30rem')};
+
   width: 35rem;
   background-color: white;
   border: 1px solid #ddd;

@@ -1,7 +1,105 @@
-import React from 'react';
+import styled from 'styled-components';
+import ProductImagePath from '../assets/images/product.png';
+import { generatePath, useNavigate } from 'react-router';
 
 const Products = () => {
-  return <div>Products</div>;
+  const navigate = useNavigate();
+
+  return (
+    <div>
+      <Section>
+        <ProductsContainer>
+          <Product onClick={() => navigate(generatePath('/products/pvc'))}>
+            <ProductHeading>PVC</ProductHeading>
+            <ProductDescription>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, optio sunt obcaecati illum veritatis autem saepe ipsa
+              error veniam odit quam voluptatum neque non numquam sint
+              reiciendis similique temporibus quidem?
+            </ProductDescription>
+            <ProductImageContainer>
+              <ProductImage src={ProductImagePath} alt="product" />
+            </ProductImageContainer>
+          </Product>
+          <Product onClick={() => navigate(generatePath('/products/alumin'))}>
+            <ProductHeading>ALUMIN</ProductHeading>
+            <ProductDescription>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, optio sunt obcaecati illum veritatis autem saepe ipsa
+              error veniam odit quam voluptatum neque non numquam sint
+              reiciendis similique temporibus quidem?
+            </ProductDescription>
+            <ProductImageContainer>
+              <ProductImage src={ProductImagePath} alt="product" />
+            </ProductImageContainer>
+          </Product>
+        </ProductsContainer>
+      </Section>
+    </div>
+  );
 };
 
 export default Products;
+
+const Section = styled.section`
+  margin-top: 2rem;
+`;
+
+const ProductsContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+`;
+
+const Product = styled.div`
+  flex-basis: 100%;
+  min-height: 50rem;
+  background-color: #fbfbfd;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  border: 1px solid #e0e0e0;
+
+  &:active {
+    border: 1px solid #c4c4c4;
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    flex-basis: calc(50% - 1rem);
+
+    &:hover,
+    &:active {
+      border: 1px solid #c4c4c4;
+      cursor: pointer;
+
+      & > h2 {
+        background: -webkit-linear-gradient(0deg, #d42539, #fa21b2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+`;
+
+const ProductHeading = styled.h2`
+  font-size: 4rem;
+`;
+
+const ProductDescription = styled.p`
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #4e4e4e;
+`;
+
+const ProductImage = styled.img`
+  width: 70%;
+  mix-blend-mode: multiply;
+`;
+
+const ProductImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
