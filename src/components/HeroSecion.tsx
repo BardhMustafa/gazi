@@ -34,6 +34,7 @@ const StyledContainer = styled.div<StyledContainerProps>`
   align-items:center;
   justify-content:center;
   padding:20rem 10rem;
+  margin-bottom: 5rem;
   @media (max-width: 768px) {
     height:85%;
   }
