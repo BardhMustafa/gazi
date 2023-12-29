@@ -75,6 +75,7 @@ export const Layout = ({ children }: { children?: React.ReactNode }) => {
           </>
         }
       />
+      <div id="page-hero-container" />
       <LayoutContainer>{children ? children : <Outlet />}</LayoutContainer>
     </>
   );

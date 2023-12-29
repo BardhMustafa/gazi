@@ -1,3 +1,4 @@
+import { createPortal } from 'react-dom';
 import styled from 'styled-components';
 
 interface PageHeroProps {
@@ -5,7 +6,20 @@ interface PageHeroProps {
   backgroundImagePath: string;
 }
 
+const portalRoot = document.getElementById(
+  'page-hero-container'
+) as HTMLElement;
+
 export const PageHero = ({ title, backgroundImagePath }: PageHeroProps) => {
+  if (portalRoot) {
+    return createPortal(
+      <Container bgImage={backgroundImagePath}>
+        <ContactHeading>{title}</ContactHeading>
+      </Container>,
+      portalRoot
+    );
+  }
+
   return (
     <Container bgImage={backgroundImagePath}>
       <ContactHeading>{title}</ContactHeading>
@@ -14,17 +28,13 @@ export const PageHero = ({ title, backgroundImagePath }: PageHeroProps) => {
 };
 
 export const Container = styled.div<{ bgImage: string }>`
-  width: 100vw;
+  width: 100%;
   height: 40rem;
+  padding-top: 7.5rem;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5)),
     url(${props => props.bgImage});
   background-position: center 30%;
   background-size: cover;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   display: flex;
   justify-content: center;
   align-items: center;
