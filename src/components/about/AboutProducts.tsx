@@ -52,6 +52,8 @@ const AboutProductsHeading = styled.h2`
 const AboutProductsDesc = styled.p`
   color: white;
   font-size: 1.6rem;
+  line-height: 1.9;
+  text-align: justify;
   width: 90%;
   margin: 0 auto;
 `;
