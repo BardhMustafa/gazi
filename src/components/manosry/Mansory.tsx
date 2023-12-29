@@ -12,6 +12,8 @@ interface ItemProps extends PaperProps {
 const Item = styled(Paper)<ItemProps>(({ theme, src }) => ({
   backgroundSize: 'cover',
   backgroundImage: `url(${src})`,
+  backgroundRepeat: 'no-repeat',
+  backgroundPosition:' center 30%',
   ...theme.typography.body2,
   padding: theme.spacing(0.5),
   textAlign: 'center',

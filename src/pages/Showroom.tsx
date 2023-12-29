@@ -17,7 +17,7 @@ import Box from '@mui/material/Box';
 import { Heading2 } from '../shared/components/Heading2';
 
 const heights = [300, 700, 300, 400, 300, 350, 450, 450, 500, 300, 400, 500, 600, 500];
-const pics = [Pic7, Pic3, Pic11, Pic1, Pic10, Pic2, Pic4, Pic14, Pic8, Pic13, Pic6, Pic9, Pic5, Pic12];
+const pics = [Pic7, Pic4,Pic12, Pic11, Pic1, Pic10, Pic2, Pic14, Pic8, Pic13, Pic6, Pic9, Pic5, Pic3];
 
 const Showroom = () => {
   return (
