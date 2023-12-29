@@ -20,6 +20,7 @@ const GridLayout = ({
             display: 'flex',
             justifyContent: 'center',
             alignContent: 'center',
+            marginBottom: '3rem',
           }}
         >
           <Heading2>{title}</Heading2>

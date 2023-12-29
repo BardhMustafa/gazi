@@ -16,6 +16,7 @@ import Pic14 from '../assets/showroom/pic14.jpg';
 import Box from '@mui/material/Box';
 import { Heading2 } from '../shared/components/Heading2';
 import styled from 'styled-components';
+import { useTranslations } from '../hooks/useTranslations';
 
 const heights = [
   300, 700, 300, 400, 300, 350, 450, 450, 500, 300, 400, 500, 600, 500,
@@ -38,10 +39,11 @@ const pics = [
 ];
 
 const Showroom = () => {
+  const {t, translations} = useTranslations();
   return (
     <Container>
       <Box display="flex" justifyContent="center" alignContent="center">
-        <Heading2>Showroom</Heading2>
+        <Heading2>{t(translations.common.showroom)}</Heading2>
       </Box>
       <Mansory heights={heights} pics={pics} />
     </Container>
