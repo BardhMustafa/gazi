@@ -3,14 +3,14 @@ import styled from 'styled-components';
 interface Box {
   id: number | string;
   title: string;
-  description: string;
+  description?: string;
   imagePath: string;
   imageAlt: string;
 }
 
 interface CardsWithBackgroundProps {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   boxes: Box[];
   sectionImage: string;
 }
@@ -21,15 +21,19 @@ export const CardsWithBackground = ({
   boxes,
   sectionImage,
 }: CardsWithBackgroundProps) => {
+
   return (
     <Section sectionImage={sectionImage}>
       <InfoSection>
         <InfoSectionHeading>{title}</InfoSectionHeading>
-        <InfoSectionDesc>{subtitle}</InfoSectionDesc>
+        {
+          subtitle &&
+          <InfoSectionDesc>{subtitle}</InfoSectionDesc>
+        } 
       </InfoSection>
       <Boxes>
         {boxes?.map(box => (
-          <Box key={box.id}>
+          <Box description={!!box.description} key={box.id}>
             <BoxImage>
               <Image src={box.imagePath} alt={box.imageAlt} />
             </BoxImage>
@@ -50,6 +54,9 @@ const Section = styled.section<{ sectionImage: string }>`
     url(${({ sectionImage }) => sectionImage}) no-repeat center center/cover;
   height: 50rem;
   margin-bottom: 40rem;
+  @media (max-width: 768px) {
+    height: 100%;
+  }
 `;
 
 const InfoSection = styled.div`
@@ -94,8 +101,9 @@ const Boxes = styled.div`
   }
 `;
 
-const Box = styled.div`
-  height: 50rem;
+const Box = styled.div<{description : boolean}>`
+  height: ${props => props.description ? '50rem' : '30rem'};
+  
   width: 35rem;
   background-color: white;
   border: 1px solid #ddd;

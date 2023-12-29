@@ -13,14 +13,40 @@ import GridLayout from '../components/layout/Grid';
 import { Stack, Typography } from '@mui/material';
 import { Button } from '../shared/components/Button';
 import { generatePath } from 'react-router';
+import { CardsWithBackground } from '../shared/components/CardsWithBackground';
+import ProductsBackground from '../assets/images/homepage-products.jpg';
+import Dritare from '../assets/images/dritare.jpg';
+import Dyer from '../assets/images/dyer.jpg';
+import Rolete from '../assets/images/rolete.jpg';
+import Alumil  from '../assets/alumil.png';
+import Wurth from '../assets/wurth.png';
+import Rehau from '../assets/rehau.png';
 
 const HomePage = () => {
   const { t, translations } = useTranslations();
-
+  const products = [
+    {
+      id: 1,
+      title: t(translations.common.window),
+      imagePath: Dritare,
+      imageAlt: t(translations.common.window),
+    },
+    {
+      id: 2,
+      title: t(translations.common.door),
+      imagePath: Dyer,
+      imageAlt: t(translations.common.door),
+    },
+    {
+      id: 3,
+      title: t(translations.common.blinds),
+      imagePath: Rolete,
+      imageAlt: t(translations.common.blinds),
+    },
+  ];
   return (
     <>
       <SlideShow />
-
       <ImagePlusText
         order={2}
         bgColor="#f2f2f2"
@@ -37,11 +63,12 @@ const HomePage = () => {
               {t(translations.homepage.first_section_content)}
             </Paragraph>
             <Button onClick={() => generatePath('/about-us')}>
-              {t(translations.common.read_more)}
+              {t(translations.common.aboutUs)}
             </Button>
           </>
         }
       />
+    
       <HeroSection
         height={700}
         background={InsideFactory}
@@ -97,10 +124,24 @@ const HomePage = () => {
         }
         fontColor="black"
       />
+      <CardsWithBackground
+        title={t(translations.about.our_products)}
+        boxes={products}
+        sectionImage={ProductsBackground}
+      />
+      <GridLayout title={t(translations.homepage['our-partners'])} backgroundColor='#f2f2f2'  items={[<SponsorImg src={Alumil} key='alumil'/>, <SponsorImg src={Rehau} key="rehau"/>,<SponsorImg src={Wurth} key="wurth"/>]}/>
     </>
   );
 };
 
+const SponsorImg = styled.div<{ src: string }>`
+  width: 100%;
+  height: 100px;
+  background-image: ${({ src }: { src: string }) => `url(${src})`};
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+`;
 const Image = styled.img`
   object-fit: cover;
   width: 100%;
