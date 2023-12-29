@@ -7,6 +7,7 @@ import { AboutSection, TextSection } from '../components/homepage/AboutSection';
 import { ImagePlusText } from '../shared/components/ImagePlusText';
 import { Paragraph } from '../shared/components/Paragraph';
 import styled from 'styled-components';
+import { AboutProducts } from '../components/about/AboutProducts';
 
 const AboutUs = () => {
   const { t, translations } = useTranslations();
@@ -41,6 +42,8 @@ const AboutUs = () => {
           </StyledTextSection>
         }
       />
+
+      <AboutProducts />
     </>
   );
 };
@@ -49,7 +52,6 @@ export default AboutUs;
 
 const ImageSection = styled.div`
   margin-top: 4rem;
-  margin-bottom: 4rem;
 
   @media (min-width: 768px) {
     margin-bottom: 0;
@@ -58,13 +60,11 @@ const ImageSection = styled.div`
 
 const Image = styled.img`
   object-fit: cover;
-  object-position: 10%;
   width: 100%;
-  height: 30rem;
+  height: 50rem;
 
   @media (min-width: 768px) {
     width: 40rem;
-    height: 50rem;
   }
 `;
 
@@ -75,6 +75,8 @@ const TextSelectionHeading = styled.h2`
 `;
 
 const StyledTextSection = styled(TextSection)`
+  margin-top: 0;
+
   @media (min-width: 768px) {
     margin-left: 14.5rem;
     width: 80%;

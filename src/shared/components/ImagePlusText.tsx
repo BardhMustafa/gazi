@@ -21,10 +21,10 @@ export const ImagePlusText = ({
   );
 };
 
-const Section = styled.section<{bgColor : string | undefined}>`
+const Section = styled.section<{ bgColor: string | undefined }>`
   display: flex;
-  padding: 3rem;
-  background-color: ${({bgColor}) => bgColor ? bgColor : 'white'};
+  padding: 1rem;
+  background-color: ${({ bgColor }) => (bgColor ? bgColor : 'white')};
   @media (max-width: 1200px) {
     flex-direction: column;
   }
