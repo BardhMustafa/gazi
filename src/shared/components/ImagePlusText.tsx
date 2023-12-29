@@ -28,6 +28,7 @@ const Section = styled.section<{bgColor : string | undefined}>`
   @media (max-width: 1200px) {
     flex-direction: column;
   }
+  margin-bottom: 5rem;
 `;
 
 const ImageSection = styled.div<{ order: number }>`

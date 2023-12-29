@@ -5,7 +5,7 @@ import { Box } from '@mui/system';
 export default function SlideShow() {
   const array = [1, 2, 3];
   return (
-    <Box marginBottom={10}> 
+    <Box marginBottom={5}> 
       <Carousel animation="fade" navButtonsAlwaysVisible autoPlay={true}>
         {array.map(i => (
           <SlideShowContainer i={i} key={i}>
@@ -27,5 +27,5 @@ const SlideShowContainer = styled.div<{ i: number }>`
   background-position: center 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image:  ${props => `url(/img/background${props.i}.jpg)`}
+  background-image:  ${props => `url(/img/background${props.i}.jpeg)`}
 `;

@@ -44,7 +44,7 @@ const HomePage = () => {
         }
       />
       <HeroSection
-        height={600}
+        height={700}
         background={InsideFactory}
         children={
           <Stack>
