@@ -6,7 +6,6 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useDrawer } from '../store/DrawerContext';
 import { Language, useTranslations } from '../hooks/useTranslations';
 import { LANG_KEY } from '../utils/types';
-import { Footer } from '../components/Footer';
 
 const getLocalStorageLanguage = () => {
   const language = localStorage.getItem(LANG_KEY);
