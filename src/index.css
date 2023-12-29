@@ -22,10 +22,6 @@
   box-sizing: inherit;
 }
 
-body {
-  scroll-behavior: smooth;
-}
-
 a {
   font-size: 1.3rem;
 }

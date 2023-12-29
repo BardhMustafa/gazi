@@ -22,6 +22,7 @@ export const MenuLinks = ({
         id="demo-simple-select"
         value={language}
         onChange={handleLanguageChange}
+        MenuProps={{ disableScrollLock: true }}
       >
         <MenuItem value="en">🇺🇸 En</MenuItem>
         <MenuItem value="shq">🇦🇱 Shq</MenuItem>
