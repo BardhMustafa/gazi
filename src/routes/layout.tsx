@@ -67,10 +67,10 @@ export const Layout = () => {
           <>
             {links}
             <select value={language} onChange={handleLanguageChange}>
-              <option value="en">En</option>
-              <option value="shq">Shq</option>
-              <option value="de">De</option>
-              <option value="fr">Fr</option>
+              <option value="en">🇺🇸 En</option>
+              <option value="shq">🇦🇱 Shq</option>
+              <option value="de">🇩🇪 De</option>
+              <option value="fr">🇫🇷 Fr</option>
             </select>
           </>
         }

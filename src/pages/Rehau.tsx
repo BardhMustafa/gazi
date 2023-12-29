@@ -4,6 +4,9 @@ import RehauHeroImage from '../assets/images/rehau2.jpg';
 import RehauImage from '../assets/images/rehau.jpg';
 import Rehau2Image from '../assets/images/rehau_3.jpg';
 import Rehau4Image from '../assets/images/rehau4.jpg';
+import RehauBoxImage1 from '../assets/images/rehau5.jpg';
+import RehauBoxImage2 from '../assets/images/rehau6.jpg';
+import RehauBoxImage3 from '../assets/images/rehau7.jpg';
 import styled from 'styled-components';
 import { ImagePlusText } from '../shared/components/ImagePlusText';
 import {
@@ -21,21 +24,21 @@ const Rehau = () => {
       id: 1,
       title: t(translations.rehau.we_deserve_trust),
       description: t(translations.rehau.we_deserve_trust_content),
-      imagePath: RehauHeroImage,
+      imagePath: RehauBoxImage1,
       imageAlt: t(translations.rehau.we_deserve_trust),
     },
     {
       id: 2,
       title: t(translations.rehau.we_are_creators),
       description: t(translations.rehau.we_are_creators_content),
-      imagePath: Rehau2Image,
+      imagePath: RehauBoxImage3,
       imageAlt: t(translations.rehau.we_are_creators),
     },
     {
       id: 3,
       title: t(translations.rehau.we_are_loyal),
       description: t(translations.rehau.we_are_loyal_content),
-      imagePath: RehauImage,
+      imagePath: RehauBoxImage2,
       imageAlt: t(translations.rehau.we_are_loyal),
     },
   ];
