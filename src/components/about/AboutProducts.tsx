@@ -2,21 +2,19 @@ import styled from 'styled-components';
 import AboutProductsImage from '../../assets/images/rehau4.jpg';
 import { Button } from '../../shared/components/Button';
 import { generatePath, useNavigate } from 'react-router';
+import { useTranslations } from '../../hooks/useTranslations';
 
 export const AboutProducts = () => {
   const navigate = useNavigate();
+  const { t, translations } = useTranslations();
+
   return (
     <Section sectionImage={AboutProductsImage}>
-      <AboutProductsHeading>Produktet Tona</AboutProductsHeading>
+      <AboutProductsHeading>
+        {t(translations.about.our_products)}
+      </AboutProductsHeading>
       <AboutProductsDesc>
-        Në fabrikat tona mjaftë bashkëkohore prodhojmë të gjitha llojet dhe
-        format e dyerve dhe dritareve me profile të cilat janë zbulimet e fundit
-        dhe tejet të përsosura. E veqantë e kompanisë sonë është se ne e bëjmë
-        vetë përpunimin e xhamit dhe izolimin e tyre,material i cili vie te ne
-        nga prodhues eminentë botërorë. Përveç këtyre produkteve, ne bëjmë edhe
-        prodhimin e fasadave strukturale dhe gjysëmstrukturale nga materiali
-        ALUMIL. Te ne mund të gjeni poashtu edhe gilindera të të gjitha llojeve
-        si dhe pikore shiu të kualitetit më të lartë.
+        {t(translations.about.our_products_desc)}
       </AboutProductsDesc>
       <Button onClick={() => navigate(generatePath('/products'))}>
         Me shume

@@ -19,24 +19,24 @@ const Rehau = () => {
   const boxes = [
     {
       id: 1,
-      title: t(translations.rehau['we-deserve-trust']),
-      description: t(translations.rehau['we-deserve-trust-content']),
+      title: t(translations.rehau.we_deserve_trust),
+      description: t(translations.rehau.we_deserve_trust_content),
       imagePath: RehauHeroImage,
-      imageAlt: t(translations.rehau['we-deserve-trust']),
+      imageAlt: t(translations.rehau.we_deserve_trust),
     },
     {
       id: 2,
-      title: t(translations.rehau['we-are-creators']),
-      description: t(translations.rehau['we-are-creators-content']),
+      title: t(translations.rehau.we_are_creators),
+      description: t(translations.rehau.we_are_creators_content),
       imagePath: Rehau2Image,
-      imageAlt: t(translations.rehau['we-are-creators']),
+      imageAlt: t(translations.rehau.we_are_creators),
     },
     {
       id: 3,
-      title: t(translations.rehau['we-are-loyal']),
-      description: t(translations.rehau['we-are-loyal-content']),
+      title: t(translations.rehau.we_are_loyal),
+      description: t(translations.rehau.we_are_loyal_content),
       imagePath: RehauImage,
-      imageAlt: t(translations.rehau['we-are-loyal']),
+      imageAlt: t(translations.rehau.we_are_loyal),
     },
   ];
 
@@ -59,16 +59,16 @@ const Rehau = () => {
           <TextSection>
             <TextSectionAbout>{t(translations.common.rehau)}</TextSectionAbout>
             <TextSelectionHeading>
-              {t(translations.rehau['why_rehau'])}
+              {t(translations.rehau.why_rehau)}
             </TextSelectionHeading>
-            <Paragraph>{t(translations.rehau['why_rehau_content'])}</Paragraph>
+            <Paragraph>{t(translations.rehau.why_rehau_content)}</Paragraph>
           </TextSection>
         }
       />
 
       <CardsWithBackground
-        title={t(translations.rehau['rehau_values'])}
-        subtitle={t(translations.rehau['rehau_values_desc'])}
+        title={t(translations.rehau.rehau_values)}
+        subtitle={t(translations.rehau.rehau_values_desc)}
         boxes={boxes}
         sectionImage={Rehau4Image}
       />

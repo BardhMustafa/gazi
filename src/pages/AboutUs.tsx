@@ -30,15 +30,10 @@ const AboutUs = () => {
         }
         textSection={
           <StyledTextSection>
-            <TextSelectionHeading>Sherbimet Tona</TextSelectionHeading>
-            <Paragraph>
-              KOMPANIA GAZI OFRON PRODUKTE TE PRODHUARA NGA MATERIALI/PROFILI
-              GJERMAN ME UNIK DHE ME I PERSOSUR NE TREG - REHAU, KU PREJ ME
-              SHUME SE DY DEKADAVEJEMI PARTNERE ZYRTARE DHE TE AFIRMUAR TE KETIJ
-              BRENDI. KOMPANIA JONË KARAKTERIZOHET ME VEÇORINË KUALITET,
-              BESUESHMËRI DHE SINQERITET,KËTO JANË VIRTYTETQË NA KANE MBAJTUR
-              KAQ GJATE NE TREG.
-            </Paragraph>
+            <TextSelectionHeading>
+              {t(translations.about.our_services)}
+            </TextSelectionHeading>
+            <Paragraph>{t(translations.about.our_services_desc)}</Paragraph>
           </StyledTextSection>
         }
       />

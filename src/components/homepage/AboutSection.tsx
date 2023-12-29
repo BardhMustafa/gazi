@@ -17,13 +17,8 @@ export const AboutSection = () => {
       </ImageSection>
       <TextSection>
         <TextSectionAbout>{t(translations.common.aboutUs)}</TextSectionAbout>
-        <Heading2>Kush jemi ne?</Heading2>
-        <Paragraph>
-          KOMPANIA E SPECIALIZUAR PER PRODHIMIN E DYERVE, DRITAREVE DHE FASADAVE
-          GAZI, NE GJILAN, ËSHTE KOMPANI E CILA ESHTE THEMELUAR NE VITIN 1995
-          DHESI E TILLE OPERON SUKSESSHEM PREJ 25 VITEVE ME NJE STAF TE
-          PROFESIONALIZUAR DHE ME MAKINERITE ME MODERNE.
-        </Paragraph>
+        <Heading2>{t(translations.about.who_are_we)}</Heading2>
+        <Paragraph>{t(translations.about.who_are_we_desc)}</Paragraph>
       </TextSection>
     </Section>
   );

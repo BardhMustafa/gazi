@@ -10,7 +10,7 @@ import HeroSection from '../components/HeroSecion';
 import InsideFactory from '../assets/factory/InsideFac.jpg';
 import { TextSectionAbout } from '../components/homepage/AboutSection';
 import GridLayout from '../components/layout/Grid';
-import { Stack , Typography} from '@mui/material';
+import { Stack, Typography } from '@mui/material';
 import { Button } from '../shared/components/Button';
 import { generatePath } from 'react-router';
 
@@ -23,19 +23,18 @@ const HomePage = () => {
 
       <ImagePlusText
         order={2}
-        bgColor='#f2f2f2'
+        bgColor="#f2f2f2"
         imageSection={
           <ImageSection>
             <Image src={GaziRehau} alt="rehau-image" />
             <Image2 src={GaziFront} alt="rehau-image" />
           </ImageSection>
-
         }
         textSection={
           <>
             <Heading2 style={{ color: '#e91b37' }}>GAZI</Heading2>
             <Paragraph>
-              {t(translations.homepage['first-section-content'])}
+              {t(translations.homepage.first_section_content)}
             </Paragraph>
             <Button onClick={() => generatePath('/about-us')}>
               {t(translations.common.read_more)}
@@ -50,24 +49,46 @@ const HomePage = () => {
           <Stack>
             <TextSection>
               <TextSectionAbout>REHAU</TextSectionAbout>
-              <TextSelectionHeading style={{color:'white'}}>GAZI & REHAU</TextSelectionHeading>
-              <Paragraph style={
-                {color:'white',
-                  fontWeight:'bold'
-                }
-              }>
-                {t(translations.homepage['gazi-rehau-section'])}
+              <TextSelectionHeading style={{ color: 'white' }}>
+                GAZI & REHAU
+              </TextSelectionHeading>
+              <Paragraph style={{ color: 'white', fontWeight: 'bold' }}>
+                {t(translations.homepage.gazi_rehau_section)}
               </Paragraph>
             </TextSection>
             <GridLayout
               items={[
-                <Typography variant='h1' align='center'  style={{alignContent:'center'}} color='#e91b37' fontFamily='Poppins' fontWeight='900' key="1">
+                <Typography
+                  variant="h1"
+                  align="center"
+                  style={{ alignContent: 'center' }}
+                  color="#e91b37"
+                  fontFamily="Poppins"
+                  fontWeight="900"
+                  key="1"
+                >
                   Synego
                 </Typography>,
-                <Typography variant='h1' align='center' style={{alignContent:'center'}}  color='#e91b37' fontFamily='Poppins' fontWeight='900' key="2">
+                <Typography
+                  variant="h1"
+                  align="center"
+                  style={{ alignContent: 'center' }}
+                  color="#e91b37"
+                  fontFamily="Poppins"
+                  fontWeight="900"
+                  key="2"
+                >
                   Geneo
                 </Typography>,
-                <Typography variant='h1' align='center' style={{alignContent:'center'}} color='#e91b37' fontFamily='Poppins' fontWeight='900'   key="3">
+                <Typography
+                  variant="h1"
+                  align="center"
+                  style={{ alignContent: 'center' }}
+                  color="#e91b37"
+                  fontFamily="Poppins"
+                  fontWeight="900"
+                  key="3"
+                >
                   Artevo
                 </Typography>,
               ]}
