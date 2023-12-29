@@ -10,7 +10,7 @@ import HeroSection from '../components/HeroSecion';
 import InsideFactory from '../assets/factory/InsideFac.jpg';
 import { TextSectionAbout } from '../components/homepage/AboutSection';
 import GridLayout from '../components/layout/Grid';
-import { Stack } from '@mui/material';
+import { Stack , Typography} from '@mui/material';
 
 const HomePage = () => {
   const { t, translations } = useTranslations();
@@ -37,28 +37,32 @@ const HomePage = () => {
         }
       />
       <HeroSection
-        height={500}
+        height={600}
         background={InsideFactory}
         children={
-          <Stack spacing={1}>
+          <Stack>
             <TextSection>
               <TextSectionAbout>REHAU</TextSectionAbout>
-              <TextSelectionHeading>GAZI & REHAU</TextSelectionHeading>
-              <Paragraph>
+              <TextSelectionHeading style={{color:'white'}}>GAZI & REHAU</TextSelectionHeading>
+              <Paragraph style={
+                {color:'white',
+                  fontWeight:'bold'
+                }
+              }>
                 {t(translations.homepage['gazi-rehau-section'])}
               </Paragraph>
             </TextSection>
             <GridLayout
               items={[
-                <Heading2 color="#e91b37" key="1">
+                <Typography variant='h1' align='center'  style={{alignContent:'center'}} color='white' fontFamily='Poppins' fontWeight='900' key="1">
                   Synego
-                </Heading2>,
-                <Heading2 color="#e91b37" key="2">
+                </Typography>,
+                <Typography variant='h1' align='center' style={{alignContent:'center'}}  color='white' fontFamily='Poppins' fontWeight='900' key="2">
                   Geneo
-                </Heading2>,
-                <Heading2 color="#e91b37" key="3">
+                </Typography>,
+                <Typography variant='h1' align='center' style={{alignContent:'center'}} color='white' fontFamily='Poppins' fontWeight='900'   key="3">
                   Artevo
-                </Heading2>,
+                </Typography>,
               ]}
             />
           </Stack>
@@ -112,7 +116,7 @@ const TextSelectionHeading = styled.h2`
 const TextSection = styled.div`
   flex-basis: 100%;
   margin: 0;
-
+  padding: 5rem 0;
   @media (min-width: 768px) {
     padding-left: 2rem;
   }
