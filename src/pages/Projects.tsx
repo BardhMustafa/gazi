@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 import { generatePath, useNavigate } from 'react-router';
 import Factory from '../assets/factory/pic16.jpg';
 import Showroom from '../assets/showroom/pic1.jpg';
