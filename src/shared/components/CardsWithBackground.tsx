@@ -50,7 +50,7 @@ const Section = styled.section<{ sectionImage: string }>`
     linear-gradient(rgba(8, 33, 90, 0.8), rgba(8, 33, 90)),
     url(${({ sectionImage }) => sectionImage}) no-repeat center center/cover;
   height: 50rem;
-  margin-bottom: 30rem;
+  margin-bottom: 40rem;
 `;
 
 const InfoSection = styled.div`
