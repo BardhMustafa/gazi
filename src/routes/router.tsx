@@ -7,12 +7,17 @@ import Products from '../pages/Products';
 import Projects from '../pages/Projects';
 import { Layout } from './layout';
 import Showroom from '../pages/Showroom';
+import { ErrorPage } from '../pages/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
-    errorElement: <div>Error 404</div>,
+    errorElement: (
+      <Layout>
+        <ErrorPage />
+      </Layout>
+    ),
     children: [
       { index: true, element: <HomePage /> },
       { path: '/about-us', element: <AboutUs /> },
