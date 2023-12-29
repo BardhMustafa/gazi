@@ -14,6 +14,7 @@ const Pvc = lazy(() => import('../pages/Products/Pvc'));
 const Alumin = lazy(() => import('../pages/Products/Alumin'));
 import { ErrorPage } from '../pages/ErrorPage';
 import Loader from '../shared/components/Loader';
+import Factory from '../pages/Factory';
 
 const router = createBrowserRouter([
   {
@@ -80,6 +81,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<Loader />}>
             <Showroom />
+          </Suspense>
+        ),
+      },
+      {
+        path: '/factory',
+        element: (
+          <Suspense fallback={<Loader />}>
+            <Factory />
           </Suspense>
         ),
       },
