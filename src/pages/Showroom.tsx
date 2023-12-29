@@ -15,19 +15,45 @@ import Pic13 from '../assets/showroom/pic13.jpg';
 import Pic14 from '../assets/showroom/pic14.jpg';
 import Box from '@mui/material/Box';
 import { Heading2 } from '../shared/components/Heading2';
+import styled from 'styled-components';
 
-const heights = [300, 700, 300, 400, 300, 350, 450, 450, 500, 300, 400, 500, 600, 500];
-const pics = [Pic7, Pic4,Pic12, Pic11, Pic1, Pic10, Pic2, Pic14, Pic8, Pic13, Pic6, Pic9, Pic5, Pic3];
+const heights = [
+  300, 700, 300, 400, 300, 350, 450, 450, 500, 300, 400, 500, 600, 500,
+];
+const pics = [
+  Pic7,
+  Pic4,
+  Pic12,
+  Pic11,
+  Pic1,
+  Pic10,
+  Pic2,
+  Pic14,
+  Pic8,
+  Pic13,
+  Pic6,
+  Pic9,
+  Pic5,
+  Pic3,
+];
 
 const Showroom = () => {
   return (
-    <>
-      <Box display='flex' justifyContent='center' alignContent='center'>
+    <Container>
+      <Box display="flex" justifyContent="center" alignContent="center">
         <Heading2>Showroom</Heading2>
       </Box>
-      <Mansory heights={heights} pics={pics}/>
-    </>
+      <Mansory heights={heights} pics={pics} />
+    </Container>
   );
 };
 
+const Container = styled.div`
+  flex-basis: 100%;
+  min-height: 50rem;
+  background-color: #fbfbfd;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  border: 1px solid #e0e0e0;
+`;
 export default Showroom;

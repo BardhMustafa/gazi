@@ -77,7 +77,7 @@ const router = createBrowserRouter([
       },
       { path: '/projects', element: <Projects /> },
       {
-        path: '/showroom',
+        path: '/projects/showroom',
         element: (
           <Suspense fallback={<Loader />}>
             <Showroom />
@@ -85,7 +85,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: '/factory',
+        path: '/projects/factory',
         element: (
           <Suspense fallback={<Loader />}>
             <Factory />

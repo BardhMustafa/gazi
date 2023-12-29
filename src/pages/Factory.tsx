@@ -19,19 +19,27 @@ import Pic17 from '../assets/factory/pic17.jpg';
 import Pic18 from '../assets/factory/pic18.jpg';
 import Box from '@mui/material/Box';
 import { Heading2 } from '../shared/components/Heading2';
+import styled from 'styled-components';
 
 const heights = [300, 700, 300, 400, 300, 350, 450, 450, 500, 300, 400, 500, 600, 500];
 const pics = [Pic7, Pic4,Pic12, Pic11, Pic1, Pic10, Pic2, Pic14, Pic8, Pic13, Pic6, Pic9, Pic5, Pic3, Pic15, Pic16, Pic17, Pic18];
 
 const Factory = () => {
   return (
-    <>
+    <Container>
       <Box display='flex' justifyContent='center' alignContent='center'>
         <Heading2>Sektori i prodhimit</Heading2>
       </Box>
       <Mansory heights={heights} pics={pics}/>
-    </>
+    </Container>
   );
 };
-
+const Container = styled.div`
+  flex-basis: 100%;
+  min-height: 50rem;
+  background-color: #fbfbfd;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  border: 1px solid #e0e0e0;
+`;
 export default Factory;
