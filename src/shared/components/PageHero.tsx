@@ -30,12 +30,12 @@ export const Container = styled.div<{ bgImage: string }>`
   align-items: center;
   color: white;
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     height: 40rem;
   }
 
-  @media (max-width: 1024px) {
-    height: 50rem;
+  @media (min-width: 1950px) {
+    height: 60rem;
   }
 `;
 
