@@ -18,7 +18,7 @@ import ProductsBackground from '../assets/images/homepage-products.jpg';
 import Dritare from '../assets/images/dritare.jpg';
 import Dyer from '../assets/images/dyer.jpg';
 import Rolete from '../assets/images/rolete.jpg';
-import Alumil  from '../assets/alumil.png';
+import Alumil from '../assets/alumil.png';
 import Wurth from '../assets/wurth.png';
 import Rehau from '../assets/rehau.png';
 
@@ -68,7 +68,7 @@ const HomePage = () => {
           </>
         }
       />
-    
+
       <HeroSection
         height={700}
         background={InsideFactory}
@@ -129,7 +129,15 @@ const HomePage = () => {
         boxes={products}
         sectionImage={ProductsBackground}
       />
-      <GridLayout title={t(translations.homepage['our-partners'])} backgroundColor='#f2f2f2'  items={[<SponsorImg src={Alumil} key='alumil'/>, <SponsorImg src={Rehau} key="rehau"/>,<SponsorImg src={Wurth} key="wurth"/>]}/>
+      <GridLayout
+        title={t(translations.homepage['our-partners'])}
+        backgroundColor="#f2f2f2"
+        items={[
+          <SponsorImg src={Alumil} key="alumil" />,
+          <SponsorImg src={Rehau} key="rehau" />,
+          <SponsorImg src={Wurth} key="wurth" />,
+        ]}
+      />
     </>
   );
 };
