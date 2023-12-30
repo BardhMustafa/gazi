@@ -144,6 +144,16 @@ const ActionList = styled.ul`
   gap: 1rem;
 
   @media (min-width: 768px) {
+    width: 70rem;
+    padding: 1rem;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  @media (min-width: 1024px) {
     width: 100%;
     margin: 0;
     padding: 0;
