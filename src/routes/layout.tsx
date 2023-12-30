@@ -9,7 +9,7 @@ export const Layout = ({ children }: { children?: React.ReactNode }) => {
       <NavBar />
       <div id="page-hero-container" />
       <LayoutContainer>{children ? children : <Outlet />}</LayoutContainer>
-      <Footer/>
+      <Footer />
     </>
   );
 };

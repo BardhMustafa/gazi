@@ -3,17 +3,18 @@ import styled from 'styled-components';
 import { Box } from '@mui/system';
 import { Typography, Stack } from '@mui/material';
 import { Button } from '../../shared/components/Button';
+import { generatePath, useNavigate } from 'react-router';
+import { useTranslations } from '../../hooks/useTranslations';
 
 export default function SlideShow() {
   const array = [Slide1, Slide2, Slide3];
+
   return (
     <Box marginBottom={5}>
       <Carousel
         navButtonsProps={{
-          // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
           style: {
-            backgroundColor: 'transparent',
-            borderRadius: 0,
+            display: 'none',
           },
         }}
         cycleNavigation={true}
@@ -43,16 +44,55 @@ const Slide2 = () => {
       style={{ backgroundColor: 'rgba(0,0,0,0.5)', paddingLeft: '10rem' }}
     >
       <Typography
-        variant="h1"
+        variant="h2"
         fontFamily="Poppins"
         fontSize="70px"
-        color="#e91b37"
+        color="#fff"
       >
         GAZI & <br></br> REHAU
       </Typography>
     </Box>
   );
 };
+
+const Slide1 = () => {
+  const navigate = useNavigate();
+  const { t, translations } = useTranslations();
+
+  return (
+    <Box
+      width="100%"
+      height="100%"
+      display="flex"
+      flexDirection="column"
+      alignItems="start"
+      justifyContent="center"
+      style={{ backgroundColor: 'rgba(0,0,0,0.5)', paddingLeft: '10rem' }}
+    >
+      <Typography
+        variant="h2"
+        fontFamily="Poppins"
+        fontSize="70px"
+        color="#fff"
+        mb={2}
+      >
+        {t(translations.common.quality_products_first_word)}{' '}
+        <span style={{ color: '#e91b37', fontWeight: 700 }}>
+          {t(translations.common.quality_products_last_word)}
+        </span>
+      </Typography>
+      <Stack direction="row" spacing={3}>
+        <ProductsButton onClick={() => navigate(generatePath('/about-us'))}>
+          {t(translations.common.aboutUs)}
+        </ProductsButton>
+        <ProductsButton onClick={() => navigate(generatePath('/products'))}>
+          {t(translations.common.products)}
+        </ProductsButton>
+      </Stack>
+    </Box>
+  );
+};
+
 const Slide3 = () => {
   return (
     <Box
@@ -65,37 +105,10 @@ const Slide3 = () => {
       style={{ backgroundColor: 'rgba(0,0,0,0.5)', paddingLeft: '10rem' }}
     >
       <Typography
-        variant="h1"
+        variant="h2"
         fontFamily="Poppins"
         fontSize="70px"
-        color="#e91b37"
-      >
-        Produkte <br />
-        Cilësore
-      </Typography>
-      <Stack direction="row" spacing={3}>
-        <Button>Produktet</Button>
-        <Button>Rreth Nesh</Button>
-      </Stack>
-    </Box>
-  );
-};
-const Slide1 = () => {
-  return (
-    <Box
-      width="100%"
-      height="100%"
-      display="flex"
-      flexDirection="column"
-      alignItems="start"
-      justifyContent="center"
-      style={{ backgroundColor: 'rgba(0,0,0,0.5)', paddingLeft: '10rem' }}
-    >
-      <Typography
-        variant="h1"
-        fontFamily="Poppins"
-        fontSize="70px"
-        color="#e91b37"
+        color="#fff"
       >
         GAZI & <br></br> REHAU
       </Typography>
@@ -113,4 +126,8 @@ const SlideShowContainer = styled.div<{ i: number }>`
   background-size: cover;
   background-repeat: no-repeat;
   background-image: ${props => `url(/img/background${props.i}.jpeg)`};
+`;
+
+const ProductsButton = styled(Button)`
+  font-weight: 600;
 `;
