@@ -18,7 +18,7 @@ export default function SlideShow() {
       return 'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956395/background2_dhigry.jpg';
     }
 
-    return 'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956396/background3_m2jik3.jpg';
+    return 'https://res.cloudinary.com/dqtfurml7/image/upload/v1703974234/image_1_compressed_z6ozta.jpg';
   };
 
   return (
