@@ -25,11 +25,11 @@ const HomePage = () => {
         imageSection={
           <ImageSection>
             <Image
-              src="https://res.cloudinary.com/dqtfurml7/image/upload/v1703955598/factory/Factory/RehauGazi_lr37j2.jpg"
-              alt="rehau-image"
+              src="https://res.cloudinary.com/dqtfurml7/image/upload/v1703977377/images/homepage_2_ngqu3o.jpg"
+              alt="home-about-us-image-1"
             />
             <Image2
-              src="https://res.cloudinary.com/dqtfurml7/image/upload/v1703955581/factory/Factory/GaziFac_a1lnae.jpg"
+              src="https://res.cloudinary.com/dqtfurml7/image/upload/v1703977376/images/gazi_front_jif88b.jpg"
               alt="rehau-image"
             />
           </ImageSection>
@@ -49,7 +49,7 @@ const HomePage = () => {
 
       <HeroSection
         height={700}
-        background="https://res.cloudinary.com/dqtfurml7/image/upload/v1703955581/factory/Factory/InsideFac_uyxm84.jpg"
+        background="https://res.cloudinary.com/dqtfurml7/image/upload/v1703977376/images/homepage_3_qq61pz.jpg"
         children={
           <Stack>
             <TextSection>

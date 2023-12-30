@@ -27,14 +27,14 @@ export const HomeProducts = () => {
       id: 2,
       title: t(translations.common.door),
       imagePath:
-        'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956028/images/dyer_ovaxf2_wvbpur.jpg',
+        'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956022/images/rehau4_uoykzd_mffdad.jpg',
       imageAlt: t(translations.common.door),
     },
     {
       id: 3,
       title: t(translations.common.blinds),
       imagePath:
-        'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956030/images/rolete_hsmxxh_bh4chs.jpg',
+        'https://res.cloudinary.com/dqtfurml7/image/upload/v1703974588/rolete_hsmxxh_bh4chs_rsaw17.jpg',
       imageAlt: t(translations.common.blinds),
     },
   ];
