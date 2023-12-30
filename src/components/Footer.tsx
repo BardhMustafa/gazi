@@ -3,15 +3,44 @@ import { Link } from 'react-router-dom';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { AdvancedImage } from '@cloudinary/react';
 import { cld } from '../App';
+import { useTranslations } from '../hooks/useTranslations';
+import { NestedMenuLink } from './layout/NavLinks';
 
 export const Footer = () => {
-  const menuLinks = [
-    { path: '/', label: 'Home' },
-    { path: '/about-us', label: 'About' },
-    { path: '/rehau', label: 'Rehau' },
-    { path: '/products', label: 'Products' },
-    { path: '/projects', label: 'Projects' },
-    { path: '/contact', label: 'Contact' },
+  const { t, translations } = useTranslations();
+  const menuLinks: NestedMenuLink[] = [
+    { path: '/', label: t(translations.common.home) },
+    { path: '/about-us', label: t(translations.common.about) },
+    { path: '/rehau', label: t(translations.common.rehau) },
+    {
+      path: '/products',
+      label: t(translations.common.products),
+      nestedLinks: [
+        {
+          path: '/products/pvc',
+          label: 'pvc',
+        },
+        {
+          path: '/products/alumin',
+          label: 'alumin',
+        },
+      ],
+    },
+    {
+      path: '/projects',
+      label: t(translations.common.projects),
+      nestedLinks: [
+        {
+          path: '/projects/showroom',
+          label: 'showroom',
+        },
+        {
+          path: '/projects/factory',
+          label: 'factory',
+        },
+      ],
+    },
+    { path: '/contact', label: t(translations.common.contact) },
   ];
 
   return (
@@ -50,7 +79,7 @@ export const Footer = () => {
         <CopyrightSection>
           <CopyrightText>
             © 1995 – {new Date(Date.now()).getFullYear()} |<br />
-            Gazi Shpk® All Rights Reserved
+            Gazi Shpk® {t(translations.common.all_rights_reserved)}
           </CopyrightText>
         </CopyrightSection>
       </Container>
