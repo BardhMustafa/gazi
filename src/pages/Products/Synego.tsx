@@ -68,6 +68,65 @@ const Synego = () => {
       },
     ],
   };
+  const synego3 = {
+    data: [
+      {
+        key: 'Gjerësia e kornizës / shiritit ballor',
+        value: '88 deri në 177 mm'
+      },
+      {
+        key: 'Gjerësia e mekanizmit mbyllës',
+        value: '124 mm deri në 220 mm',
+      },
+      {
+        key: 'Thellësia',
+        value: '70 mm',
+      },
+      {
+        key: 'Numri i dhomave',
+        value: '5',
+      },
+      {
+        key: 'Trashësia',
+        value: 'maksimale 41 mm',
+      },
+      {
+        key: 'Sisteme izolimi',
+        value: '2 izolues ndalues',
+      },
+      {
+        key: 'Dizajn profili',
+        value:
+          'Krahë me sipërfaqe të zhvendosur, gjysmë krah me krah të rrumbullakët',
+      },
+    ],
+  };
+  const synego4 = {
+    data: [
+      { key: 'Izolimi termik Uf', value: '	deri në 1.3 W/m²K' },
+      { key: 'Izolimi akustik Rw', value: '	deri në 45 dB' },
+      {
+        key: 'Rezistenca ndaj vjedhjeve (EN 1627)',
+        value: 'deri në RC3',
+      },
+      {
+        key: 'Rezistenca ndaj erës (EN 12210)',
+        value: 'B5',
+      },
+      {
+        key: 'Papërshkueshmëria ndaj shiut me erë (EN 12208)',
+        value: '9A',
+      },
+      {
+        key: 'Përshkueshmëria e ajrit (EN 12207)',
+        value: '4',
+      },
+      {
+        key: 'Operatorët (EN 13115)',
+        value: '1',
+      },
+    ],
+  };
   return (
     <>
       <InfoSection title="Synego" imageSrc={SynegoPic} />
@@ -112,6 +171,11 @@ const Synego = () => {
       <ProductsContainer>
         <CustomizedTables title="Të pergjithshmet" data={synego1} />
         <CustomizedTables title="Karakterisikat" data={synego2} />
+      </ProductsContainer>
+      <Typography variant='h1' fontFamily='poppins' align='center' marginTop={5} >Të dhënat teknike - Dritare me Brillant Design</Typography>
+      <ProductsContainer>
+        <CustomizedTables title="Të pergjithshmet" data={synego3} />
+        <CustomizedTables title="Karakterisikat" data={synego4} />
       </ProductsContainer>
     </>
   );
