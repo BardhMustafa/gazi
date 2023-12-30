@@ -13,32 +13,32 @@ const Synego = () => {
     data: [
       {
         key: t(translations.synego['general-table-key1']),
-        value: '94 mm deri në 175 mm',
+        value: t(translations.synego['general-table-value1']),
       },
       {
         key: t(translations.synego['general-table-key2']),
-        value: '114 mm deri në 218 mm',
+        value: t(translations.synego['general-table-value2'])
       },
       {
         key: t(translations.synego['general-table-key3']),
-        value: '80mm',
+        value: t(translations.synego['general-table-value3'])
       },
       {
         key: t(translations.synego['general-table-key4']),
-        value: '7/6',
+        value: t(translations.synego['general-table-value4'])
       },
       {
         key: t(translations.synego['general-table-key5']),
-        value: 'maksimale 51 mm',
+        value: t(translations.synego['general-table-value5'])
       },
       {
         key: t(translations.synego['general-table-key6']),
-        value: 'AD: 2 izolues ndalues MD: 2 izolues ndalues,1 izolim qendror',
+        value: t(translations.synego['general-table-value6'])
       },
       {
         key: t(translations.synego['general-table-key7']),
         value:
-          'Krahë me sipërfaqe të zhvendosur, gjysmë krah me krah të rrumbullakët',
+        t(translations.synego['general-table-value7'])
       },
     ],
   };
@@ -154,6 +154,7 @@ const Synego = () => {
           <Typography
             variant="h2"
             component="h2"
+            marginBottom={2}
             align="center"
             fontFamily="poppins"
             fontWeight={600}
