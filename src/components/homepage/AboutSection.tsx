@@ -10,7 +10,7 @@ export const AboutSection = () => {
   return (
     <Section>
       <ImageSection>
-        <Image cldImg={cld.image('about_1_b66tqn')} />
+        <Image cldImg={cld.image('images/about_1_b66tqn_wfyef7')} />
         <YearsOfExperience>
           <h3>28</h3>
           <p>{t(translations.common.years_of_experience)}</p>

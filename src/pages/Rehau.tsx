@@ -20,7 +20,7 @@ const Rehau = () => {
       title: t(translations.rehau.we_deserve_trust),
       description: t(translations.rehau.we_deserve_trust_content),
       imagePath:
-        'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893517/rehau5_cicwji.jpg',
+        'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956023/images/rehau5_cicwji_p678kf.jpg',
       imageAlt: t(translations.rehau.we_deserve_trust),
     },
     {
@@ -28,7 +28,7 @@ const Rehau = () => {
       title: t(translations.rehau.we_are_creators),
       description: t(translations.rehau.we_are_creators_content),
       imagePath:
-        'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893518/rehau7_bxmuvh.jpg',
+        'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956023/images/rehau7_bxmuvh_okmrtm.jpg',
       imageAlt: t(translations.rehau.we_are_creators),
     },
     {
@@ -36,7 +36,7 @@ const Rehau = () => {
       title: t(translations.rehau.we_are_loyal),
       description: t(translations.rehau.we_are_loyal_content),
       imagePath:
-        'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893517/rehau6_fj6qok.jpg',
+        'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956023/images/rehau6_fj6qok_cqwfjj.jpg',
       imageAlt: t(translations.rehau.we_are_loyal),
     },
   ];
@@ -45,15 +45,21 @@ const Rehau = () => {
     <>
       <PageHero
         title={t(translations.common.rehau)}
-        backgroundImagePath="https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893517/rehau2_w9rcq7.jpg"
+        backgroundImagePath="https://res.cloudinary.com/dqtfurml7/image/upload/v1703956022/images/rehau2_w9rcq7_ujjsaw.jpg"
       />
 
       <ImagePlusText
         order={2}
         imageSection={
           <ImageSection>
-            <Image cldImg={cld.image('rehau_3_pnvsz6')} alt="rehau-image" />
-            <Image2 cldImg={cld.image('rehau_rpmmyt')} alt="rehau-image" />
+            <Image
+              cldImg={cld.image('images/rehau_3_pnvsz6_m2my8b')}
+              alt="rehau-image"
+            />
+            <Image2
+              cldImg={cld.image('images/rehau_rpmmyt_eamhhw')}
+              alt="rehau-image"
+            />
           </ImageSection>
         }
         textSection={

@@ -16,6 +16,10 @@ export const InfoSection = ({ title, imageSrc }: InfoSectionProps) => {
 };
 
 const Section = styled.section`
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
   height: 70rem;
   color: #d42539;
 `;

@@ -14,7 +14,7 @@ const Contact = () => {
     <>
       <PageHero
         title={t(translations.contact.contact_us)}
-        backgroundImagePath="https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893513/contact_hero_ktmb1n.jpg"
+        backgroundImagePath="https://res.cloudinary.com/dqtfurml7/image/upload/v1703956019/images/contact_hero_ktmb1n_prlbdf.jpg"
       />
       <ContactInfo phone="049444333" email="info@gazi.com" address="Adresa" />
       <Suspense fallback={<div>Loading Map</div>}>

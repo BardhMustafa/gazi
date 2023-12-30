@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 import { generatePath, useNavigate } from 'react-router';
-import { cld } from '../App';
-import { AdvancedImage } from '@cloudinary/react';
 
 const Products = () => {
   const navigate = useNavigate();
@@ -13,17 +11,13 @@ const Products = () => {
           <Product onClick={() => navigate(generatePath('/products/pvc'))}>
             <ProductHeading>PVC</ProductHeading>
             <ProductDescription>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur, optio sunt obcaecati illum veritatis autem saepe ipsa
-              error veniam odit quam voluptatum neque non numquam sint
-              reiciendis similique temporibus quidem?
+              PVC: e qëndrueshme, rezistente ndaj motit dhe pa nevojë për
+              mirëmbajtje Formësim i shkëlqyeshëm, liri absolute dizajni dhe
+              raport optimal çmim-performancë, të gjitha këto tregojnë se
+              dritaret dhe dyert e prodhuara me PVC kanë cilësi të lartë. Ne
+              gjithashtu i pajisim profilet tona me një sipërfaqe shumë të
+              veçantë: veshje me definicion të lartë.
             </ProductDescription>
-            <ProductImageContainer>
-              <ProductImage
-                cldImg={cld.image('product_ajeke0')}
-                alt="product"
-              />
-            </ProductImageContainer>
           </Product>
           <Product onClick={() => navigate(generatePath('/products/alumin'))}>
             <ProductHeading>ALUMIN</ProductHeading>
@@ -33,12 +27,12 @@ const Products = () => {
               error veniam odit quam voluptatum neque non numquam sint
               reiciendis similique temporibus quidem?
             </ProductDescription>
-            <ProductImageContainer>
+            {/* <ProductImageContainer>
               <ProductImage
                 cldImg={cld.image('product_ajeke0')}
                 alt="product"
               />
-            </ProductImageContainer>
+            </ProductImageContainer> */}
           </Product>
         </ProductsContainer>
       </Section>
@@ -50,18 +44,26 @@ export default Products;
 
 const Section = styled.section`
   margin-top: 2rem;
+
+  @media (min-width: 2000px) {
+    margin-bottom: 37rem;
+  }
 `;
 
 const ProductsContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
 `;
 
 const Product = styled.div`
   flex-basis: 100%;
-  min-height: 50rem;
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+
   background-color: #fbfbfd;
   padding: 2rem;
   border-radius: 1.2rem;
@@ -101,12 +103,12 @@ const ProductDescription = styled.p`
   color: #4e4e4e;
 `;
 
-const ProductImage = styled(AdvancedImage)`
-  width: 70%;
-  mix-blend-mode: multiply;
-`;
+// const ProductImage = styled(AdvancedImage)`
+//   width: 70%;
+//   mix-blend-mode: multiply;
+// `;
 
-const ProductImageContainer = styled.div`
-  display: flex;
-  justify-content: center;
-`;
+// const ProductImageContainer = styled.div`
+//   display: flex;
+//   justify-content: center;
+// `;

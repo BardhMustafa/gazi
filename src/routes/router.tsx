@@ -15,6 +15,7 @@ const Alumin = lazy(() => import('../pages/Products/Alumin'));
 import { ErrorPage } from '../pages/ErrorPage';
 import Loader from '../shared/components/Loader';
 import Factory from '../pages/Factory';
+import Synego from '../pages/Products/Synego';
 
 const router = createBrowserRouter([
   {
@@ -89,6 +90,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<Loader />}>
             <Factory />
+          </Suspense>
+        ),
+      },
+      {
+        path: '/products/pvc/synego',
+        element: (
+          <Suspense fallback={<Loader />}>
+            <Synego />
           </Suspense>
         ),
       },

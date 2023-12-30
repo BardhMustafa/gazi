@@ -1,13 +1,15 @@
 import { Outlet } from 'react-router-dom';
 import styled from 'styled-components';
-import { MainHeader } from '../components/layout/MainHeader';
+import { NavBar } from '../components/layout/NavBar';
+import { Footer } from '../components/Footer';
 
 export const Layout = ({ children }: { children?: React.ReactNode }) => {
   return (
     <>
-      <MainHeader />
+      <NavBar />
       <div id="page-hero-container" />
       <LayoutContainer>{children ? children : <Outlet />}</LayoutContainer>
+      <Footer />
     </>
   );
 };

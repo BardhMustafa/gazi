@@ -1,7 +1,7 @@
 import Grid from '@mui/material/Grid';
 import { Container, Box } from '@mui/material';
 import React from 'react';
-import { Heading2 } from '../../shared/components/Heading2';
+import styled from 'styled-components';
 
 const GridLayout = ({
   title,
@@ -20,10 +20,10 @@ const GridLayout = ({
             display: 'flex',
             justifyContent: 'center',
             alignContent: 'center',
-            marginBottom: '3rem',
+            marginBottom: '6rem',
           }}
         >
-          <Heading2>{title}</Heading2>
+          <ContainerHeading>{title}</ContainerHeading>
         </Container>
       )}
       <Grid sx={{ flexGrow: 1 }} container>
@@ -35,7 +35,7 @@ const GridLayout = ({
             columnSpacing={{ xs: 1, sm: 2, md: 10 }}
           >
             {items.map((item, index) => (
-              <Grid item xs={20} sm={6} md={4} key={index}>
+              <Grid item xs={20} sm={6} md={3} key={index}>
                 {item}
               </Grid>
             ))}
@@ -48,3 +48,10 @@ const GridLayout = ({
 };
 
 export default GridLayout;
+
+const ContainerHeading = styled.h2`
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: Poppins;
+  text-align: center;
+`;

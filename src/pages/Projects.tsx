@@ -12,7 +12,7 @@ const Projects = () => {
             <ProductHeading>Showroom</ProductHeading>
             <ProductImageContainer>
               <ProductImage
-                src="https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703894710/pic1_kn4snv.jpg"
+                src="https://res.cloudinary.com/dqtfurml7/image/upload/v1703956029/images/pic1_kn4snv_ajd6bl.jpg"
                 alt="showroom-product"
               />
             </ProductImageContainer>
@@ -22,8 +22,8 @@ const Projects = () => {
 
             <ProductImageContainer>
               <ProductImage
-                src="https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893515/about_3_vherwe.jpg"
-                alt="product"
+                src="https://res.cloudinary.com/dqtfurml7/image/upload/v1703955594/factory/Factory/pic16_fin8q4.jpg"
+                alt="factory-image"
               />
             </ProductImageContainer>
           </Product>

@@ -1,19 +1,32 @@
 import Carousel from 'react-material-ui-carousel';
 import styled from 'styled-components';
 import { Box } from '@mui/system';
-import { Typography, Stack } from '@mui/material';
+import { Stack } from '@mui/material';
 import { Button } from '../../shared/components/Button';
+import { generatePath, useNavigate } from 'react-router';
+import { useTranslations } from '../../hooks/useTranslations';
 
 export default function SlideShow() {
   const array = [Slide1, Slide2, Slide3];
+
+  const slideImageFromCloudinary = (i: number) => {
+    if (i === 1) {
+      return 'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956394/background1_zvpsvk.jpg';
+    }
+
+    if (i === 2) {
+      return 'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956395/background2_dhigry.jpg';
+    }
+
+    return 'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956396/background3_m2jik3.jpg';
+  };
+
   return (
-    <Box marginBottom={5}>
+    <Box mb={3}>
       <Carousel
         navButtonsProps={{
-          // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
           style: {
-            backgroundColor: 'transparent',
-            borderRadius: 0,
+            display: 'none',
           },
         }}
         cycleNavigation={true}
@@ -23,7 +36,10 @@ export default function SlideShow() {
         autoPlay={true}
       >
         {array.map((item, index) => (
-          <SlideShowContainer i={index + 1} key={index}>
+          <SlideShowContainer
+            image={slideImageFromCloudinary(index + 1)}
+            key={index}
+          >
             {item()}
           </SlideShowContainer>
         ))}
@@ -40,19 +56,59 @@ const Slide2 = () => {
       flexDirection="column"
       alignItems="start"
       justifyContent="center"
-      style={{ backgroundColor: 'rgba(0,0,0,0.5)', paddingLeft: '10rem' }}
+      sx={{
+        backgroundColor: 'rgba(0,0,0,0.5)',
+        paddingLeft: '10rem',
+        '@media (max-width: 768px)': {
+          paddingLeft: '2rem',
+        },
+      }}
     >
-      <Typography
-        variant="h1"
-        fontFamily="Poppins"
-        fontSize="70px"
-        color="#e91b37"
-      >
+      <SliderHeading color="#fff">
         GAZI & <br></br> REHAU
-      </Typography>
+      </SliderHeading>
     </Box>
   );
 };
+
+const Slide1 = () => {
+  const navigate = useNavigate();
+  const { t, translations } = useTranslations();
+
+  return (
+    <Box
+      width="100%"
+      height="100%"
+      display="flex"
+      flexDirection="column"
+      alignItems="start"
+      justifyContent="center"
+      sx={{
+        backgroundColor: 'rgba(0,0,0,0.5)',
+        paddingLeft: '10rem',
+        '@media (max-width: 768px)': {
+          paddingLeft: '2rem',
+        },
+      }}
+    >
+      <SliderHeading>
+        {t(translations.common.quality_products_first_word)}{' '}
+        <span style={{ color: '#e91b37', fontWeight: 700 }}>
+          {t(translations.common.quality_products_last_word)}
+        </span>
+      </SliderHeading>
+      <Stack direction="row" spacing={3}>
+        <ProductsButton onClick={() => navigate(generatePath('/about-us'))}>
+          {t(translations.common.aboutUs)}
+        </ProductsButton>
+        <ProductsButton onClick={() => navigate(generatePath('/products'))}>
+          {t(translations.common.products)}
+        </ProductsButton>
+      </Stack>
+    </Box>
+  );
+};
+
 const Slide3 = () => {
   return (
     <Box
@@ -62,48 +118,22 @@ const Slide3 = () => {
       flexDirection="column"
       alignItems="start"
       justifyContent="center"
-      style={{ backgroundColor: 'rgba(0,0,0,0.5)', paddingLeft: '10rem' }}
+      sx={{
+        backgroundColor: 'rgba(0,0,0,0.5)',
+        paddingLeft: '10rem',
+        '@media (max-width: 768px)': {
+          paddingLeft: '2rem',
+        },
+      }}
     >
-      <Typography
-        variant="h1"
-        fontFamily="Poppins"
-        fontSize="70px"
-        color="#e91b37"
-      >
-        Produkte <br />
-        Cilësore
-      </Typography>
-      <Stack direction="row" spacing={3}>
-        <Button>Produktet</Button>
-        <Button>Rreth Nesh</Button>
-      </Stack>
-    </Box>
-  );
-};
-const Slide1 = () => {
-  return (
-    <Box
-      width="100%"
-      height="100%"
-      display="flex"
-      flexDirection="column"
-      alignItems="start"
-      justifyContent="center"
-      style={{ backgroundColor: 'rgba(0,0,0,0.5)', paddingLeft: '10rem' }}
-    >
-      <Typography
-        variant="h1"
-        fontFamily="Poppins"
-        fontSize="70px"
-        color="#e91b37"
-      >
+      <SliderHeading>
         GAZI & <br></br> REHAU
-      </Typography>
+      </SliderHeading>
     </Box>
   );
 };
 
-const SlideShowContainer = styled.div<{ i: number }>`
+const SlideShowContainer = styled.div<{ image: string }>`
   width: 100%;
   height: 600px;
   display: flex;
@@ -112,5 +142,25 @@ const SlideShowContainer = styled.div<{ i: number }>`
   background-position: center 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: ${props => `url(/img/background${props.i}.jpeg)`};
+  background-image: url(${({ image }: { image: string }) => image});
+`;
+
+const ProductsButton = styled(Button)`
+  font-weight: 600;
+
+  @media (max-width: 568px) {
+    padding: 1rem 2rem;
+  }
+`;
+
+const SliderHeading = styled.h1`
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+
+  @media (min-width: 768px) {
+    font-size: 6.5rem;
+  }
 `;
