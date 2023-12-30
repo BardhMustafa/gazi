@@ -173,15 +173,6 @@ const LinkText = styled(Link)`
 
   text-decoration: none;
   color: #333333;
-
-  @media (max-width: 768px) {
-    &:hover {
-      color: #6d030f;
-    }
-    &:active {
-      color: #6d030f;
-    }
-  }
 ` as typeof Link;
 
 const UnitTitle = styled.h4`

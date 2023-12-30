@@ -124,6 +124,14 @@ const Box = styled.div<{ image: string }>`
     }
   }
 
+  @media (max-width: 456px) {
+    width: 30rem;
+  }
+
+  @media (max-width: 356px) {
+    width: 27rem;
+  }
+
   @media (max-width: 1200px) {
     background:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),

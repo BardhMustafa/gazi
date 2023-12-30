@@ -10,7 +10,7 @@ export default function SlideShow() {
   const array = [Slide1, Slide2, Slide3];
 
   return (
-    <Box marginBottom={5}>
+    <Box mb={3}>
       <Carousel
         navButtonsProps={{
           style: {
