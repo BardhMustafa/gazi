@@ -6,16 +6,16 @@ import { useTranslations } from '../hooks/useTranslations';
 
 const heights = [300, 700, 300, 400, 300, 350, 450, 450, 300];
 const pics = [
-  'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703894716/pic7_alyg6i.jpg',
-  'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703894712/pic4_wrxfwy.jpg',
-  'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893519/rolete_hsmxxh.jpg',
-  'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893515/homepage-products_lleo9h.jpg',
-  'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703894710/pic1_kn4snv.jpg',
-  'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703894717/pic9_yu8kbg.jpg',
-  'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703894714/pic2_h5mmgj.jpg',
-  'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703894710/pic3_dpnv0i.jpg',
-  'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703894716/pic8_qs4qtu.jpg',
-  'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703894715/pic6_c2z1c0.jpg',
+  'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956028/images/pic7_alyg6i_qkoqqh.jpg',
+  'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956029/images/pic4_wrxfwy_ih3lhw.jpg',
+  'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956030/images/rolete_hsmxxh_bh4chs.jpg',
+  'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956026/images/homepage-products_lleo9h_igeogw.jpg',
+  'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956029/images/pic1_kn4snv_ajd6bl.jpg',
+  'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956021/images/pic9_yu8kbg_azivvj.jpg',
+  'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956021/images/pic2_h5mmgj_a8efhh.jpg',
+  'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956020/images/pic3_dpnv0i_wmh9f2.jpg',
+  'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956022/images/pic8_qs4qtu_h76fbn.jpg',
+  'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956027/images/pic6_c2z1c0_bcg4eq.jpg',
 ];
 
 const Showroom = () => {

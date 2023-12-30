@@ -1,22 +1,16 @@
 import { useTranslations } from '../hooks/useTranslations';
 import SlideShow from '../components/slideshow/Slidershow';
 import { ImagePlusText } from '../shared/components/ImagePlusText';
-import GaziRehau from '../assets/factory/RehauGazi.jpg';
-import GaziFront from '../assets/factory/GaziFac.jpg';
 import styled from 'styled-components';
 import { Heading2 } from '../shared/components/Heading2';
 import { Paragraph } from '../shared/components/Paragraph';
 import HeroSection from '../components/HeroSecion';
-import InsideFactory from '../assets/factory/InsideFac.jpg';
 import { TextSectionAbout } from '../components/homepage/AboutSection';
 import GridLayout from '../components/layout/Grid';
 import { Stack, Typography } from '@mui/material';
 import { Button } from '../shared/components/Button';
 import { generatePath } from 'react-router';
 
-import Alumil from '../assets/alumil.png';
-import Wurth from '../assets/wurth.png';
-import Rehau from '../assets/rehau.png';
 import { HomeProducts } from '../components/homepage/HomeProducts';
 
 const HomePage = () => {
@@ -30,8 +24,14 @@ const HomePage = () => {
         bgColor="#f2f2f2"
         imageSection={
           <ImageSection>
-            <Image src={GaziRehau} alt="rehau-image" />
-            <Image2 src={GaziFront} alt="rehau-image" />
+            <Image
+              src="https://res.cloudinary.com/dqtfurml7/image/upload/v1703955598/factory/Factory/RehauGazi_lr37j2.jpg"
+              alt="rehau-image"
+            />
+            <Image2
+              src="https://res.cloudinary.com/dqtfurml7/image/upload/v1703955581/factory/Factory/GaziFac_a1lnae.jpg"
+              alt="rehau-image"
+            />
           </ImageSection>
         }
         textSection={
@@ -49,7 +49,7 @@ const HomePage = () => {
 
       <HeroSection
         height={700}
-        background={InsideFactory}
+        background="https://res.cloudinary.com/dqtfurml7/image/upload/v1703955581/factory/Factory/InsideFac_uyxm84.jpg"
         children={
           <Stack>
             <TextSection>
@@ -108,9 +108,18 @@ const HomePage = () => {
         title={t(translations.homepage['our-partners'])}
         backgroundColor="#f2f2f2"
         items={[
-          <SponsorImg src={Alumil} key="alumil" />,
-          <SponsorImg src={Rehau} key="rehau" />,
-          <SponsorImg src={Wurth} key="wurth" />,
+          <SponsorImg
+            src="https://res.cloudinary.com/dqtfurml7/image/upload/v1703956150/images/alumil_uaiwz8.png"
+            key="alumil"
+          />,
+          <SponsorImg
+            src="https://res.cloudinary.com/dqtfurml7/image/upload/v1703956150/images/rehau_whgfvy.png"
+            key="rehau"
+          />,
+          <SponsorImg
+            src="https://res.cloudinary.com/dqtfurml7/image/upload/v1703956150/images/wurth_qx1mbn.png"
+            key="wurth"
+          />,
         ]}
       />
     </>

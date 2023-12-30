@@ -20,27 +20,27 @@ export const HomeProducts = () => {
       id: 1,
       title: t(translations.common.window),
       imagePath:
-        'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893516/dritare_zuosm2.jpg',
+        'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956017/images/dritare_zuosm2_ew29cd.jpg',
       imageAlt: t(translations.common.window),
     },
     {
       id: 2,
       title: t(translations.common.door),
       imagePath:
-        'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703894715/pic6_c2z1c0.jpg',
+        'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956028/images/dyer_ovaxf2_wvbpur.jpg',
       imageAlt: t(translations.common.door),
     },
     {
       id: 3,
       title: t(translations.common.blinds),
       imagePath:
-        'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893519/rolete_hsmxxh.jpg',
+        'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956030/images/rolete_hsmxxh_bh4chs.jpg',
       imageAlt: t(translations.common.blinds),
     },
   ];
 
   return (
-    <Section sectionImage="https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893515/homepage-products_lleo9h.jpg">
+    <Section sectionImage="https://res.cloudinary.com/dqtfurml7/image/upload/v1703956026/images/homepage-products_lleo9h_igeogw.jpg">
       <SectionHeading>
         {t(translations.common.products_that_we_offer)}
       </SectionHeading>

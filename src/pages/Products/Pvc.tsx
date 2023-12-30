@@ -16,7 +16,7 @@ const Pvc = () => {
             <ProductHeading>Synego</ProductHeading>
             <ProductImageContainer>
               <ProductImage
-                cldImg={cld.image('synego_1_ydmkpd')}
+                cldImg={cld.image('images/synego_1_ydmkpd_hyuavx')}
                 alt="product"
               />
             </ProductImageContainer>
@@ -26,7 +26,10 @@ const Pvc = () => {
           >
             <ProductHeading>Geneo</ProductHeading>
             <ProductImageContainer>
-              <ProductImage cldImg={cld.image('geneo_emgney')} alt="product" />
+              <ProductImage
+                cldImg={cld.image('images/geneo_emgney_nzvask')}
+                alt="product"
+              />
             </ProductImageContainer>
           </Product>
           <Product
@@ -34,7 +37,10 @@ const Pvc = () => {
           >
             <ProductHeading>Artevo</ProductHeading>
             <ProductImageContainer>
-              <ProductImage cldImg={cld.image('artevo_kezr7o')} alt="product" />
+              <ProductImage
+                cldImg={cld.image('images/artevo_kezr7o_iyu2of')}
+                alt="product"
+              />
             </ProductImageContainer>
           </Product>
         </ProductsContainer>

@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import { FixedWrapper } from '../../shared/components/FixedWrapper';
 import { Link } from 'react-router-dom';
-import logo1 from '../../assets/gazi-logo.png';
 import { useTranslations } from '../../hooks/useTranslations';
 import { NavLinks, NestedMenuLink } from './NavLinks';
+import { AdvancedImage } from '@cloudinary/react';
+import { cld } from '../../App';
 
 export const NavBar = () => {
   const { t, translations } = useTranslations();
@@ -49,7 +50,7 @@ export const NavBar = () => {
         <HeaderWrapper>
           <LogoWrapper>
             <Link to="/">
-              <Logo src={logo1} />
+              <Logo cldImg={cld.image('gazi-logo_vqovqx')} />
             </Link>
           </LogoWrapper>
           <Actions>
@@ -61,7 +62,7 @@ export const NavBar = () => {
   );
 };
 
-const Logo = styled.img`
+const Logo = styled(AdvancedImage)`
   width: 120px;
 `;
 

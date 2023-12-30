@@ -9,6 +9,18 @@ import { useTranslations } from '../../hooks/useTranslations';
 export default function SlideShow() {
   const array = [Slide1, Slide2, Slide3];
 
+  const slideImageFromCloudinary = (i: number) => {
+    if (i === 1) {
+      return 'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956394/background1_zvpsvk.jpg';
+    }
+
+    if (i === 2) {
+      return 'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956395/background2_dhigry.jpg';
+    }
+
+    return 'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956396/background3_m2jik3.jpg';
+  };
+
   return (
     <Box mb={3}>
       <Carousel
@@ -24,7 +36,10 @@ export default function SlideShow() {
         autoPlay={true}
       >
         {array.map((item, index) => (
-          <SlideShowContainer i={index + 1} key={index}>
+          <SlideShowContainer
+            image={slideImageFromCloudinary(index + 1)}
+            key={index}
+          >
             {item()}
           </SlideShowContainer>
         ))}
@@ -118,7 +133,7 @@ const Slide3 = () => {
   );
 };
 
-const SlideShowContainer = styled.div<{ i: number }>`
+const SlideShowContainer = styled.div<{ image: string }>`
   width: 100%;
   height: 600px;
   display: flex;
@@ -127,7 +142,7 @@ const SlideShowContainer = styled.div<{ i: number }>`
   background-position: center 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: ${props => `url(/img/background${props.i}.jpeg)`};
+  background-image: url(${({ image }: { image: string }) => image});
 `;
 
 const ProductsButton = styled(Button)`

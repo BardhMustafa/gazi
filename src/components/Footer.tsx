@@ -47,7 +47,7 @@ export const Footer = () => {
     <FooterStyles>
       <Container>
         <ContactSection>
-          <Logo cldImg={cld.image('gazi_logo_eupb5e')} />
+          <Logo cldImg={cld.image('images/gazi_logo_eupb5e_iqnoff')} />
           <MainContactLink href="mailto: info@gazi.shpk">
             info@gazi.shpk
           </MainContactLink>

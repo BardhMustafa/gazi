@@ -8,7 +8,7 @@ export const AboutProducts = () => {
   const { t, translations } = useTranslations();
 
   return (
-    <Section sectionImage="https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893517/rehau4_uoykzd.jpg">
+    <Section sectionImage="https://res.cloudinary.com/dqtfurml7/image/upload/v1703956022/images/rehau4_uoykzd_mffdad.jpg">
       <AboutProductsHeading>
         {t(translations.about.our_products)}
       </AboutProductsHeading>

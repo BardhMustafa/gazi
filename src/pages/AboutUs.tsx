@@ -16,7 +16,7 @@ const AboutUs = () => {
     <>
       <PageHero
         title={t(translations.common.aboutUs)}
-        backgroundImagePath="https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893513/about_2_jxyff1.jpg"
+        backgroundImagePath="https://res.cloudinary.com/dqtfurml7/image/upload/v1703956017/images/about_2_jxyff1_hhu1p2.jpg"
       />
 
       <AboutSection />
@@ -25,7 +25,7 @@ const AboutUs = () => {
         order={1}
         imageSection={
           <ImageSection>
-            <Image cldImg={cld.image('about_3_vherwe')} />
+            <Image cldImg={cld.image('images/about_3_vherwe_abtjvv')} />
           </ImageSection>
         }
         textSection={
