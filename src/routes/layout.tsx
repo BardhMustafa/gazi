@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import styled from 'styled-components';
 import { NavBar } from '../components/layout/NavBar';
+import { Footer } from '../components/Footer';
 
 export const Layout = ({ children }: { children?: React.ReactNode }) => {
   return (
@@ -8,6 +9,7 @@ export const Layout = ({ children }: { children?: React.ReactNode }) => {
       <NavBar />
       <div id="page-hero-container" />
       <LayoutContainer>{children ? children : <Outlet />}</LayoutContainer>
+      <Footer/>
     </>
   );
 };
