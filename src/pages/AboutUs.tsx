@@ -1,6 +1,5 @@
 import { PageHero } from '../shared/components/PageHero';
-import AboutHero from '../assets/images/about_2.jpg';
-import About3 from '../assets/images/about_3.jpg';
+import { AdvancedImage } from '@cloudinary/react';
 
 import { useTranslations } from '../hooks/useTranslations';
 import { AboutSection, TextSection } from '../components/homepage/AboutSection';
@@ -8,6 +7,7 @@ import { ImagePlusText } from '../shared/components/ImagePlusText';
 import { Paragraph } from '../shared/components/Paragraph';
 import styled from 'styled-components';
 import { AboutProducts } from '../components/about/AboutProducts';
+import { cld } from '../App';
 
 const AboutUs = () => {
   const { t, translations } = useTranslations();
@@ -16,7 +16,7 @@ const AboutUs = () => {
     <>
       <PageHero
         title={t(translations.common.aboutUs)}
-        backgroundImagePath={AboutHero}
+        backgroundImagePath="https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893513/about_2_jxyff1.jpg"
       />
 
       <AboutSection />
@@ -25,7 +25,7 @@ const AboutUs = () => {
         order={1}
         imageSection={
           <ImageSection>
-            <Image src={About3} alt="rehau-image" />
+            <Image cldImg={cld.image('about_3_vherwe')} />
           </ImageSection>
         }
         textSection={
@@ -53,7 +53,7 @@ const ImageSection = styled.div`
   }
 `;
 
-const Image = styled.img`
+const Image = styled(AdvancedImage)`
   object-fit: cover;
   width: 100%;
   height: 50rem;

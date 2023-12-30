@@ -23,7 +23,7 @@ export default function SlideShow() {
         autoPlay={true}
       >
         {array.map((item, index) => (
-          <SlideShowContainer i={index+1} key={index}>
+          <SlideShowContainer i={index + 1} key={index}>
             {item()}
           </SlideShowContainer>
         ))}
@@ -31,8 +31,8 @@ export default function SlideShow() {
     </Box>
   );
 }
-const Slide2 = ()=> {
-  return(
+const Slide2 = () => {
+  return (
     <Box
       width="100%"
       height="100%"
@@ -40,7 +40,7 @@ const Slide2 = ()=> {
       flexDirection="column"
       alignItems="start"
       justifyContent="center"
-      style={{ backgroundColor:'rgba(0,0,0,0.5)', paddingLeft:'10rem'}}
+      style={{ backgroundColor: 'rgba(0,0,0,0.5)', paddingLeft: '10rem' }}
     >
       <Typography
         variant="h1"
@@ -48,12 +48,13 @@ const Slide2 = ()=> {
         fontSize="70px"
         color="#e91b37"
       >
-           GAZI & <br></br> REHAU
+        GAZI & <br></br> REHAU
       </Typography>
-    </Box>);
+    </Box>
+  );
 };
-const Slide3 = ()=> {
-  return(
+const Slide3 = () => {
+  return (
     <Box
       width="100%"
       height="100%"
@@ -61,7 +62,7 @@ const Slide3 = ()=> {
       flexDirection="column"
       alignItems="start"
       justifyContent="center"
-      style={{ backgroundColor:'rgba(0,0,0,0.5)', paddingLeft:'10rem'}}
+      style={{ backgroundColor: 'rgba(0,0,0,0.5)', paddingLeft: '10rem' }}
     >
       <Typography
         variant="h1"
@@ -69,8 +70,8 @@ const Slide3 = ()=> {
         fontSize="70px"
         color="#e91b37"
       >
-                Produkte <br />
-                Cilësore
+        Produkte <br />
+        Cilësore
       </Typography>
       <Stack direction="row" spacing={3}>
         <Button>Produktet</Button>
@@ -79,8 +80,8 @@ const Slide3 = ()=> {
     </Box>
   );
 };
-const Slide1 = ()=> {
-  return(
+const Slide1 = () => {
+  return (
     <Box
       width="100%"
       height="100%"
@@ -88,7 +89,7 @@ const Slide1 = ()=> {
       flexDirection="column"
       alignItems="start"
       justifyContent="center"
-      style={{ backgroundColor:'rgba(0,0,0,0.5)', paddingLeft:'10rem'}}
+      style={{ backgroundColor: 'rgba(0,0,0,0.5)', paddingLeft: '10rem' }}
     >
       <Typography
         variant="h1"
@@ -96,10 +97,12 @@ const Slide1 = ()=> {
         fontSize="70px"
         color="#e91b37"
       >
-           GAZI & <br></br> REHAU
+        GAZI & <br></br> REHAU
       </Typography>
-    </Box>);
+    </Box>
+  );
 };
+
 const SlideShowContainer = styled.div<{ i: number }>`
   width: 100%;
   height: 600px;

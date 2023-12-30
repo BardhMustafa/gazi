@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { generatePath, useNavigate } from 'react-router';
-import Factory from '../assets/factory/pic16.jpg';
-import Showroom from '../assets/showroom/pic1.jpg';
+
 const Projects = () => {
   const navigate = useNavigate();
 
@@ -12,14 +11,20 @@ const Projects = () => {
           <Product onClick={() => navigate(generatePath('/projects/showroom'))}>
             <ProductHeading>Showroom</ProductHeading>
             <ProductImageContainer>
-              <ProductImage src={Showroom} alt="product" />
+              <ProductImage
+                src="https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703894710/pic1_kn4snv.jpg"
+                alt="showroom-product"
+              />
             </ProductImageContainer>
           </Product>
           <Product onClick={() => navigate(generatePath('/projects/factory'))}>
             <ProductHeading>Factory</ProductHeading>
-          
+
             <ProductImageContainer>
-              <ProductImage src={Factory} alt="product" />
+              <ProductImage
+                src="https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893515/about_3_vherwe.jpg"
+                alt="product"
+              />
             </ProductImageContainer>
           </Product>
         </ProductsContainer>
@@ -75,7 +80,6 @@ const ProductHeading = styled.h2`
   margin-left: 5%;
   margin-bottom: 1rem;
 `;
-
 
 const ProductImage = styled.img`
   width: 90%;

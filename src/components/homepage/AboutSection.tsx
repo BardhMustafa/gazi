@@ -2,14 +2,15 @@ import styled from 'styled-components';
 import { Heading2 } from '../../shared/components/Heading2';
 import { Paragraph } from '../../shared/components/Paragraph';
 import { useTranslations } from '../../hooks/useTranslations';
-import AboutImage from '../../assets/images/about_1.jpg';
+import { cld } from '../../App';
+import { AdvancedImage } from '@cloudinary/react';
 
 export const AboutSection = () => {
   const { t, translations } = useTranslations();
   return (
     <Section>
       <ImageSection>
-        <Image src={AboutImage} alt="worker" />
+        <Image cldImg={cld.image('about_1_b66tqn')} />
         <YearsOfExperience>
           <h3>28</h3>
           <p>{t(translations.common.years_of_experience)}</p>
@@ -54,7 +55,7 @@ const ImageSection = styled.div`
   }
 `;
 
-const Image = styled.img`
+const Image = styled(AdvancedImage)`
   object-fit: cover;
   width: 40rem;
   height: 50rem;

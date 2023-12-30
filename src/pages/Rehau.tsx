@@ -1,12 +1,5 @@
 import { useTranslations } from '../hooks/useTranslations';
 import { PageHero } from '../shared/components/PageHero';
-import RehauHeroImage from '../assets/images/rehau2.jpg';
-import RehauImage from '../assets/images/rehau.jpg';
-import Rehau2Image from '../assets/images/rehau_3.jpg';
-import Rehau4Image from '../assets/images/rehau4.jpg';
-import RehauBoxImage1 from '../assets/images/rehau5.jpg';
-import RehauBoxImage2 from '../assets/images/rehau6.jpg';
-import RehauBoxImage3 from '../assets/images/rehau7.jpg';
 import styled from 'styled-components';
 import { ImagePlusText } from '../shared/components/ImagePlusText';
 import {
@@ -15,6 +8,8 @@ import {
 } from '../components/homepage/AboutSection';
 import { Paragraph } from '../shared/components/Paragraph';
 import { CardsWithBackground } from '../shared/components/CardsWithBackground';
+import { AdvancedImage } from '@cloudinary/react';
+import { cld } from '../App';
 
 const Rehau = () => {
   const { t, translations } = useTranslations();
@@ -24,21 +19,24 @@ const Rehau = () => {
       id: 1,
       title: t(translations.rehau.we_deserve_trust),
       description: t(translations.rehau.we_deserve_trust_content),
-      imagePath: RehauBoxImage1,
+      imagePath:
+        'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893517/rehau5_cicwji.jpg',
       imageAlt: t(translations.rehau.we_deserve_trust),
     },
     {
       id: 2,
       title: t(translations.rehau.we_are_creators),
       description: t(translations.rehau.we_are_creators_content),
-      imagePath: RehauBoxImage3,
+      imagePath:
+        'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893518/rehau7_bxmuvh.jpg',
       imageAlt: t(translations.rehau.we_are_creators),
     },
     {
       id: 3,
       title: t(translations.rehau.we_are_loyal),
       description: t(translations.rehau.we_are_loyal_content),
-      imagePath: RehauBoxImage2,
+      imagePath:
+        'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893517/rehau6_fj6qok.jpg',
       imageAlt: t(translations.rehau.we_are_loyal),
     },
   ];
@@ -47,15 +45,15 @@ const Rehau = () => {
     <>
       <PageHero
         title={t(translations.common.rehau)}
-        backgroundImagePath={RehauHeroImage}
+        backgroundImagePath="https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893517/rehau2_w9rcq7.jpg"
       />
 
       <ImagePlusText
         order={2}
         imageSection={
           <ImageSection>
-            <Image src={Rehau2Image} alt="rehau-image" />
-            <Image2 src={RehauImage} alt="rehau-image" />
+            <Image cldImg={cld.image('rehau_3_pnvsz6')} alt="rehau-image" />
+            <Image2 cldImg={cld.image('rehau_rpmmyt')} alt="rehau-image" />
           </ImageSection>
         }
         textSection={
@@ -73,7 +71,7 @@ const Rehau = () => {
         title={t(translations.rehau.rehau_values)}
         subtitle={t(translations.rehau.rehau_values_desc)}
         boxes={boxes}
-        sectionImage={Rehau4Image}
+        sectionImage="https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893517/rehau4_uoykzd.jpg"
       />
     </>
   );
@@ -100,7 +98,7 @@ const ImageSection = styled.div`
   }
 `;
 
-const Image = styled.img`
+const Image = styled(AdvancedImage)`
   object-fit: cover;
   width: 100%;
   height: 30rem;
