@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import { AdvancedImage } from '@cloudinary/react';
+import { cld } from '../App';
 
 export const Footer = () => {
   const menuLinks = [
@@ -15,13 +18,15 @@ export const Footer = () => {
     <FooterStyles>
       <Container>
         <ContactSection>
-          <h1>Logo</h1>
+          <Logo cldImg={cld.image('gazi_logo_eupb5e')} />
           <MainContactLink href="mailto: info@gazi.shpk">
             info@gazi.shpk
           </MainContactLink>
-          <MainContactLink href={'tel: 049281270'}>049281270</MainContactLink>
+          <MainContactLink href={'tel: 049281270'}>
+            +383 49 444 555
+          </MainContactLink>
           <LogoLink href="https://www.facebook.com/GaziGjilan" target="_blank">
-            FB_ICON_HERE
+            <FacebookIcon style={{ color: '#1122dd', fontSize: '3.6rem' }} />
           </LogoLink>
         </ContactSection>
         <LinkColumnContainer>
@@ -44,14 +49,18 @@ export const Footer = () => {
         </UnitColumnContainer>
         <CopyrightSection>
           <CopyrightText>
-            © 1991 – 2023 |<br />
-            Gazi Shpk®
+            © 1995 – {new Date(Date.now()).getFullYear()} |<br />
+            Gazi Shpk® All Rights Reserved
           </CopyrightText>
         </CopyrightSection>
       </Container>
     </FooterStyles>
   );
 };
+
+const FooterStyles = styled.footer`
+  background-color: #f4f4f4;
+`;
 
 const Container = styled.div`
   display: grid;
@@ -107,11 +116,16 @@ const MainContactLink = styled.a`
   width: fit-content;
 
   text-decoration: none;
-  color: white;
+  color: #333333;
 `;
 
 const LogoLink = styled.a`
   width: fit-content;
+`;
+
+const Logo = styled(AdvancedImage)`
+  width: 5rem;
+  height: 6rem;
 `;
 
 const Title = styled.h4`
@@ -119,24 +133,24 @@ const Title = styled.h4`
   line-height: 24px;
   font-weight: 700;
 
-  color: white;
+  color: #333333;
 `;
 
 const LinkText = styled(Link)`
   font-size: 14px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 600;
   width: fit-content;
 
   text-decoration: none;
-  color: #b0bec5;
+  color: #333333;
 
   @media (max-width: 768px) {
     &:hover {
-      color: #b0bec5;
+      color: #6d030f;
     }
     &:active {
-      color: #0a58ca;
+      color: #6d030f;
     }
   }
 ` as typeof Link;
@@ -146,7 +160,7 @@ const UnitTitle = styled.h4`
   line-height: 24px;
   font-weight: 700;
 
-  color: #dcdee5;
+  color: #333333;
 `;
 
 const UnitSubtitle = styled.h5`
@@ -154,7 +168,7 @@ const UnitSubtitle = styled.h5`
   line-height: 24px;
   font-weight: 400;
 
-  color: #90a4ae;
+  color: #333333;
   margin-bottom: 40px;
 
   @media (max-width: 768px) {
@@ -194,10 +208,6 @@ const CopyrightText = styled.p`
   line-height: 24px;
   font-weight: 400;
 
-  color: #607d8b;
+  color: #333333;
   margin-bottom: 0px;
-`;
-
-const FooterStyles = styled.footer`
-  background-color: #002a4d;
 `;
