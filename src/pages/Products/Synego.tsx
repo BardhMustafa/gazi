@@ -5,7 +5,7 @@ import { useTranslations } from '../../hooks/useTranslations';
 import styled from 'styled-components';
 import Typography from '@mui/material/Typography';
 import CustomizedTables from '../../components/Table/Table';
-import { Heading2 } from '../../shared/components/Heading2';
+
 
 const Synego = () => {
   const { t, translations } = useTranslations();
