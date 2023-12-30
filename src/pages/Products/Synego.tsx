@@ -154,6 +154,7 @@ const Synego = () => {
           <Typography
             variant="h2"
             component="h2"
+            marginBottom={2}
             align="center"
             fontFamily="poppins"
             fontWeight={600}
