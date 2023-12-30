@@ -4,19 +4,22 @@ import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
-
+import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
 const StyledTableCell = styled(TableCell)(({ }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: '#e91b37',
+
+    color: '#e91b37',
+    fontWeight: 700,
+    fontSize: 18,
+    fontFamily: 'Poppins',
 
   },
   [`&.${tableCellClasses.body}`]: {
     fontSize: 16,
     fontFamily: 'Poppins',
-
   },
 }));
 
@@ -40,14 +43,16 @@ function createData(
 
 
 type Props = {
-  data: rowValues[]
+  data: rowValues[],
+
+  
 }
 type rowValues = {
   key: string,
   value: string
 }
 
-export default function CustomizedTables({ data }: { data: Props}) {
+export default function CustomizedTables({ data, title }: { data: Props,title:string }) {
   const rows = data?.data?.map((row) => 
     createData(row.key, row.value)
   );
@@ -55,7 +60,9 @@ export default function CustomizedTables({ data }: { data: Props}) {
   return (
     <TableContainer component={Paper}>
       <Table aria-label="customized table">
-    
+        <TableHead>
+          <StyledTableCell>{title}</StyledTableCell>
+        </TableHead>
         <TableBody>
           {rows?.map((row) => (
             <StyledTableRow key="row">
