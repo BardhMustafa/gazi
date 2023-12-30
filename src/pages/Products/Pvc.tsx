@@ -53,6 +53,7 @@ export default Pvc;
 
 const Section = styled.section`
   margin-top: 2rem;
+  margin-bottom: 20rem;
 `;
 
 const ProductsContainer = styled.div`

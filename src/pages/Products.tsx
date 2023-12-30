@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { generatePath, useNavigate } from 'react-router';
 
-
 const Products = () => {
   const navigate = useNavigate();
 
@@ -19,7 +18,6 @@ const Products = () => {
               gjithashtu i pajisim profilet tona me një sipërfaqe shumë të
               veçantë: veshje me definicion të lartë.
             </ProductDescription>
-
           </Product>
           <Product onClick={() => navigate(generatePath('/products/alumin'))}>
             <ProductHeading>ALUMIN</ProductHeading>
@@ -46,6 +44,10 @@ export default Products;
 
 const Section = styled.section`
   margin-top: 2rem;
+
+  @media (min-width: 2000px) {
+    margin-bottom: 37rem;
+  }
 `;
 
 const ProductsContainer = styled.div`
@@ -58,7 +60,7 @@ const ProductsContainer = styled.div`
 
 const Product = styled.div`
   flex-basis: 100%;
-min-height: 25rem;
+  min-height: 25rem;
   display: flex;
   flex-direction: column;
 
