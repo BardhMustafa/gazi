@@ -61,11 +61,13 @@ export default function CustomizedTables({ data, title }: { data: Props,title:st
     <TableContainer component={Paper}>
       <Table aria-label="customized table">
         <TableHead>
-          <StyledTableCell>{title}</StyledTableCell>
+          <TableRow>
+            <StyledTableCell>{title}</StyledTableCell>
+          </TableRow>
         </TableHead>
         <TableBody>
-          {rows?.map((row) => (
-            <StyledTableRow key="row">
+          {rows?.map((row, i) => (
+            <StyledTableRow key={`row-${i}`}>
               <StyledTableCell align="left">{row.key}</StyledTableCell>
               <StyledTableCell align="left">{row.value}</StyledTableCell>
             </StyledTableRow>
