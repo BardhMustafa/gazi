@@ -102,7 +102,7 @@ const MobileStyledMenuItem = styled.li`
   color: #d42539;
   cursor: pointer;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     padding: 1rem 0;
     padding-left: 2rem;
     width: 100%;
