@@ -10,8 +10,8 @@
         "services": "Sherbimet",
         "projects": "Projektet",
         "rehau": "Rehau",
-        "showroom" :"Sallë Ekspozuese",
-        "prod-sec":"Sektori i prodhimit",
+        "showroom": "Sallë Ekspozuese",
+        "prod-sec": "Sektori i prodhimit",
         "synego": "Synego",
         "years_of_experience": "Vjet Pervoje",
         "we_build_everything_that_you_need": "Ne ndërtojmë gjithçka që ju nevojitet",
@@ -61,10 +61,21 @@
         "who_are_we_desc": "Kompania e specializuar per prodhimin e dyerve, dritareve dhe fasadave Gazi, në Gjilan, është kompani e cila eshte themeluar në vitin 1995 dhe si e till operon suksesëshëm prej 25 viteve me një staf profesional dhe me makineritë me moderne.",
         "our_products": "Produktet Tona",
         "our_products_desc": "Në fabrikat tona mjaftë bashkëkohore prodhojmë të gjitha llojet dhe format e dyerve dhe me profile të cilat janë zbulimet e fundit dhe tejet të përsosura. E veqantë e kompanisë sonë është se ne  bëjmë vetë përpunimin e xhamit dhe izolimin e tyre,material i cili vie te ne nga prodhues eminentë botërorë.  këtyre produkteve, ne bëjmë edhe prodhimin e fasadave strukturale dhe gjysëmstrukturale nga materiali ALUMIL. Te ne mund të gjeni poashtu edhe gilindera të të gjitha llojeve si dhe pikore shiu të kualitetit më të lartë."
+      },
+      "synego": {
+        "synego-dsp": "Dritaret nga profili SYNEGO janë krijuar si mundësi ideale per te gjithe ata te cilët deshirojne që njëhere e pergjithmone të zgjidhin problemet e tyre me dritare. Dritaret SYNEGO janë programi ideal i kursimit. Ne krahasim me dritaret aktuale standarte, SYNEGO-ja ju ofron deri në 50% më shumë termoizolim.Të jesh në shtëpi do te thote: siguri, komoditet, qetësi dhe intimitet. Falë dritareve SYNEGO mund të keni nje perjetim te tille në shtëpi.",
+        "synego-window": "Dritaret Synego",
+        "synego-window-p1": " Më shumë hapësirë ​​në magazinë, sepse mund të pajisni sistemin SYNEGO me dy variante izolimi.",
+        "synego-window-p2": "Gamë e gjerë profilesh",
+        "synego-window-p3": " E disponueshme në të gjitha ngjyrat dhe me brendësinë e re prej xhami të laminuar KALEIDO VISION",
+        "synego-window-p4": "E riciklueshme dhe miqësore ndaj mjedisit",
+        "synego-brilliant": "Dritare me Brillant Design",
+        "synego-brilliant-p1": "Më shumë hapësirë ​​në magazinë falë përforcimeve të njëjtave për kornizën dhe shiritin",
+        "synego-brilliant-p2": "Veti të mira statike",
+        "synego-brilliant-p3": "E disponueshme në të gjitha ngjyrat KALEIDO COLOR përveç KALEIDO VISION"
       }
     }
   },
-  
   "en": {
     "translation": {
       "common": {
@@ -78,7 +89,7 @@
         "showroom": "Showroom",
         "rehau": "Rehau",
         "synego": "Synego",
-        "prod-sec":"Production Sector",
+        "prod-sec": "Production Sector",
         "years_of_experience": "Years Of Experience",
         "we_build_everything_that_you_need": "We Build Everything That You Need",
         "read_more": "Read More",
@@ -96,7 +107,6 @@
         "gazi_rehau_section": "Collaboration with Rehau for the use of products such as Syngeu, Geneodhe Artego will facilitate the production of PVC windows. These products offer a good and environmentally friendly alternative for the production of windows that need to be lightweight and durable in various weather conditions. This will help in creating an efficient and reliable production line for this product, ensuring that the production is environmentally friendly and the products are of high quality. The collaboration will also enable the development of new and innovative technologies in the field of PVC window production.",
         "our-partners": "Our Partners"
       },
-
       "contact": {
         "contact_us": "Contact Us",
         "do_you_have_any_questions": "Do you have any questions?",
@@ -128,6 +138,18 @@
         "who_are_we_desc": "The specialized company for the production of doors, windows, and facades Gazi, in Gjilan, is a company that was founded in 1995 and as such has been operating successfully for 25 years with a professional staff and the most modern machinery.",
         "our_products": "Our Products",
         "our_products_desc": "In our modern factories, we produce all types and formats of doors and windows with profiles that are the latest and highly perfected developments. The unique feature of our company is that we handle the processing and insulation ourselves, using materials sourced from renowned global manufacturers. In addition to these products, we also manufacture structural and semi_structural facades using the material ALUMIL. With us, you can also find cylinders of all kinds as well as the highest quality rainwater."
+      },
+      "synego": {
+        "synego-dsp": "Profiles from the SYNEGO line are created as an ideal solution for those who want to solve their window-related issues once and for all. SYNEGO windows are the perfect savings program. Compared to current standard windows, SYNEGO offers up to 50% more thermal insulation. Being at home means: security, comfort, tranquility, and privacy. Thanks to SYNEGO windows, you can have such an experience at home.",
+        "synego-window": "SYNEGO Windows",
+        "synego-window-p1": "More space in the room, as you can equip the SYNEGO system with two insulation options.",
+        "synego-window-p2": "Wide range of profiles",
+        "synego-window-p3": "Available in all colors and with the new laminated glass interior KALEIDO VISION",
+        "synego-window-p4": "Recyclable and environmentally friendly",
+        "synego-brilliant": "Brilliant Design Windows",
+        "synego-brilliant-p1": "More space in the room thanks to the same reinforcements for the frame and strip",
+        "synego-brilliant-p2": "Good static properties",
+        "synego-brilliant-p3": "Available in all KALEIDO COLOR colors except KALEIDO VISION"
       }
     }
   },
@@ -143,7 +165,7 @@
         "projects": "Projekte",
         "rehau": "Rehau",
         "synego": "Synego",
-        "prod-sec":"Produktionssektor",
+        "prod-sec": "Produktionssektor",
         "showroom": "Ausstellungsraum",
         "years_of_experience": "Jahre Erfahrung",
         "we_build_everything_that_you_need": "Wir bauen alles, was Sie brauchen",
@@ -162,7 +184,6 @@
         "gazi_rehau_section": "Die Zusammenarbeit mit Rehau für die Verwendung von Produkten wie Syngeu, Geneodhe Artego wird die Herstellung von PVC_Fenstern fördern. Diese Produkte bieten eine gute und umweltfreundliche Alternative für die Herstellung von Fenstern, die leicht und umweltfreundlich unter verschiedenen Wetterbedingungen sein müssen. Dies wird dazu beitragen, eine effiziente und zuverlässige Produktionslinie für dieses Produkt zu schaffen, indem sichergestellt wird, dass die Produktion umweltfreundlich ist und die Produkte von hoher Qualität sind. Die Zusammenarbeit wird auch die Entwicklung neuer und innovativer Technologien im Bereich der PVC_Fensterproduktion ermöglichen.",
         "our-partners": "Unsere Partner"
       },
-
       "contact": {
         "contact_us": "Kontaktiere uns",
         "do_you_have_any_questions": "Haben Sie Fragen?",
@@ -194,6 +215,18 @@
         "who_are_we_desc": "Das spezialisierte Unternehmen für die Herstellung von Türen, Fenstern und Fassaden Gazi, in Gjilan, ist ein Unternehmen, das 1995 gegründet wurde und als solches seit 25 Jahren erfolgreich mit einem professionellen Personal und den modernsten Maschinen tätig ist.",
         "our_products": "Unsere Produkte",
         "our_products_desc": "In unseren modernen Fabriken produzieren wir alle Arten und Formate von Türen und Fenstern mit Profilen, die die neuesten und hochentwickelten Entwicklungen darstellen. Das Besondere an unserem Unternehmen ist, dass wir die Herstellung und Isolierung selbst durchführen, wobei das Material von weltweit renommierten Herstellern stammt. Neben diesen Produkten stellen wir auch strukturelle und halbstrukturierte Fassaden aus dem Material ALUMIL her. Bei uns finden Sie auch Zylinder aller Art sowie hochwertigste Regenwasser."
+      },
+      "synego": {
+        "synego-dsp": "Profile aus der SYNEGO-Reihe werden als ideale Lösung für diejenigen erstellt, die ihre Fensterprobleme einmal und für alle lösen möchten. SYNEGO-Fenster sind das perfekte Sparprogramm. Im Vergleich zu aktuellen Standardfenstern bietet SYNEGO bis zu 50% mehr Wärmedämmung. Zu Hause zu sein bedeutet: Sicherheit, Komfort, Ruhe und Privatsphäre. Dank der SYNEGO-Fenster können Sie ein solches Erlebnis zu Hause haben.",
+        "synego-window": "SYNEGO-Fenster",
+        "synego-window-p1": "Mehr Platz im Raum, da Sie das SYNEGO-System mit zwei Isolierungsoptionen ausstatten können.",
+        "synego-window-p2": "Breites Spektrum von Profilen",
+        "synego-window-p3": "Erhältlich in allen Farben und mit dem neuen laminierten Glasinterieur KALEIDO VISION",
+        "synego-window-p4": "Recyclebar und umweltfreundlich",
+        "synego-brilliant": "Fenster mit Brillantem Design",
+        "synego-brilliant-p1": "Mehr Platz im Raum dank der gleichen Verstärkungen für Rahmen und Streifen",
+        "synego-brilliant-p2": "Gute statische Eigenschaften",
+        "synego-brilliant-p3": "Erhältlich in allen KALEIDO COLOR-Farben außer KALEIDO VISION"
       }
     }
   },
@@ -209,7 +242,7 @@
         "projects": "Projets",
         "rehau": "Rehau",
         "synego": "Synego",
-        "prod-sec":"Secteur de production",
+        "prod-sec": "Secteur de production",
         "showroom": "Salle d'exposition",
         "years_of_experience": "Années d'expérience",
         "we_build_everything_that_you_need": "Nous construisons tout ce dont vous avez besoin",
@@ -228,7 +261,6 @@
         "gazi_rehau_section": "La collaboration avec Rehau pour l'utilisation de produits tels que Syngeu, Geneodhe Artego favorisera la production de fenêtres en PVC. Ces produits offrent une alternative de qualité et respectueuse de l'environnement pour la fabrication de fenêtres qui doivent être légères et durables dans des conditions météorologiques variées. Cela contribuera à la création d'une ligne de production efficace et fiable pour ce produit, en veillant à ce que la production soit respectueuse de l'environnement et que les produits soient de haute qualité. La collaboration permettra également le développement de nouvelles technologies innovantes dans le domaine de la production de fenêtres en PVC.",
         "our-partners": "Nos partenaires"
       },
-
       "contact": {
         "contact_us": "Contactez nous",
         "do_you_have_any_questions": "Avez-vous des questions?",
@@ -260,6 +292,18 @@
         "who_are_we_desc": "La société spécialisée dans la production de portes, fenêtres et façades Gazi, à Gjilan, est une société fondée en 1995 et qui, en tant que telle, opère avec succès depuis 25 ans avec un personnel professionnel et les machines les plus modernes.",
         "our_products": "Nos produits",
         "our_products_desc": "Dans nos usines modernes, nous produisons toutes sortes de portes et fenêtres avec des profils qui représentent les dernières avancées et sont très perfectionnés. Ce qui distingue notre entreprise, c'est que nous réalisons nous_mêmes le traitement des profilés et leur isolation, avec des matériaux provenant de fabricants mondialement reconnus. En plus de ces produits, nous fabriquons également des façades structurales et semi_structurales en utilisant le matériau ALUMIL. Chez nous, vous trouverez également des cylindres de toutes sortes ainsi que des eaux pluviales de la plus haute qualité."
+      },
+      "synego": {
+        "synego-dsp": "Les profils de la gamme SYNEGO sont créés comme une solution idéale pour ceux qui veulent résoudre une fois pour toutes leurs problèmes de fenêtres. Les fenêtres SYNEGO sont le programme idéal d'économie. Comparées aux fenêtres standards actuelles, les fenêtres SYNEGO offrent jusqu'à 50% d'isolation thermique en plus. Être chez soi signifie : sécurité, confort, tranquillité et intimité. Grâce aux fenêtres SYNEGO, vous pouvez avoir une telle expérience à la maison.",
+        "synego-window": "Fenêtres SYNEGO",
+        "synego-window-p1": "Plus d'espace dans la pièce, car vous pouvez équiper le système SYNEGO de deux options d'isolation.",
+        "synego-window-p2": "Large gamme de profils",
+        "synego-window-p3": "Disponible dans toutes les couleurs et avec le nouveau vitrage intérieur en verre laminé KALEIDO VISION",
+        "synego-window-p4": "Recyclable et respectueux de l'environnement",
+        "synego-brilliant": "Fenêtres au Design Brillant",
+        "synego-brilliant-p1": "Plus d'espace dans la pièce grâce aux mêmes renforcements pour le cadre et la bande",
+        "synego-brilliant-p2": "Bonne propriétés statiques",
+        "synego-brilliant-p3": "Disponible dans toutes les couleurs KALEIDO COLOR sauf KALEIDO VISION"
       }
     }
   }
