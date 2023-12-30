@@ -10,6 +10,7 @@ import { ArrowDropDown } from '@mui/icons-material';
 import { MenuLinks } from './MenuLinks';
 import MenuIcon from '@mui/icons-material/Menu';
 import { DropdownMenu } from './DropdownMenu';
+import { useIsMobile } from '../../hooks/useIsMobile';
 
 export interface MenuLink {
   path: string;
@@ -36,9 +37,13 @@ const getLocalStorageLanguage = () => {
 export const NavLinks = ({ menuLinks }: NavLinks) => {
   const [language, setLanguage] = useState<Language>(getLocalStorageLanguage());
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [mobileActiveDropdown, setMobileActiveDropdown] = useState<
+    string | null
+  >(null);
   const navigate = useNavigate();
   const { drawer, toggleDrawer } = useDrawer();
   const { changeLanguage } = useTranslations();
+  const isMobile = useIsMobile();
 
   const handleLanguageChange = (event: SelectChangeEvent<string>) => {
     const selectedLanguage = event.target.value as Language;
@@ -52,7 +57,17 @@ export const NavLinks = ({ menuLinks }: NavLinks) => {
       return (
         <div key={link.path}>
           <ActionListItem
-            onClick={() => setActiveDropdown(link.path)}
+            onClick={() => {
+              if (isMobile) {
+                setMobileActiveDropdown(prev =>
+                  prev === link.path ? null : link.path
+                );
+              } else {
+                setActiveDropdown(prev =>
+                  prev === link.path ? null : link.path
+                );
+              }
+            }}
             id={`button-${link.path}`}
           >
             {link.label}
@@ -62,6 +77,7 @@ export const NavLinks = ({ menuLinks }: NavLinks) => {
             link={link}
             activeDropdown={activeDropdown}
             setActiveDropdown={setActiveDropdown}
+            mobileActiveDropdown={mobileActiveDropdown}
           />
         </div>
       );
@@ -156,6 +172,8 @@ export const ActionListItem = styled.li`
   font-weight: 700;
   color: #d42539;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 
   @media (max-width: 768px) {
     padding: 1rem 0;
