@@ -19,7 +19,7 @@ export const ContactForm = () => {
   const { t, translations } = useTranslations();
 
   const handleFormSubmit = handleSubmit((data: ContactForm) => {
-    console.log(data);
+    //code will be here
   });
 
   return (
