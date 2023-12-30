@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import AboutProductsImage from '../../assets/images/rehau4.jpg';
 import { Button } from '../../shared/components/Button';
 import { generatePath, useNavigate } from 'react-router';
 import { useTranslations } from '../../hooks/useTranslations';
@@ -9,7 +8,7 @@ export const AboutProducts = () => {
   const { t, translations } = useTranslations();
 
   return (
-    <Section sectionImage={AboutProductsImage}>
+    <Section sectionImage="https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893517/rehau4_uoykzd.jpg">
       <AboutProductsHeading>
         {t(translations.about.our_products)}
       </AboutProductsHeading>

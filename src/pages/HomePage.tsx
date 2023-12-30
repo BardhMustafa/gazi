@@ -15,9 +15,7 @@ import { Button } from '../shared/components/Button';
 import { generatePath } from 'react-router';
 import { CardsWithBackground } from '../shared/components/CardsWithBackground';
 import ProductsBackground from '../assets/images/homepage-products.jpg';
-import Dritare from '../assets/images/dritare.jpg';
-import Dyer from '../assets/images/dyer.jpg';
-import Rolete from '../assets/images/rolete.jpg';
+
 import Alumil from '../assets/alumil.png';
 import Wurth from '../assets/wurth.png';
 import Rehau from '../assets/rehau.png';
@@ -28,19 +26,22 @@ const HomePage = () => {
     {
       id: 1,
       title: t(translations.common.window),
-      imagePath: Dritare,
+      imagePath:
+        'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893516/dritare_zuosm2.jpg',
       imageAlt: t(translations.common.window),
     },
     {
       id: 2,
       title: t(translations.common.door),
-      imagePath: Dyer,
+      imagePath:
+        'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703894715/pic6_c2z1c0.jpg',
       imageAlt: t(translations.common.door),
     },
     {
       id: 3,
       title: t(translations.common.blinds),
-      imagePath: Rolete,
+      imagePath:
+        'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893519/rolete_hsmxxh.jpg',
       imageAlt: t(translations.common.blinds),
     },
   ];

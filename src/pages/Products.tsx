@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-import ProductImagePath from '../assets/images/product.png';
 import { generatePath, useNavigate } from 'react-router';
+import { cld } from '../App';
+import { AdvancedImage } from '@cloudinary/react';
 
 const Products = () => {
   const navigate = useNavigate();
@@ -18,7 +19,10 @@ const Products = () => {
               reiciendis similique temporibus quidem?
             </ProductDescription>
             <ProductImageContainer>
-              <ProductImage src={ProductImagePath} alt="product" />
+              <ProductImage
+                cldImg={cld.image('product_ajeke0')}
+                alt="product"
+              />
             </ProductImageContainer>
           </Product>
           <Product onClick={() => navigate(generatePath('/products/alumin'))}>
@@ -30,7 +34,10 @@ const Products = () => {
               reiciendis similique temporibus quidem?
             </ProductDescription>
             <ProductImageContainer>
-              <ProductImage src={ProductImagePath} alt="product" />
+              <ProductImage
+                cldImg={cld.image('product_ajeke0')}
+                alt="product"
+              />
             </ProductImageContainer>
           </Product>
         </ProductsContainer>
@@ -94,7 +101,7 @@ const ProductDescription = styled.p`
   color: #4e4e4e;
 `;
 
-const ProductImage = styled.img`
+const ProductImage = styled(AdvancedImage)`
   width: 70%;
   mix-blend-mode: multiply;
 `;
