@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import styled from 'styled-components';
 
@@ -6,11 +7,14 @@ interface PageHeroProps {
   backgroundImagePath: string;
 }
 
-const portalRoot = document.getElementById(
-  'page-hero-container'
-) as HTMLElement;
-
 export const PageHero = ({ title, backgroundImagePath }: PageHeroProps) => {
+  const [portalRoot, setPortalRoot] = useState<HTMLElement | null>(null);
+
+  useEffect(() => {
+    const root = document.getElementById('page-hero-container') as HTMLElement;
+    setPortalRoot(root);
+  }, []);
+
   if (portalRoot) {
     return createPortal(
       <Container bgImage={backgroundImagePath}>
