@@ -12,31 +12,31 @@ const Synego = () => {
   const synego1 = {
     data: [
       {
-        key: 'Gjerësia e kornizës / shiritit ballor',
+        key: t(translations.synego['general-table-key1']),
         value: '94 mm deri në 175 mm',
       },
       {
-        key: 'Gjerësia e mekanizmit mbyllës',
+        key: t(translations.synego['general-table-key2']),
         value: '114 mm deri në 218 mm',
       },
       {
-        key: 'Thellësia',
+        key: t(translations.synego['general-table-key3']),
         value: '80mm',
       },
       {
-        key: 'Numri i dhomave',
+        key: t(translations.synego['general-table-key4']),
         value: '7/6',
       },
       {
-        key: 'Trashësia',
+        key: t(translations.synego['general-table-key5']),
         value: 'maksimale 51 mm',
       },
       {
-        key: 'Sisteme izolimi',
+        key: t(translations.synego['general-table-key6']),
         value: 'AD: 2 izolues ndalues MD: 2 izolues ndalues,1 izolim qendror',
       },
       {
-        key: 'Dizajn profili',
+        key: t(translations.synego['general-table-key7']),
         value:
           'Krahë me sipërfaqe të zhvendosur, gjysmë krah me krah të rrumbullakët',
       },
@@ -44,26 +44,26 @@ const Synego = () => {
   };
   const synego2 = {
     data: [
-      { key: 'Izolimi termik Uf', value: '	deri në 0,94 W/m²K' },
-      { key: 'Izolimi akustik Rw', value: '	deri në 47 dB' },
+      { key: t(translations.synego['characteristic-table-key1']), value: '	deri në 0,94 W/m²K' },
+      { key: t(translations.synego['characteristic-table-key2']), value: '	deri në 47 dB' },
       {
-        key: 'Rezistenca ndaj vjedhjeve (EN 1627)',
+        key: t(translations.synego['characteristic-table-key3']),
         value: 'deri në RC3',
       },
       {
-        key: 'Rezistenca ndaj erës (EN 12210)',
+        key: t(translations.synego['characteristic-table-key4']),
         value: 'B5',
       },
       {
-        key: 'Papërshkueshmëria ndaj shiut me erë (EN 12208)',
+        key: t(translations.synego['characteristic-table-key5']),
         value: '9A',
       },
       {
-        key: 'Përshkueshmëria e ajrit (EN 12207)',
+        key: t(translations.synego['characteristic-table-key6']),
         value: '4',
       },
       {
-        key: 'Operatorët (EN 13115)',
+        key: t(translations.synego['characteristic-table-key7']),
         value: '2',
       },
     ],
@@ -71,31 +71,31 @@ const Synego = () => {
   const synego3 = {
     data: [
       {
-        key: 'Gjerësia e kornizës / shiritit ballor',
+        key:  t(translations.synego['general-table-key1']),
         value: '88 deri në 177 mm'
       },
       {
-        key: 'Gjerësia e mekanizmit mbyllës',
+        key:  t(translations.synego['general-table-key2']),
         value: '124 mm deri në 220 mm',
       },
       {
-        key: 'Thellësia',
+        key: t(translations.synego['general-table-key3']),
         value: '70 mm',
       },
       {
-        key: 'Numri i dhomave',
+        key: t(translations.synego['general-table-key4']),
         value: '5',
       },
       {
-        key: 'Trashësia',
+        key: t(translations.synego['general-table-key5']),
         value: 'maksimale 41 mm',
       },
       {
-        key: 'Sisteme izolimi',
+        key: t(translations.synego['general-table-key6']),
         value: '2 izolues ndalues',
       },
       {
-        key: 'Dizajn profili',
+        key: t(translations.synego['general-table-key7']),
         value:
           'Krahë me sipërfaqe të zhvendosur, gjysmë krah me krah të rrumbullakët',
       },
@@ -103,26 +103,26 @@ const Synego = () => {
   };
   const synego4 = {
     data: [
-      { key: 'Izolimi termik Uf', value: '	deri në 1.3 W/m²K' },
-      { key: 'Izolimi akustik Rw', value: '	deri në 45 dB' },
+      { key: t(translations.synego['characteristic-table-key1']), value: '	deri në 1.3 W/m²K' },
+      { key:  t(translations.synego['characteristic-table-key2']), value: '	deri në 45 dB' },
       {
-        key: 'Rezistenca ndaj vjedhjeve (EN 1627)',
+        key:  t(translations.synego['characteristic-table-key3']),
         value: 'deri në RC3',
       },
       {
-        key: 'Rezistenca ndaj erës (EN 12210)',
+        key:  t(translations.synego['characteristic-table-key4']),
         value: 'B5',
       },
       {
-        key: 'Papërshkueshmëria ndaj shiut me erë (EN 12208)',
+        key:  t(translations.synego['characteristic-table-key5']),
         value: '9A',
       },
       {
-        key: 'Përshkueshmëria e ajrit (EN 12207)',
+        key:  t(translations.synego['characteristic-table-key6']),
         value: '4',
       },
       {
-        key: 'Operatorët (EN 13115)',
+        key:  t(translations.synego['characteristic-table-key7']),
         value: '1',
       },
     ],

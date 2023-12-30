@@ -73,7 +73,23 @@
         "synego-brilliant": "Dritare me Brillant Design",
         "synego-brilliant-p1": "Më shumë hapësirë ​​në magazinë falë përforcimeve të njëjtave për kornizën dhe shiritin",
         "synego-brilliant-p2": "Veti të mira statike",
-        "synego-brilliant-p3": "E disponueshme në të gjitha ngjyrat KALEIDO COLOR përveç KALEIDO VISION"
+        "synego-brilliant-p3": "E disponueshme në të gjitha ngjyrat KALEIDO COLOR përveç KALEIDO VISION",
+        "general-table": "Të përgjithshmet",
+        "general-table-key1": "Gjerësia e kornizës / shiritit ballor",
+        "general-table-key2": "Gjerësia e mekanizmit mbyllës",
+        "general-table-key3": "Thellësia",
+        "general-table-key4": "Numri i dhomave",
+        "general-table-key5": "Trashësia",
+        "general-table-key6": "Sisteme izolimi",
+        "general-table-key7": "Dizajn profili",
+        "characteristic-table": "Karakteristikat",
+        "characteristic-table-key1": "Izolimi termik Uf",
+        "characteristic-table-key2": "Izolimi akustik Rw",
+        "characteristic-table-key3": "Rezistenca ndaj erës (EN 12210)",
+        "characteristic-table-key4": "Rezistenca ndaj vjedhjeve (EN 1627)",
+        "characteristic-table-key5": "Papërshkueshmëria ndaj shiut me erë (EN 12208)",
+        "characteristic-table-key6": "Përshkueshmëria e ajrit (EN 12207)",
+        "characteristic-table-key7": "Operatorët (EN 13115)"
       }
     }
   },
@@ -151,7 +167,24 @@
         "synego-brilliant": "Brilliant Design Windows",
         "synego-brilliant-p1": "More space in the room thanks to the same reinforcements for the frame and strip",
         "synego-brilliant-p2": "Good static properties",
-        "synego-brilliant-p3": "Available in all KALEIDO COLOR colors except KALEIDO VISION"
+        "synego-brilliant-p3": "Available in all KALEIDO COLOR colors except KALEIDO VISION",
+        "general-table": "General Information",
+        "general-table-key1": "Frame/Sash Width",
+        "general-table-key2": "Closing Mechanism Width",
+        "general-table-key3": "Depth",
+        "general-table-key4": "Number of Rooms",
+        "general-table-key5": "Thickness",
+        "general-table-key6": "Insulation System",
+        "general-table-key7": "Profile Design",
+        "characteristic-table": "Characteristics",
+        "characteristic-table-key1": "Thermal Insulation Uf",
+        "characteristic-table-key2": "Acoustic Insulation Rw",
+        "characteristic-table-key3": "Wind Resistance (EN 12210)"
+,
+        "characteristic-table-key4": "Wind Resistance (EN 12210)",
+        "characteristic-table-key5": "Watertightness with Wind-Driven Rain (EN 12208)",
+        "characteristic-table-key6": "Air Permeability (EN 12207)",
+        "characteristic-table-key7": "Operators (EN 13115)"
       }
     }
   },
@@ -229,7 +262,23 @@
         "synego-brilliant": "Fenster mit Brillantem Design",
         "synego-brilliant-p1": "Mehr Platz im Raum dank der gleichen Verstärkungen für Rahmen und Streifen",
         "synego-brilliant-p2": "Gute statische Eigenschaften",
-        "synego-brilliant-p3": "Erhältlich in allen KALEIDO COLOR-Farben außer KALEIDO VISION"
+        "synego-brilliant-p3": "Erhältlich in allen KALEIDO COLOR-Farben außer KALEIDO VISION",
+        "general-table": "Allgemeine Informationen",
+        "general-table-key1": "Rahmen-/Flügelbreite",
+        "general-table-key2": "Breite des Schließmechanismus",
+        "general-table-key3": "Tiefe",
+        "general-table-key4": "Anzahl der Zimmer",
+        "general-table-key5": "Dicke",
+        "general-table-key6": "Isoliersystem",
+        "general-table-key7": "Profil Design",
+        "characteristic-table": "Eigenschaften",
+        "characteristic-table-key1": "Wärmedämmung Uf",
+        "characteristic-table-key2": "Schalldämmung Rw",
+        "characteristic-table-key3": "Windwiderstand (EN 12210)",
+        "characteristic-table-key4": "Windwiderstand (EN 12210)",
+        "characteristic-table-key5": "Wasserdichtigkeit bei windgetriebenem Regen (EN 12208)",
+        "characteristic-table-key6": "Luftdurchlässigkeit (EN 12207)",
+        "characteristic-table-key7": "Betätiger (EN 13115)"
       }
     }
   },
@@ -307,7 +356,24 @@
         "synego-brilliant": "Fenêtres au Design Brillant",
         "synego-brilliant-p1": "Plus d'espace dans la pièce grâce aux mêmes renforcements pour le cadre et la bande",
         "synego-brilliant-p2": "Bonne propriétés statiques",
-        "synego-brilliant-p3": "Disponible dans toutes les couleurs KALEIDO COLOR sauf KALEIDO VISION"
+        "synego-brilliant-p3": "Disponible dans toutes les couleurs KALEIDO COLOR sauf KALEIDO VISION",
+        "general-table": "Informations Générales",
+        "general-table-key1": "Largeur du Cadre/Battant",
+        "general-table-key2": "Largeur du Mécanisme de Fermeture",
+        "general-table-key3": "Profondeur",
+        "general-table-key4": "Nombre de Pièces",
+        "general-table-key5": "Épaisseur",
+        "general-table-key6": "Système d'Isolation",
+        "general-table-key7": "Design du Profil",
+        "characteristic-table": "Caractéristiques",
+        "characteristic-table-key1": "Isolation Thermique Uf",
+        "characteristic-table-key2": "Isolation Acoustique Rw",
+        "characteristic-table-key3": "Résistance au Vent (EN 12210)"
+,
+        "characteristic-table-key4": "Résistance au Vent (EN 12210)",
+        "characteristic-table-key5": "Étanchéité à la Pluie Battante avec Vent (EN 12208)",
+        "characteristic-table-key6": "Perméabilité à l'Air (EN 12207)",
+        "characteristic-table-key7": "Opérateurs (EN 13115)"
       }
     }
   }
