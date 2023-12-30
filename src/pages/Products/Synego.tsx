@@ -44,11 +44,11 @@ const Synego = () => {
   };
   const synego2 = {
     data: [
-      { key: t(translations.synego['characteristic-table-key1']), value: '	deri në 0,94 W/m²K' },
-      { key: t(translations.synego['characteristic-table-key2']), value: '	deri në 47 dB' },
+      { key: t(translations.synego['characteristic-table-key1']), value: t(translations.synego['characteristic-table1-value1']) },
+      { key: t(translations.synego['characteristic-table-key2']), value: t(translations.synego['characteristic-table1-value2']) },
       {
         key: t(translations.synego['characteristic-table-key3']),
-        value: 'deri në RC3',
+        value: t(translations.synego['characteristic-table1-value3']),
       },
       {
         key: t(translations.synego['characteristic-table-key4']),
@@ -72,15 +72,15 @@ const Synego = () => {
     data: [
       {
         key:  t(translations.synego['general-table-key1']),
-        value: '88 deri në 177 mm'
+        value: t(translations.synego['general-table2-value1'])
       },
       {
         key:  t(translations.synego['general-table-key2']),
-        value: '124 mm deri në 220 mm',
+        value: t(translations.synego['general-table2-value2'])
       },
       {
         key: t(translations.synego['general-table-key3']),
-        value: '70 mm',
+        value: t(translations.synego['general-table2-value3'])
       },
       {
         key: t(translations.synego['general-table-key4']),
@@ -88,26 +88,25 @@ const Synego = () => {
       },
       {
         key: t(translations.synego['general-table-key5']),
-        value: 'maksimale 41 mm',
+        value: t(translations.synego['general-table2-value5'])
       },
       {
         key: t(translations.synego['general-table-key6']),
-        value: '2 izolues ndalues',
+        value: t(translations.synego['general-table2-value6'])
       },
       {
         key: t(translations.synego['general-table-key7']),
-        value:
-          'Krahë me sipërfaqe të zhvendosur, gjysmë krah me krah të rrumbullakët',
+        value:t(translations.synego['general-table2-value7'])
       },
     ],
   };
   const synego4 = {
     data: [
-      { key: t(translations.synego['characteristic-table-key1']), value: '	deri në 1.3 W/m²K' },
-      { key:  t(translations.synego['characteristic-table-key2']), value: '	deri në 45 dB' },
+      { key: t(translations.synego['characteristic-table-key1']), value: t(translations.synego['characteristic-table2-value1'])},
+      { key:  t(translations.synego['characteristic-table-key2']), value: t(translations.synego['characteristic-table2-value2']) },
       {
         key:  t(translations.synego['characteristic-table-key3']),
-        value: 'deri në RC3',
+        value: t(translations.synego['characteristic-table2-value3']),
       },
       {
         key:  t(translations.synego['characteristic-table-key4']),
@@ -115,7 +114,7 @@ const Synego = () => {
       },
       {
         key:  t(translations.synego['characteristic-table-key5']),
-        value: '9A',
+        value: '9A', 
       },
       {
         key:  t(translations.synego['characteristic-table-key6']),

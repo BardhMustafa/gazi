@@ -96,6 +96,12 @@
         "general-table-value5": "maksimale 51mm",
         "general-table-value6": "AD: 2 izolues ndalues MD: 2 izolues ndalues,1 izolim qendror",
         "general-table-value7": "Krahë me sipërfaqe të zhvendosur, gjysmë krah me krah të rrumbullakët",
+        "general-table2-value1": "88 deri në 177mm",
+        "general-table2-value2": "124 mm deri në 220 mm",
+        "general-table2-value3": "70mm",
+        "general-table2-value5": "maksimale 41mm",
+        "general-table2-value6": "2 izloues ndalues",
+        "general-table2-value7": "'Krahë me sipërfaqe të zhvendosur, gjysmë krah me krah të rrumbullakët",
         "characteristic-table": "Karakteristikat",
         "characteristic-table-key1": "Izolimi termik Uf",
         "characteristic-table-key2": "Izolimi akustik Rw",
@@ -103,7 +109,13 @@
         "characteristic-table-key4": "Rezistenca ndaj vjedhjeve (EN 1627)",
         "characteristic-table-key5": "Papërshkueshmëria ndaj shiut me erë (EN 12208)",
         "characteristic-table-key6": "Përshkueshmëria e ajrit (EN 12207)",
-        "characteristic-table-key7": "Operatorët (EN 13115)"
+        "characteristic-table-key7": "Operatorët (EN 13115)",
+        "characteristic-table1-value1": "deri në 0,94 W/m2K",
+        "characteristic-table1-value2": "deri në 47 dB",
+        "characteristic-table1-value3": "deri në RC3",
+        "characteristic-table2-value1": "deri në 1.3 W/m2K",
+        "characteristic-table2-value2": "deri në 45 dB",
+        "characteristic-table2-value3": "deri në RC3"
       }
     }
   },
@@ -201,6 +213,13 @@
         "general-table-value5": "maximum 51mm",
         "general-table-value6": "AD: 2 isolating barriers MD: 2 isolating barriers, 1 central insulation",
         "general-table-value7": "Arms with displaced surface, half arms with rounded edges",
+        "general-table2-value1": "88 mm to 177 mm",
+        "general-table2-value2": "124 mm to 220 mm",
+        "general-table2-value3": "70mm",
+        "general-table2-value5": "maximum 41mm",
+        "general-table2-value6": "2 isolating barriers",
+        "general-table2-value7": "Arms with displaced surface, half arms with rounded edges",
+
         "characteristic-table": "Characteristics",
         "characteristic-table-key1": "Thermal Insulation Uf",
         "characteristic-table-key2": "Acoustic Insulation Rw",
@@ -208,7 +227,13 @@
         "characteristic-table-key4": "Wind Resistance (EN 12210)",
         "characteristic-table-key5": "Watertightness with Wind-Driven Rain (EN 12208)",
         "characteristic-table-key6": "Air Permeability (EN 12207)",
-        "characteristic-table-key7": "Operators (EN 13115)"
+        "characteristic-table-key7": "Operators (EN 13115)",
+        "characteristic-table1-value1": "up to 0,94 W/m2K",
+        "characteristic-table1-value2": "up to 47 dB",
+        "characteristic-table1-value3": "up to RC3",
+        "characteristic-table2-value1": "up to 1.3 W/m2K",
+        "characteristic-table2-value2": "up to 45 dB",
+        "characteristic-table2-value3": "up to RC3"
       }
     }
   },
@@ -306,7 +331,12 @@
         "general-table-value5": "maximal 51mm",
         "general-table-value6": "AD: 2 isolierende Barrieren MD: 2 isolierende Barrieren, 1 zentrale Isolierung",
         "general-table-value7": "Arme mit verschobener Oberfläche, halbe Arme mit abgerundeten Kanten",
-
+        "general-table2-value1": "88 mm bis 177 mm",
+        "general-table2-value2": "124 mm bis 220 mm",
+        "general-table2-value3": "70mm",
+        "general-table2-value5": "maximal 41mm",
+        "general-table2-value6": "2 isolierende Barrieren",
+        "general-table2-value7": "Arme mit verschobener Oberfläche, halbe Arme mit abgerundeten Kanten",
         "characteristic-table": "Eigenschaften",
         "characteristic-table-key1": "Wärmedämmung Uf",
         "characteristic-table-key2": "Schalldämmung Rw",
@@ -314,7 +344,13 @@
         "characteristic-table-key4": "Windwiderstand (EN 12210)",
         "characteristic-table-key5": "Wasserdichtigkeit bei windgetriebenem Regen (EN 12208)",
         "characteristic-table-key6": "Luftdurchlässigkeit (EN 12207)",
-        "characteristic-table-key7": "Betätiger (EN 13115)"
+        "characteristic-table-key7": "Betätiger (EN 13115)",
+        "characteristic-table2-value1": "bis zu 1,3 W/m2K",
+        "characteristic-table2-value2": "bis zu 45 dB",
+        "characteristic-table2-value3": "bis zu RC3",
+        "characteristic-table1-value1": "bis zu 0,94 W/m2K",
+        "characteristic-table1-value2": "bis zu 47 dB",
+        "characteristic-table1-value3": "bis zu RC3"
       }
     }
   },
@@ -412,6 +448,12 @@
         "general-table-value5": "maximum 51mm",
         "general-table-value6": "AD : 2 barrières isolantes MD : 2 barrières isolantes, 1 isolation centrale",
         "general-table-value7": "Bras avec surface déplacée, demi-bras avec bords arrondis",
+        "general-table2-value1": "88 mm à 177 mm",
+        "general-table2-value2": "124 mm à 220 mm",
+        "general-table2-value3": "70mm",
+        "general-table2-value5": "maximum 41mm",
+        "general-table2-value6": "2 barrières isolantes",
+        "general-table2-value7": "Bras avec surface déplacée, demi-bras avec bords arrondis",
         "characteristic-table": "Caractéristiques",
         "characteristic-table-key1": "Isolation Thermique Uf",
         "characteristic-table-key2": "Isolation Acoustique Rw",
@@ -419,7 +461,13 @@
         "characteristic-table-key4": "Résistance au Vent (EN 12210)",
         "characteristic-table-key5": "Étanchéité à la Pluie Battante avec Vent (EN 12208)",
         "characteristic-table-key6": "Perméabilité à l'Air (EN 12207)",
-        "characteristic-table-key7": "Opérateurs (EN 13115)"
+        "characteristic-table-key7": "Opérateurs (EN 13115)",
+        "characteristic-table1-value1": "jusqu'à 0,94 W/m2K",
+        "characteristic-table1-value2": "jusqu'à 47 dB",
+        "characteristic-table1-value3": "jusqu'à RC3",
+        "characteristic-table2-value1": "jusqu'à 1,3 W/m2K",
+        "characteristic-table2-value2": "jusqu'à 45 dB",
+        "characteristic-table2-value3": "jusqu'à RC3"
       }
     }
   }
