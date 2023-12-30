@@ -25,7 +25,8 @@
         "facade": "Fasada",
         "blinds": "Rolete",
         "all_rights_reserved": "Të gjitha të drejtat e rezervuara",
-        "see_more": "Shiko më shumë"
+        "see_more": "Shiko më shumë",
+        "products_that_we_offer": "Disa nga produktet që ne ofrojmë"
       },
       "homepage": {
         "first_section_content": "Në fabrikat tona mjaft bashkëkohore prodhojmë te gjitha llojet dhe format e dyerve dhe dritareve me profile te cilat jane zbulimet e fundit dhe tejet te persosura. E veçante e kompanise sone shte se ne e bejme vete perpunimin e hamit dhe izolimin e tyre, material i cili vie te ne nga prodhues eminente botrore. Perveç këtyre produkteve, ne gjithashtu prodhojmë edhe fasada strukturale dhe gjysmë-strukturale nga materiali  ALUMIL",
@@ -120,7 +121,8 @@
         "facade": "Facade",
         "blinds": "Blinds",
         "all_rights_reserved": "All rights reserved",
-        "see_more": "See More"
+        "see_more": "See More",
+        "products_that_we_offer": "Products That We Offer"
       },
       "homepage": {
         "first_section_content": "In our modern factories, we produce all types and formats of doors and windows with profiles that are the latest and highly perfected developments. The unique feature of our company is that we handle the processing and insulation ourselves, using materials sourced from renowned global manufacturers. In addition to these products, we also manufacture structural and semi_structural facades using the material ALUMIL.",
@@ -181,8 +183,7 @@
         "characteristic-table": "Characteristics",
         "characteristic-table-key1": "Thermal Insulation Uf",
         "characteristic-table-key2": "Acoustic Insulation Rw",
-        "characteristic-table-key3": "Wind Resistance (EN 12210)"
-,
+        "characteristic-table-key3": "Wind Resistance (EN 12210)",
         "characteristic-table-key4": "Wind Resistance (EN 12210)",
         "characteristic-table-key5": "Watertightness with Wind-Driven Rain (EN 12208)",
         "characteristic-table-key6": "Air Permeability (EN 12207)",
@@ -216,7 +217,8 @@
         "facade": "Fassade",
         "blinds": "Rollos",
         "all_rights_reserved": "Alle Rechte vorbehalten",
-        "see_more": "Mehr sehen"
+        "see_more": "Mehr sehen",
+        "products_that_we_offer": "Produkte, die wir anbieten"
       },
       "homepage": {
         "first_section_content": "In unseren modernen Fabriken produzieren wir alle Arten und Formate von Türen und Fenstern mit Profilen, die die neuesten und perfektionierten Entwicklungen darstellen. Das Besondere an unserem Unternehmen ist, dass wir die Herstellung und Isolierung selbst durchführen, wobei das Material von weltweit renommierten Herstellern stammt. Neben diesen Produkten stellen wir auch strukturelle und halbstrukturierte Fassaden aus dem Material ALUMIL her.",
@@ -311,7 +313,8 @@
         "facade": "Façade",
         "blinds": "Stores",
         "all_rights_reserved": "Tous les droits sont réservés",
-        "see_more": "Voir plus"
+        "see_more": "Voir plus",
+        "products_that_we_offer": "Produits que nous offrons"
       },
       "homepage": {
         "first_section_content": "Dans nos usines modernes, nous produisons toutes sortes de portes et fenêtres avec des profils qui représentent les dernières avancées et sont très perfectionnés. Ce qui distingue notre entreprise, c'est que nous réalisons nous_mêmes le traitement des profilés et leur isolation, avec des matériaux provenant de fabricants mondialement reconnus. En plus de ces produits, nous fabriquons également des façades structurales et semi_structurales en utilisant le matériau ALUMIL.",
@@ -372,8 +375,7 @@
         "characteristic-table": "Caractéristiques",
         "characteristic-table-key1": "Isolation Thermique Uf",
         "characteristic-table-key2": "Isolation Acoustique Rw",
-        "characteristic-table-key3": "Résistance au Vent (EN 12210)"
-,
+        "characteristic-table-key3": "Résistance au Vent (EN 12210)",
         "characteristic-table-key4": "Résistance au Vent (EN 12210)",
         "characteristic-table-key5": "Étanchéité à la Pluie Battante avec Vent (EN 12208)",
         "characteristic-table-key6": "Perméabilité à l'Air (EN 12207)",

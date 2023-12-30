@@ -41,7 +41,9 @@ export const HomeProducts = () => {
 
   return (
     <Section sectionImage="https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893515/homepage-products_lleo9h.jpg">
-      <SectionHeading>Disa nga produktet qe ne ofrojme</SectionHeading>
+      <SectionHeading>
+        {t(translations.common.products_that_we_offer)}
+      </SectionHeading>
       <Boxes>
         {products?.map(box => (
           <Box key={box.id} image={box.imagePath}>
