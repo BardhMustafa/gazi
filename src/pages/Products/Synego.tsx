@@ -4,8 +4,70 @@ import { Paragraph } from '../../shared/components/Paragraph';
 import { useTranslations } from '../../hooks/useTranslations';
 import styled from 'styled-components';
 import Typography from '@mui/material/Typography';
+import CustomizedTables from '../../components/Table/Table';
+import { Heading2 } from '../../shared/components/Heading2';
+
 const Synego = () => {
   const { t, translations } = useTranslations();
+  const synego1 = {
+    data: [
+      {
+        key: 'Gjerësia e kornizës / shiritit ballor',
+        value: '94 mm deri në 175 mm',
+      },
+      {
+        key: 'Gjerësia e mekanizmit mbyllës',
+        value: '114 mm deri në 218 mm',
+      },
+      {
+        key: 'Thellësia',
+        value: '80mm',
+      },
+      {
+        key: 'Numri i dhomave',
+        value: '7/6',
+      },
+      {
+        key: 'Trashësia',
+        value: 'maksimale 51 mm',
+      },
+      {
+        key: 'Sisteme izolimi',
+        value: 'AD: 2 izolues ndalues MD: 2 izolues ndalues,1 izolim qendror',
+      },
+      {
+        key: 'Dizajn profili',
+        value:
+          'Krahë me sipërfaqe të zhvendosur, gjysmë krah me krah të rrumbullakët',
+      },
+    ],
+  };
+  const synego2 = {
+    data: [
+      { key: 'Izolimi termik Uf', value: '	deri në 0,94 W/m²K' },
+      { key: 'Izolimi akustik Rw', value: '	deri në 47 dB' },
+      {
+        key: 'Rezistenca ndaj vjedhjeve (EN 1627)',
+        value: 'deri në RC3',
+      },
+      {
+        key: 'Rezistenca ndaj erës (EN 12210)',
+        value: 'B5',
+      },
+      {
+        key: 'Papërshkueshmëria ndaj shiut me erë (EN 12208)',
+        value: '9A',
+      },
+      {
+        key: 'Përshkueshmëria e ajrit (EN 12207)',
+        value: '4',
+      },
+      {
+        key: 'Operatorët (EN 13115)',
+        value: '2',
+      },
+    ],
+  };
   return (
     <>
       <InfoSection title="Synego" imageSrc={SynegoPic} />
@@ -21,14 +83,12 @@ const Synego = () => {
             fontWeight={600}
           >
             {t(translations.synego['synego-window'])}
-           
           </Typography>
           <Paragraph>
             <li> {t(translations.synego['synego-window-p1'])}</li>
             <li> {t(translations.synego['synego-window-p2'])}</li>
             <li> {t(translations.synego['synego-window-p3'])}</li>
             <li> {t(translations.synego['synego-window-p4'])}</li>
-
           </Paragraph>
         </Product>
         <Product>
@@ -45,9 +105,13 @@ const Synego = () => {
             <li> {t(translations.synego['synego-brilliant-p1'])}</li>
             <li> {t(translations.synego['synego-brilliant-p2'])}</li>
             <li> {t(translations.synego['synego-brilliant-p3'])}</li>
-        
           </Paragraph>
         </Product>
+      </ProductsContainer>
+      <Typography variant='h1' fontFamily='poppins' align='center' marginTop={5}>Të dhënat teknike - Dritaret Synego</Typography>
+      <ProductsContainer>
+        <CustomizedTables title="Të pergjithshmet" data={synego1} />
+        <CustomizedTables title="Karakterisikat" data={synego2} />
       </ProductsContainer>
     </>
   );
