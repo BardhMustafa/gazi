@@ -1,7 +1,7 @@
 import Carousel from 'react-material-ui-carousel';
 import styled from 'styled-components';
 import { Box } from '@mui/system';
-import { Typography, Stack } from '@mui/material';
+import { Stack } from '@mui/material';
 import { Button } from '../../shared/components/Button';
 import { generatePath, useNavigate } from 'react-router';
 import { useTranslations } from '../../hooks/useTranslations';
@@ -41,16 +41,17 @@ const Slide2 = () => {
       flexDirection="column"
       alignItems="start"
       justifyContent="center"
-      style={{ backgroundColor: 'rgba(0,0,0,0.5)', paddingLeft: '10rem' }}
+      sx={{
+        backgroundColor: 'rgba(0,0,0,0.5)',
+        paddingLeft: '10rem',
+        '@media (max-width: 768px)': {
+          paddingLeft: '2rem',
+        },
+      }}
     >
-      <Typography
-        variant="h2"
-        fontFamily="Poppins"
-        fontSize="70px"
-        color="#fff"
-      >
+      <SliderHeading color="#fff">
         GAZI & <br></br> REHAU
-      </Typography>
+      </SliderHeading>
     </Box>
   );
 };
@@ -67,20 +68,20 @@ const Slide1 = () => {
       flexDirection="column"
       alignItems="start"
       justifyContent="center"
-      style={{ backgroundColor: 'rgba(0,0,0,0.5)', paddingLeft: '10rem' }}
+      sx={{
+        backgroundColor: 'rgba(0,0,0,0.5)',
+        paddingLeft: '10rem',
+        '@media (max-width: 768px)': {
+          paddingLeft: '2rem',
+        },
+      }}
     >
-      <Typography
-        variant="h2"
-        fontFamily="Poppins"
-        fontSize="70px"
-        color="#fff"
-        mb={2}
-      >
+      <SliderHeading>
         {t(translations.common.quality_products_first_word)}{' '}
         <span style={{ color: '#e91b37', fontWeight: 700 }}>
           {t(translations.common.quality_products_last_word)}
         </span>
-      </Typography>
+      </SliderHeading>
       <Stack direction="row" spacing={3}>
         <ProductsButton onClick={() => navigate(generatePath('/about-us'))}>
           {t(translations.common.aboutUs)}
@@ -102,16 +103,17 @@ const Slide3 = () => {
       flexDirection="column"
       alignItems="start"
       justifyContent="center"
-      style={{ backgroundColor: 'rgba(0,0,0,0.5)', paddingLeft: '10rem' }}
+      sx={{
+        backgroundColor: 'rgba(0,0,0,0.5)',
+        paddingLeft: '10rem',
+        '@media (max-width: 768px)': {
+          paddingLeft: '2rem',
+        },
+      }}
     >
-      <Typography
-        variant="h2"
-        fontFamily="Poppins"
-        fontSize="70px"
-        color="#fff"
-      >
+      <SliderHeading>
         GAZI & <br></br> REHAU
-      </Typography>
+      </SliderHeading>
     </Box>
   );
 };
@@ -130,4 +132,20 @@ const SlideShowContainer = styled.div<{ i: number }>`
 
 const ProductsButton = styled(Button)`
   font-weight: 600;
+
+  @media (max-width: 568px) {
+    padding: 1rem 2rem;
+  }
+`;
+
+const SliderHeading = styled.h1`
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+
+  @media (min-width: 768px) {
+    font-size: 6.5rem;
+  }
 `;
