@@ -13,38 +13,15 @@ import GridLayout from '../components/layout/Grid';
 import { Stack, Typography } from '@mui/material';
 import { Button } from '../shared/components/Button';
 import { generatePath } from 'react-router';
-import { CardsWithBackground } from '../shared/components/CardsWithBackground';
-import ProductsBackground from '../assets/images/homepage-products.jpg';
 
 import Alumil from '../assets/alumil.png';
 import Wurth from '../assets/wurth.png';
 import Rehau from '../assets/rehau.png';
+import { HomeProducts } from '../components/homepage/HomeProducts';
 
 const HomePage = () => {
   const { t, translations } = useTranslations();
-  const products = [
-    {
-      id: 1,
-      title: t(translations.common.window),
-      imagePath:
-        'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893516/dritare_zuosm2.jpg',
-      imageAlt: t(translations.common.window),
-    },
-    {
-      id: 2,
-      title: t(translations.common.door),
-      imagePath:
-        'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703894715/pic6_c2z1c0.jpg',
-      imageAlt: t(translations.common.door),
-    },
-    {
-      id: 3,
-      title: t(translations.common.blinds),
-      imagePath:
-        'https://res.cloudinary.com/dmo0ndu9b/image/upload/v1703893519/rolete_hsmxxh.jpg',
-      imageAlt: t(translations.common.blinds),
-    },
-  ];
+
   return (
     <>
       <SlideShow />
@@ -125,11 +102,8 @@ const HomePage = () => {
         }
         fontColor="black"
       />
-      <CardsWithBackground
-        title={t(translations.about.our_products)}
-        boxes={products}
-        sectionImage={ProductsBackground}
-      />
+      <HomeProducts />
+
       <GridLayout
         title={t(translations.homepage['our-partners'])}
         backgroundColor="#f2f2f2"
@@ -151,6 +125,7 @@ const SponsorImg = styled.div<{ src: string }>`
   background-repeat: no-repeat;
   background-position: center;
 `;
+
 const Image = styled.img`
   object-fit: cover;
   width: 100%;
@@ -161,6 +136,7 @@ const Image = styled.img`
     height: 40rem;
   }
 `;
+
 const Image2 = styled(Image)`
   transform: translate(0, 0);
 
@@ -168,6 +144,7 @@ const Image2 = styled(Image)`
     transform: translate(65%, -35%);
   }
 `;
+
 const ImageSection = styled.div`
   display: flex;
   flex-direction: column;
@@ -186,11 +163,13 @@ const ImageSection = styled.div`
     margin-bottom: 0;
   }
 `;
+
 const TextSelectionHeading = styled.h2`
   font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 2rem;
 `;
+
 const TextSection = styled.div`
   flex-basis: 100%;
   margin: 0;
