@@ -50,6 +50,10 @@ const Section = styled.section<{ sectionImage: string }>`
     url(${({ sectionImage }) => sectionImage}) no-repeat center center/cover;
   height: 50rem;
   margin-bottom: 40rem;
+
+  @media (max-width: 768px) {
+    margin-bottom: 150rem;
+  }
 `;
 
 const InfoSection = styled.div`
