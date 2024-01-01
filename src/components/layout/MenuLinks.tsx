@@ -24,8 +24,8 @@ export const MenuLinks = ({
         onChange={handleLanguageChange}
         MenuProps={{ disableScrollLock: true }}
       >
-        <MenuItem value="en">🇺🇸 En</MenuItem>
         <MenuItem value="shq">🇦🇱 Shq</MenuItem>
+        <MenuItem value="en">🇺🇸 En</MenuItem>
         <MenuItem value="de">🇩🇪 De</MenuItem>
         <MenuItem value="fr">🇫🇷 Fr</MenuItem>
       </Select>
