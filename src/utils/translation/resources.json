@@ -117,6 +117,9 @@
         "characteristic-table2-value2": "deri në 45 dB",
         "characteristic-table2-value3": "deri në RC3"
       }
+      ,"artevo":{
+        "first_section_content":"Sipërfaqet bujare dhe të dizajnuara në mënyrë individuale të dritareve nuk kanë qenë kurrë aq të kërkuara sa janë sot. Si një element dizajni në shkallë të gjerë, ato përmirësojnë hapësirën e jetesës në një mënyrë moderne dhe maksimizojnë dritën natyrale. ARTEVO ripërcakton kufijtë e asaj që është e mundur për sa i përket madhësisë, efikasitetit të prodhimit, qëndrueshmërisë, origjinalitetit dhe dizajnit, duke mundësuar kështu një përvojë krejtësisht të re jete. Kjo krijon liri arkitekturore dhe siguron rezultate bashkëkohore."
+      }
     }
   },
   "en": {
@@ -234,6 +237,8 @@
         "characteristic-table2-value1": "up to 1.3 W/m2K",
         "characteristic-table2-value2": "up to 45 dB",
         "characteristic-table2-value3": "up to RC3"
+      },"artevo":{
+        "first_section_content":"Generous and individually designed window surfaces have never been in such demand as they are today. As a large-scale design element, they enhance the living space in a modern way and maximise natural light. ARTEVO redefines the limits of what is possible in terms of size, production efficiency, sustainability, originality and design, thus enabling a completely new living experience. This creates architectural freedom and ensures contemporary results."
       }
     }
   },
@@ -351,7 +356,12 @@
         "characteristic-table1-value1": "bis zu 0,94 W/m2K",
         "characteristic-table1-value2": "bis zu 47 dB",
         "characteristic-table1-value3": "bis zu RC3"
-      }
+      },
+      "artevo":{
+        "first_section_content":"Großzügige und individuell gestaltete Fensterflächen waren noch nie so gefragt wie heute. Als großflächiges Gestaltungselement werten sie den Wohnraum auf moderne Weise auf und maximieren den natürlichen Lichteinfall. ARTEVO definiert die Grenzen des Möglichen hinsichtlich Größe, Produktionseffizienz, Nachhaltigkeit, Originalität und Design neu und ermöglicht so ein völlig neues Wohnerlebnis. Das schafft architektonische Freiheit und sorgt für zeitgemäße Ergebnisse."      }
+    },
+    "geneo":{
+        "first_section_content":"Dritaret GENEO vijnë me avantazhin bindës - përveç izolimit të shkëlqyeshëm termik - me një paketë gjithëpërfshirëse të koordinuar. Sepse: Falë materialit të përbërë me fibra RAU‑FIPRO, GENEO ofron stabilitet maksimal pa përmbajtje çeliku. Dritaret GENEO janë të lehta dhe kanë veti  izoluese termike që asnjë dritare tjetër nuk mund të ofrojë. Binduni vetë!"
     }
   },
   "fr": {
@@ -468,6 +478,8 @@
         "characteristic-table2-value1": "jusqu'à 1,3 W/m2K",
         "characteristic-table2-value2": "jusqu'à 45 dB",
         "characteristic-table2-value3": "jusqu'à RC3"
+      },"artevo":{
+        "first_section_content":"Les surfaces de fenêtres généreuses et conçues individuellement n’ont jamais été aussi demandées qu’aujourd’hui. En tant qu’élément de design à grande échelle, ils embellissent l’espace de vie de manière moderne et maximisent la lumière naturelle. ARTEVO redéfinit les limites de ce qui est possible en termes de taille, d'efficacité de production, de durabilité, d'originalité et de design, permettant ainsi une toute nouvelle expérience de vie. Cela crée une liberté architecturale et garantit des résultats contemporains."
       }
     }
   }
