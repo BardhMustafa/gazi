@@ -10,7 +10,7 @@ const getLocalStorageLanguage = () => {
   if (language) {
     return language as Language;
   }
-  return 'en';
+  return 'shq';
 };
 
 i18n.use(initReactI18next).init({

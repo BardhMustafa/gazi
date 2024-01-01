@@ -31,7 +31,7 @@ const getLocalStorageLanguage = () => {
   if (language) {
     return language as Language;
   }
-  return 'en';
+  return 'shq';
 };
 
 export const NavLinks = ({ menuLinks }: NavLinks) => {
