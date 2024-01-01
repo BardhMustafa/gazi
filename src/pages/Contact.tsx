@@ -16,7 +16,7 @@ const Contact = () => {
         title={t(translations.contact.contact_us)}
         backgroundImagePath="https://res.cloudinary.com/dqtfurml7/image/upload/v1703956019/images/contact_hero_ktmb1n_prlbdf.jpg"
       />
-      <ContactInfo phone="049444333" email="info@gazi.com" address="Adresa" />
+      <ContactInfo phone="(+383)44-177-222" email="info@gazi.com" address="Adresa" />
       <Suspense fallback={<div>Loading Map</div>}>
         <MapsContainer height="50rem" />
       </Suspense>

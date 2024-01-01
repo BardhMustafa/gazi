@@ -9,13 +9,13 @@ import { TextSectionAbout } from '../components/homepage/AboutSection';
 import GridLayout from '../components/layout/Grid';
 import { Stack, Typography } from '@mui/material';
 import { Button } from '../shared/components/Button';
-import { generatePath } from 'react-router';
+import { generatePath, useNavigate } from 'react-router';
 
 import { HomeProducts } from '../components/homepage/HomeProducts';
 
 const HomePage = () => {
   const { t, translations } = useTranslations();
-
+  const navigate = useNavigate();
   return (
     <>
       <SlideShow />
@@ -40,7 +40,7 @@ const HomePage = () => {
             <Paragraph>
               {t(translations.homepage.first_section_content)}
             </Paragraph>
-            <Button onClick={() => generatePath('/about-us')}>
+            <Button onClick={() => navigate(generatePath('/about-us'))}>
               {t(translations.common.aboutUs)}
             </Button>
           </>

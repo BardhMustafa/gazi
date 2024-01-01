@@ -106,6 +106,9 @@ const Box = styled.div<{ description: boolean }>`
   border: 1px solid #ddd;
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const BoxImage = styled.div`

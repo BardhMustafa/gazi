@@ -51,8 +51,8 @@ export const Footer = () => {
           <MainContactLink href="mailto: info@gazi.shpk">
             info@gazi.shpk
           </MainContactLink>
-          <MainContactLink href={'tel: 049281270'}>
-            +383 49 444 555
+          <MainContactLink href={'tel: 044177222'}>
+          (+383)44-177-222  
           </MainContactLink>
           <LogoLink href="https://www.facebook.com/GaziGjilan" target="_blank">
             <FacebookIcon style={{ color: '#1122dd', fontSize: '3.6rem' }} />
@@ -72,7 +72,7 @@ export const Footer = () => {
             <UnitSubtitle>
               <UnitSubtitleLine>Gilan</UnitSubtitleLine>
               <UnitSubtitleLine>Rruga</UnitSubtitleLine>
-              <UnitSubtitleLine>(49) 4446666</UnitSubtitleLine>
+              <UnitSubtitleLine>(49) </UnitSubtitleLine>
             </UnitSubtitle>
           </div>
         </UnitColumnContainer>
