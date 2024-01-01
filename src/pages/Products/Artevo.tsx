@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { InfoSection } from '../../components/homepage/InfoSection';
 import { Paragraph } from '../../shared/components/Paragraph';
 import { useTranslations } from '../../hooks/useTranslations';
