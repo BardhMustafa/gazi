@@ -16,7 +16,7 @@ export const AboutProducts = () => {
         {t(translations.about.our_products_desc)}
       </AboutProductsDesc>
       <Button onClick={() => navigate(generatePath('/products'))}>
-        Me shume
+        {t(translations.common.read_more)}
       </Button>
     </Section>
   );
@@ -52,7 +52,7 @@ const AboutProductsDesc = styled.p`
   color: white;
   font-size: 1.6rem;
   line-height: 1.9;
-  text-align: justify;
+  text-align: center;
   width: 90%;
   margin: 0 auto;
 `;

@@ -12,6 +12,7 @@ const Geneo = () => {
         imageSrc="https://res.cloudinary.com/dqtfurml7/image/upload/v1703956018/images/geneo_emgney_nzvask.webp"
       />
       <Paragraph>{t(translations.artevo.first_section_content)}</Paragraph>
+      
     </>
   );
 };
