@@ -48,8 +48,8 @@ export const Footer = () => {
       <Container>
         <ContactSection>
           <Logo cldImg={cld.image('images/gazi_logo_eupb5e_iqnoff')} />
-          <MainContactLink href="mailto: info@gazi.shpk">
-            info@gazi.shpk
+          <MainContactLink href="mailto: contact@gazi.shpk">
+            contact@gazi.shpk
           </MainContactLink>
           <MainContactLink href={'tel: 044177222'}>
           (+383)44-177-222  
