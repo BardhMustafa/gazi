@@ -54,6 +54,9 @@ export const Footer = () => {
           <MainContactLink href={'tel: 044177222'}>
           (+383)44-177-222  
           </MainContactLink>
+          <MainContactLink>
+            Vëllezrit Maliqi 7, Gjilan, Kosovë  
+          </MainContactLink>
           <LogoLink href="https://www.facebook.com/GaziGjilan" target="_blank">
             <FacebookIcon style={{ color: '#1122dd', fontSize: '3.6rem' }} />
           </LogoLink>
@@ -66,23 +69,14 @@ export const Footer = () => {
             </LinkText>
           ))}
         </LinkColumnContainer>
-        <UnitColumnContainer>
-          <div>
-            <UnitTitle>Contact</UnitTitle>
-            <UnitSubtitle>
-              <UnitSubtitleLine>Gilan</UnitSubtitleLine>
-              <UnitSubtitleLine>Rruga</UnitSubtitleLine>
-              <UnitSubtitleLine>(49) </UnitSubtitleLine>
-            </UnitSubtitle>
-          </div>
-        </UnitColumnContainer>
-        <CopyrightSection>
-          <CopyrightText>
+  
+      </Container>
+      <CopyrightSection>
+        <CopyrightText>
             © 1995 – {new Date(Date.now()).getFullYear()} |<br />
             Gazi Shpk® {t(translations.common.all_rights_reserved)}
-          </CopyrightText>
-        </CopyrightSection>
-      </Container>
+        </CopyrightText>
+      </CopyrightSection>
     </FooterStyles>
   );
 };
@@ -95,16 +89,13 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr 92px;
-  padding: 96px 80px;
   gap: 8px;
   max-width: 1280px;
   margin: 0 auto;
   margin-top: 10rem;
-
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    padding: 40px 24px;
     row-gap: 40px;
     column-gap: 20px;
   }
@@ -127,8 +118,7 @@ const ContactSection = styled.div`
 const CopyrightSection = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-
+  width: 100%;
   grid-column: 1 / span 2;
   grid-row: 2 / span 1;
 
@@ -139,6 +129,7 @@ const CopyrightSection = styled.div`
 `;
 
 const MainContactLink = styled.a`
+
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -175,31 +166,7 @@ const LinkText = styled(Link)`
   color: #333333;
 ` as typeof Link;
 
-const UnitTitle = styled.h4`
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
 
-  color: #333333;
-`;
-
-const UnitSubtitle = styled.h5`
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #333333;
-  margin-bottom: 40px;
-
-  @media (max-width: 768px) {
-    margin-bottom: 0px;
-  }
-`;
-
-const UnitSubtitleLine = styled.span`
-  display: block;
-  white-space: nowrap;
-`;
 
 const LinkColumnContainer = styled.div<{ first?: boolean }>`
   display: flex;
@@ -209,19 +176,7 @@ const LinkColumnContainer = styled.div<{ first?: boolean }>`
   ${props => (props.first ? 'min-width: 200px' : '')};
 `;
 
-const UnitColumnContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  grid-column: 5 / span 2;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 36px;
-    grid-column: unset;
-  }
-`;
 
 const CopyrightText = styled.p`
   font-size: 14px;

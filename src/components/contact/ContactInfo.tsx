@@ -37,6 +37,7 @@ export const ContactInfo = ({ phone, email, address }: ContactInfoProps) => {
             <StyledMail />
             <BoxInfo>
               <h3>{email}</h3>
+              <h3>ntpgazi@hotmail.com</h3>
               <p>{t(translations.contact.email)}</p>
             </BoxInfo>
           </Box>
