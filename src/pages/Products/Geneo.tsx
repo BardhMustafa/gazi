@@ -26,9 +26,13 @@ const Geneo = () => {
             {t(translations.synego['synego-brilliant'])}
           </Typography>
           <Paragraph>
-            <li> {t(translations.synego['synego-brilliant-p1'])}</li>
-            <li> {t(translations.synego['synego-brilliant-p2'])}</li>
-            <li> {t(translations.synego['synego-brilliant-p3'])}</li>
+            <li> {t(translations.geneo['advantages-table-key1'])}</li>
+            <li> {t(translations.geneo['advantages-table-key2'])}</li>
+            <li> {t(translations.geneo['advantages-table-key4'])}</li>
+            <li> {t(translations.geneo['advantages-table-key5'])}</li>
+            <li> {t(translations.geneo['advantages-table-key6'])}</li>
+            <li> {t(translations.geneo['advantages-table-key7'])}</li>
+
           </Paragraph>
         </Product>
         <Product>
@@ -40,24 +44,19 @@ const Geneo = () => {
             fontFamily="poppins"
             fontWeight={600}
           >
-            Avantazhet
+            <li>{t(translations.geneo['general-table-value1'])}</li>
           </Typography>
           <Paragraph>
-            <li>Mund të kurseni energji deri në 76 %</li>
-            <li>Ndjehuni të sigurt falë sistemit të mbrojtjes nga hajdutët</li>
-            <li>
-              Do të shijoni oazën tuaj të qetësisë përmes reduktimit 24‑fish të
-              zhurmës
-            </li>
-            <li>Sa i përket dizajnit, imagjinata juaj nuk njeh kufij</li>
-            <li>
-              Përjetoni një pastrim shumë të lehtë falë sipërfaqes së lëmuar Të
-              disponueshme edhe në versionin e certifikuar për shtëpi pasive
-            </li>
-            <li>
-              GENEO janë gjithashtu të disponueshme edhe si derë e jashtme edhe
-              derë rrëshqitëse
-            </li>
+            <li>{t(translations.geneo['general-table-value1'])}</li>
+            <li>{t(translations.geneo['general-table-value3'])}</li>
+            <li>{t(translations.geneo['general-table-value4'])}</li>
+            <li>{t(translations.geneo['general-table-value5'])}</li>
+            <li>{t(translations.geneo['general-table-value6'])}</li>
+            <li>{t(translations.geneo['general-table-value7'])}</li>
+            <li>{t(translations.geneo['general-table-value8'])}</li>
+            <li>{t(translations.geneo['general-table-value9'])}</li>
+            <li>{t(translations.geneo['general-table-value10'])}</li>
+            <li>{t(translations.geneo['general-table-value11'])}</li>
           </Paragraph>
         </Product>
         
