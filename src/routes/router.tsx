@@ -15,6 +15,7 @@ import Alumin from '../pages/Products/Alumin';
 import Showroom from '../pages/Showroom';
 import Products from '../pages/Products';
 import { Artevo } from '../pages/Products/Artevo';
+import Geneo from '../pages/Products/Geneo';
 
 const router = createBrowserRouter([
   {
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
       {
         path: '/products/pvc/artevo',
         element: <Artevo />,
+      },
+      {
+        path: '/products/pvc/geneo',
+        element: <Geneo />,
       },
     ],
   },

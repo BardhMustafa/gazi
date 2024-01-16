@@ -8,7 +8,7 @@
         "contact": "Kontakti",
         "products": "Produktet",
         "services": "Sherbimet",
-        "projects": "Projektet",
+        "projects": "Pamje",
         "rehau": "Rehau",
         "showroom": "Sallë Ekspozuese",
         "prod-sec": "Sektori i prodhimit",
@@ -16,7 +16,7 @@
         "years_of_experience": "Vjet Pervoje",
         "we_build_everything_that_you_need": "Ne ndërtojmë gjithçka që ju nevojitet",
         "read_more": "Më Shumë",
-        "is_required": "Duhet te plotesohet",
+        "is_required": "Duhet të plotësohet",
         "name": "Emri",
         "email": "Email",
         "message": "Mesazhi",
@@ -31,8 +31,8 @@
         "quality_products_last_word": "Cilësore"
       },
       "homepage": {
-        "first_section_content": "Në fabrikat tona mjaft bashkëkohore prodhojmë te gjitha llojet dhe format e dyerve dhe dritareve me profile të cilat janë produktet e fundit dhe tejet te persosura. E veçantë e kompanisë sonë është se ne e bejmë vetë përpunimin e ramit dhe izolimin e tyre, material i cili vie te ne nga prodhues eminente botrore. Perveç këtyre produkteve, ne gjithashtu prodhojmë edhe fasada strukturale dhe gjysmë-strukturale nga materiali  ALUMIL",
-        "gazi_rehau_section": "Bashkepunimi me Rehau per perdorimin e produkteve si Syngeu, Geneodhe Artego do te ndihmoje ne prodhimin e dritareve me baze PVC.Këto produkte ofrojne nje alternative te mire dhe te gendrueshme per prodhimin e dritareve ge duhet te jene te lehta dhe te gendrueshme në kushte të ndryshme të motit. Kjo do të ndihmojë në krijimin e një linje prodhimi efikase dhe të besueshme për këtë produkt, duke siguruar që prodhimi të jetë i qëndrushëm dhe produktet të jenë të cilesisë së lartë. Bashkpunimi do të mundēsoje gjithashtu zhvillimin e teknologjive të reja dhe inovative në fushën e prodhimit të dritareve PVC.",
+        "first_section_content": "Në fabrikat tona mjaft bashkëkohore prodhojmë te gjitha llojet dhe format e dyerve dhe dritareve me profile të cilat janë produktet e fundit dhe tejet të persosura. E veçantë e kompanisë sonë është se ne e bëjmë vetë përpunimin e ramit dhe izolimin e tyre, material i cili vie te ne nga prodhues eminente botërore. Përveç këtyre produkteve, ne gjithashtu prodhojmë edhe fasada strukturale dhe gjysmë-strukturale nga materiali  ALUMIL",
+        "gazi_rehau_section": "Bashkëpunimi me Rehau për perdorimin e produkteve si Syngeu, Geneo dhe Artego do të ndihmojë në prodhimin e dritareve me baze PVC. Këto produkte ofrojnë një alternativë të mirë dhe të qëndrueshme për prodhimin e dritareve të cilat janë të lehta dhe të qendrueshme në kushte të ndryshme të motit. Kjo do të ndihmojë në krijimin e një linje prodhimi efikase dhe të besueshme për këtë produkt, duke siguruar që prodhimi të jetë i qëndrushëm dhe produktet të jenë të cilesisë së lartë. Bashkpunimi do të mundēsoje gjithashtu zhvillimin e teknologjive të reja dhe inovative në fushën e prodhimit të dritareve PVC.",
         "our-partners": "Partnerët tonë"
       },
       "contact": {
@@ -51,7 +51,7 @@
         "we_deserve_trust": "Ne meritojmë besim",
         "we_deserve_trust_content": "Besimin dhe të qenit i besueshem i ndan nje det i tërë. Në REHAU, çdo ditë ne përpiqemi të fitojmë dhe shpërblejmë besimin e klientit dhe besimin e punonjësve tanë, sepse së bashku mund të krijojmë gjëra të mëdha.",
         "we_are_creators": "Ne jemi inovatorë",
-        "we_are_creators_content": "Idetë dhe krijimtaria në zgjidhjen e problemeve janë në ADN-në, tonë. Në zhvillimin e produkteve dhe dizejnimin e shërbimeve, pasioni ynë për të menduar në mënyrë moderne dhe guximi per te marre përsipër rreziqe të llogaritura, lejon REHAU të shtrojë rrugën dhe të tjerët të na ndjekin.",
+        "we_are_creators_content": "Idetë dhe krijimtaria në zgjidhjen e problemeve janë në ADN-në, tonë. Në zhvillimin e produkteve dhe dizajnimin e shërbimeve, pasioni ynë për të menduar në mënyrë moderne dhe guximi per te marrë përsipër rreziqe të llogaritura, lejon REHAU të shtrojë rrugën dhe të tjerët të na ndjekin.",
         "we_are_loyal": "Ne jemi të besueshëm",
         "we_are_loyal_content": "Kredibiliteti ynë varet nga besueshmëria jonë, dhe ne bëjmë atë që themi. Ne veprojmë në mënyrë transparente dhe gjithmonë përpiqemi të mbajmë premtimet tona.",
         "why_rehau": "Pse REHAU",
@@ -116,9 +116,12 @@
         "characteristic-table2-value1": "deri në 1.3 W/m2K",
         "characteristic-table2-value2": "deri në 45 dB",
         "characteristic-table2-value3": "deri në RC3"
-      }
-      ,"artevo":{
-        "first_section_content":"Sipërfaqet bujare dhe të dizajnuara në mënyrë individuale të dritareve nuk kanë qenë kurrë aq të kërkuara sa janë sot. Si një element dizajni në shkallë të gjerë, ato përmirësojnë hapësirën e jetesës në një mënyrë moderne dhe maksimizojnë dritën natyrale. ARTEVO ripërcakton kufijtë e asaj që është e mundur për sa i përket madhësisë, efikasitetit të prodhimit, qëndrueshmërisë, origjinalitetit dhe dizajnit, duke mundësuar kështu një përvojë krejtësisht të re jete. Kjo krijon liri arkitekturore dhe siguron rezultate bashkëkohore."
+      },
+      "artevo": {
+        "first_section_content": "Sipërfaqet bujare dhe të dizajnuara në mënyrë individuale të dritareve nuk kanë qenë kurrë aq të kërkuara sa janë sot. Si një element dizajni në shkallë të gjerë, ato përmirësojnë hapësirën e jetesës në një mënyrë moderne dhe maksimizojnë dritën natyrale. ARTEVO ripërcakton kufijtë e asaj që është e mundur për sa i përket madhësisë, efikasitetit të prodhimit, qëndrueshmërisë, origjinalitetit dhe dizajnit, duke mundësuar kështu një përvojë krejtësisht të re jete. Kjo krijon liri arkitekturore dhe siguron rezultate bashkëkohore."
+      },
+      "geneo": {
+        "first_section_content": "Dritaret GENEO vijnë me avantazhin bindës - përveç izolimit të shkëlqyeshëm termik - me një paketë gjithëpërfshirëse të koordinuar. Sepse: Falë materialit të përbërë me fibra RAU‑FIPRO, GENEO ofron stabilitet maksimal pa përmbajtje çeliku. Dritaret GENEO janë të lehta dhe kanë veti  izoluese termike që asnjë dritare tjetër nuk mund të ofrojë."
       }
     }
   },
@@ -131,7 +134,7 @@
         "contact": "Contact",
         "products": "Products",
         "services": "Services",
-        "projects": "Projects",
+        "projects": "Images",
         "showroom": "Showroom",
         "rehau": "Rehau",
         "synego": "Synego",
@@ -155,7 +158,7 @@
       },
       "homepage": {
         "first_section_content": "In our modern factories, we produce all types and formats of doors and windows with profiles that are the latest and highly perfected developments. The unique feature of our company is that we handle the processing and insulation ourselves, using materials sourced from renowned global manufacturers. In addition to these products, we also manufacture structural and semi_structural facades using the material ALUMIL.",
-        "gazi_rehau_section": "Collaboration with Rehau for the use of products such as Syngeu, Geneodhe Artego will facilitate the production of PVC windows. These products offer a good and environmentally friendly alternative for the production of windows that need to be lightweight and durable in various weather conditions. This will help in creating an efficient and reliable production line for this product, ensuring that the production is environmentally friendly and the products are of high quality. The collaboration will also enable the development of new and innovative technologies in the field of PVC window production.",
+        "gazi_rehau_section": "Collaboration with Rehau for the use of products such as Syngeu, Geneo and Artego will facilitate the production of PVC windows. These products offer a good and environmentally friendly alternative for the production of windows that need to be lightweight and durable in various weather conditions. This will help in creating an efficient and reliable production line for this product, ensuring that the production is environmentally friendly and the products are of high quality. The collaboration will also enable the development of new and innovative technologies in the field of PVC window production.",
         "our-partners": "Our Partners"
       },
       "contact": {
@@ -237,8 +240,12 @@
         "characteristic-table2-value1": "up to 1.3 W/m2K",
         "characteristic-table2-value2": "up to 45 dB",
         "characteristic-table2-value3": "up to RC3"
-      },"artevo":{
-        "first_section_content":"Generous and individually designed window surfaces have never been in such demand as they are today. As a large-scale design element, they enhance the living space in a modern way and maximise natural light. ARTEVO redefines the limits of what is possible in terms of size, production efficiency, sustainability, originality and design, thus enabling a completely new living experience. This creates architectural freedom and ensures contemporary results."
+      },
+      "artevo": {
+        "first_section_content": "Generous and individually designed window surfaces have never been in such demand as they are today. As a large-scale design element, they enhance the living space in a modern way and maximise natural light. ARTEVO redefines the limits of what is possible in terms of size, production efficiency, sustainability, originality and design, thus enabling a completely new living experience. This creates architectural freedom and ensures contemporary results."
+      },
+      "geneo": {
+        "first_section_content": "GENEO windows come with the convincing advantage - in addition to excellent thermal insulation - of a comprehensive coordinated package. Because: Thanks to the RAU‑FIPRO fiber composite material, GENEO offers maximum stability without steel content. GENEO windows are lightweight and have thermal insulation properties that no other window can offer."
       }
     }
   },
@@ -251,7 +258,7 @@
         "contact": "Kontakt",
         "products": "Produkte",
         "services": "Dienstleistungen",
-        "projects": "Projekte",
+        "projects": "Bilder",
         "rehau": "Rehau",
         "synego": "Synego",
         "prod-sec": "Produktionssektor",
@@ -275,7 +282,7 @@
       },
       "homepage": {
         "first_section_content": "In unseren modernen Fabriken produzieren wir alle Arten und Formate von Türen und Fenstern mit Profilen, die die neuesten und perfektionierten Entwicklungen darstellen. Das Besondere an unserem Unternehmen ist, dass wir die Herstellung und Isolierung selbst durchführen, wobei das Material von weltweit renommierten Herstellern stammt. Neben diesen Produkten stellen wir auch strukturelle und halbstrukturierte Fassaden aus dem Material ALUMIL her.",
-        "gazi_rehau_section": "Die Zusammenarbeit mit Rehau für die Verwendung von Produkten wie Syngeu, Geneodhe Artego wird die Herstellung von PVC_Fenstern fördern. Diese Produkte bieten eine gute und umweltfreundliche Alternative für die Herstellung von Fenstern, die leicht und umweltfreundlich unter verschiedenen Wetterbedingungen sein müssen. Dies wird dazu beitragen, eine effiziente und zuverlässige Produktionslinie für dieses Produkt zu schaffen, indem sichergestellt wird, dass die Produktion umweltfreundlich ist und die Produkte von hoher Qualität sind. Die Zusammenarbeit wird auch die Entwicklung neuer und innovativer Technologien im Bereich der PVC_Fensterproduktion ermöglichen.",
+        "gazi_rehau_section": "Die Zusammenarbeit mit Rehau für die Verwendung von Produkten wie Syngeu, Geneo und Artego wird die Herstellung von PVC_Fenstern fördern. Diese Produkte bieten eine gute und umweltfreundliche Alternative für die Herstellung von Fenstern, die leicht und umweltfreundlich unter verschiedenen Wetterbedingungen sein müssen. Dies wird dazu beitragen, eine effiziente und zuverlässige Produktionslinie für dieses Produkt zu schaffen, indem sichergestellt wird, dass die Produktion umweltfreundlich ist und die Produkte von hoher Qualität sind. Die Zusammenarbeit wird auch die Entwicklung neuer und innovativer Technologien im Bereich der PVC_Fensterproduktion ermöglichen.",
         "our-partners": "Unsere Partner"
       },
       "contact": {
@@ -357,12 +364,14 @@
         "characteristic-table1-value2": "bis zu 47 dB",
         "characteristic-table1-value3": "bis zu RC3"
       },
-      "artevo":{
-        "first_section_content":"Großzügige und individuell gestaltete Fensterflächen waren noch nie so gefragt wie heute. Als großflächiges Gestaltungselement werten sie den Wohnraum auf moderne Weise auf und maximieren den natürlichen Lichteinfall. ARTEVO definiert die Grenzen des Möglichen hinsichtlich Größe, Produktionseffizienz, Nachhaltigkeit, Originalität und Design neu und ermöglicht so ein völlig neues Wohnerlebnis. Das schafft architektonische Freiheit und sorgt für zeitgemäße Ergebnisse."      }
-    },
-    "geneo":{
-        "first_section_content":"Dritaret GENEO vijnë me avantazhin bindës - përveç izolimit të shkëlqyeshëm termik - me një paketë gjithëpërfshirëse të koordinuar. Sepse: Falë materialit të përbërë me fibra RAU‑FIPRO, GENEO ofron stabilitet maksimal pa përmbajtje çeliku. Dritaret GENEO janë të lehta dhe kanë veti  izoluese termike që asnjë dritare tjetër nuk mund të ofrojë. Binduni vetë!"
+      "artevo": {
+        "first_section_content": "Großzügige und individuell gestaltete Fensterflächen waren noch nie so gefragt wie heute. Als großflächiges Gestaltungselement werten sie den Wohnraum auf moderne Weise auf und maximieren den natürlichen Lichteinfall. ARTEVO definiert die Grenzen des Möglichen hinsichtlich Größe, Produktionseffizienz, Nachhaltigkeit, Originalität und Design neu und ermöglicht so ein völlig neues Wohnerlebnis. Das schafft architektonische Freiheit und sorgt für zeitgemäße Ergebnisse."
+      },
+      "geneo": {
+        "first_section_content": "GENEO-Fenster überzeugen neben einer hervorragenden Wärmedämmung durch ein abgestimmtes Gesamtpaket. Denn: Dank des Faserverbundwerkstoffs RAU-FIPRO bietet GENEO höchste Stabilität ohne Stahlanteil. GENEO-Fenster sind leicht und verfügen über Wärmedämmeigenschaften, die kein anderes Fenster bieten kann."
+      }
     }
+   
   },
   "fr": {
     "translation": {
@@ -373,7 +382,7 @@
         "contact": "Contact",
         "products": "Produits",
         "services": "Services",
-        "projects": "Projets",
+        "projects": "Images",
         "rehau": "Rehau",
         "synego": "Synego",
         "prod-sec": "Secteur de production",
@@ -397,7 +406,7 @@
       },
       "homepage": {
         "first_section_content": "Dans nos usines modernes, nous produisons toutes sortes de portes et fenêtres avec des profils qui représentent les dernières avancées et sont très perfectionnés. Ce qui distingue notre entreprise, c'est que nous réalisons nous_mêmes le traitement des profilés et leur isolation, avec des matériaux provenant de fabricants mondialement reconnus. En plus de ces produits, nous fabriquons également des façades structurales et semi_structurales en utilisant le matériau ALUMIL.",
-        "gazi_rehau_section": "La collaboration avec Rehau pour l'utilisation de produits tels que Syngeu, Geneodhe Artego favorisera la production de fenêtres en PVC. Ces produits offrent une alternative de qualité et respectueuse de l'environnement pour la fabrication de fenêtres qui doivent être légères et durables dans des conditions météorologiques variées. Cela contribuera à la création d'une ligne de production efficace et fiable pour ce produit, en veillant à ce que la production soit respectueuse de l'environnement et que les produits soient de haute qualité. La collaboration permettra également le développement de nouvelles technologies innovantes dans le domaine de la production de fenêtres en PVC.",
+        "gazi_rehau_section": "La collaboration avec Rehau pour l'utilisation de produits tels que Syngeu, Geneo et Artego favorisera la production de fenêtres en PVC. Ces produits offrent une alternative de qualité et respectueuse de l'environnement pour la fabrication de fenêtres qui doivent être légères et durables dans des conditions météorologiques variées. Cela contribuera à la création d'une ligne de production efficace et fiable pour ce produit, en veillant à ce que la production soit respectueuse de l'environnement et que les produits soient de haute qualité. La collaboration permettra également le développement de nouvelles technologies innovantes dans le domaine de la production de fenêtres en PVC.",
         "our-partners": "Nos partenaires"
       },
       "contact": {
@@ -478,8 +487,12 @@
         "characteristic-table2-value1": "jusqu'à 1,3 W/m2K",
         "characteristic-table2-value2": "jusqu'à 45 dB",
         "characteristic-table2-value3": "jusqu'à RC3"
-      },"artevo":{
-        "first_section_content":"Les surfaces de fenêtres généreuses et conçues individuellement n’ont jamais été aussi demandées qu’aujourd’hui. En tant qu’élément de design à grande échelle, ils embellissent l’espace de vie de manière moderne et maximisent la lumière naturelle. ARTEVO redéfinit les limites de ce qui est possible en termes de taille, d'efficacité de production, de durabilité, d'originalité et de design, permettant ainsi une toute nouvelle expérience de vie. Cela crée une liberté architecturale et garantit des résultats contemporains."
+      },
+      "artevo": {
+        "first_section_content": "Les surfaces de fenêtres généreuses et conçues individuellement n’ont jamais été aussi demandées qu’aujourd’hui. En tant qu’élément de design à grande échelle, ils embellissent l’espace de vie de manière moderne et maximisent la lumière naturelle. ARTEVO redéfinit les limites de ce qui est possible en termes de taille, d'efficacité de production, de durabilité, d'originalité et de design, permettant ainsi une toute nouvelle expérience de vie. Cela crée une liberté architecturale et garantit des résultats contemporains."
+      },
+      "geneo": {
+        "first_section_content": "Les fenêtres GENEO présentent l'avantage convaincant - en plus d'une excellente isolation thermique - d'un ensemble complet et coordonné. Parce que : grâce au matériau composite fibreux RAU‑FIPRO, GENEO offre une stabilité maximale sans teneur en acier. Les fenêtres GENEO sont légères et possèdent des propriétés d’isolation thermique qu’aucune autre fenêtre ne peut offrir."
       }
     }
   }
