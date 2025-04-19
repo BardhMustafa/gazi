@@ -47,6 +47,58 @@ export default function SlideShow() {
     </Box>
   );
 }
+
+const Slide1 = () => {
+  const navigate = useNavigate();
+  const { t, translations } = useTranslations();
+
+  return (
+    <Box
+      width="100%"
+      height="100%"
+      display="flex"
+      flexDirection="column"
+      alignItems="start"
+      justifyContent="center"
+      sx={{
+        backgroundColor: 'rgba(0,0,0,0.2)',
+        paddingLeft: '10rem',
+        '@media (max-width: 768px)': {
+          '& > *': {
+            display: 'none',
+          },
+          paddingLeft: '2rem',
+        },
+      }}
+    >
+      <SliderHeading>
+        {t(translations.common.quality_products_first_word)}{' '}
+        <span style={{ color: '#e91b37', fontWeight: 700 }}>
+          {t(translations.common.quality_products_last_word)}
+        </span>
+      </SliderHeading>
+      <Stack
+        direction="row"
+        spacing={3}
+        sx={{
+          '@media (max-width: 768px)': {
+            '& > *': {
+              display: 'none',
+            },
+          },
+        }}
+      >
+        <ProductsButton onClick={() => navigate(generatePath('/about-us'))}>
+          {t(translations.common.aboutUs)}
+        </ProductsButton>
+        <ProductsButton onClick={() => navigate(generatePath('/products'))}>
+          {t(translations.common.products)}
+        </ProductsButton>
+      </Stack>
+    </Box>
+  );
+};
+
 const Slide2 = () => {
   return (
     <Box
@@ -67,44 +119,6 @@ const Slide2 = () => {
       <SliderHeading color="#fff">
         GAZI & <br></br> REHAU
       </SliderHeading>
-    </Box>
-  );
-};
-
-const Slide1 = () => {
-  const navigate = useNavigate();
-  const { t, translations } = useTranslations();
-
-  return (
-    <Box
-      width="100%"
-      height="100%"
-      display="flex"
-      flexDirection="column"
-      alignItems="start"
-      justifyContent="center"
-      sx={{
-        backgroundColor: 'rgba(0,0,0,0.5)',
-        paddingLeft: '10rem',
-        '@media (max-width: 768px)': {
-          paddingLeft: '2rem',
-        },
-      }}
-    >
-      <SliderHeading>
-        {t(translations.common.quality_products_first_word)}{' '}
-        <span style={{ color: '#e91b37', fontWeight: 700 }}>
-          {t(translations.common.quality_products_last_word)}
-        </span>
-      </SliderHeading>
-      <Stack direction="row" spacing={3}>
-        <ProductsButton onClick={() => navigate(generatePath('/about-us'))}>
-          {t(translations.common.aboutUs)}
-        </ProductsButton>
-        <ProductsButton onClick={() => navigate(generatePath('/products'))}>
-          {t(translations.common.products)}
-        </ProductsButton>
-      </Stack>
     </Box>
   );
 };
@@ -143,13 +157,10 @@ const SlideShowContainer = styled.div<{ image: string }>`
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(${({ image }: { image: string }) => image});
-`;
 
-const ProductsButton = styled(Button)`
-  font-weight: 600;
-
-  @media (max-width: 568px) {
-    padding: 1rem 2rem;
+  @media (max-width: 768px) {
+    background-position: 82% center;
+    height: 400px;
   }
 `;
 
@@ -162,5 +173,17 @@ const SliderHeading = styled.h1`
 
   @media (min-width: 768px) {
     font-size: 6.5rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2.8rem;
+  }
+`;
+
+const ProductsButton = styled(Button)`
+  font-weight: 600;
+
+  @media (max-width: 568px) {
+    padding: 1rem 2rem;
   }
 `;

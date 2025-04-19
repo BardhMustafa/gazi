@@ -21,10 +21,10 @@ export const NavBar = () => {
           path: '/products/pvc',
           label: 'pvc',
         },
-        {
-          path: '/products/alumin',
-          label: 'alumin',
-        },
+        // {
+        //   path: '/products/alumin',
+        //   label: 'alumin',
+        // },
       ],
     },
     {

@@ -20,10 +20,10 @@ export const Footer = () => {
           path: '/products/pvc',
           label: 'pvc',
         },
-        {
-          path: '/products/alumin',
-          label: 'alumin',
-        },
+        // {
+        //   path: '/products/alumin',
+        //   label: 'alumin',
+        // },
       ],
     },
     {
@@ -49,15 +49,12 @@ export const Footer = () => {
         <ContactSection>
           <Logo cldImg={cld.image('images/gazi_logo_eupb5e_iqnoff')} />
           <MainContactLink href="mailto: contact@gazi.shpk">
-            contact@gazi.shpk
-            ntpgazi@hotmail.com
+            contact@gazi.shpk ntpgazi@hotmail.com
           </MainContactLink>
           <MainContactLink href={'tel: 044177222'}>
             (+383)44-177-222
           </MainContactLink>
-          <MainContactLink>
-            Vëllezrit Maliqi 7, Gjilan, Kosovë
-          </MainContactLink>
+          <MainContactLink>Vëllezrit Maliqi 7, Gjilan, Kosovë</MainContactLink>
           <LogoLink href="https://www.facebook.com/GaziGjilan" target="_blank">
             <FacebookIcon style={{ color: '#1122dd', fontSize: '3.6rem' }} />
           </LogoLink>
@@ -65,7 +62,6 @@ export const Footer = () => {
 
         {/* New Link Column Container */}
         <LinkColumnContainer>
-
           {menuLinks.map(item => (
             <LinkText to={item.path} key={item.path}>
               {item.label}
@@ -76,8 +72,8 @@ export const Footer = () => {
 
       <CopyrightSection>
         <CopyrightText>
-          © 1995 – {new Date(Date.now()).getFullYear()} |
-          Gazi Shpk® {t(translations.common.all_rights_reserved)}
+          © 1995 – {new Date(Date.now()).getFullYear()} | Gazi Shpk®{' '}
+          {t(translations.common.all_rights_reserved)}
         </CopyrightText>
       </CopyrightSection>
     </FooterStyles>
@@ -89,7 +85,7 @@ const FooterStyles = styled.footer`
 `;
 
 const Container = styled.div`
-  display:flex;
+  display: flex;
   justify-content: space-evenly;
   flex-direction: row;
   gap: 8px;
@@ -109,9 +105,8 @@ const ContactSection = styled.div`
   gap: 16px;
   padding: 2rem;
   @media (max-width: 768px) {
-width: 100%;
+    width: 100%;
   }
-
 `;
 
 const CopyrightSection = styled.div`
@@ -121,7 +116,6 @@ const CopyrightSection = styled.div`
   justify-content: center;
   align-items: center;
   padding-bottom: 2rem;
-
 
   @media (max-width: 768px) {
     grid-column: 1 / span 2;
@@ -148,8 +142,6 @@ const Logo = styled(AdvancedImage)`
   height: 6rem;
 `;
 
-
-
 const LinkText = styled(Link)`
   font-size: 14px;
   line-height: 24px;
@@ -166,8 +158,7 @@ const LinkColumnContainer = styled.div`
   justify-content: space-evenly;
   align-items: center;
   @media (max-width: 768px) {
-display: none;
-  
+    display: none;
   }
 `;
 
@@ -179,6 +170,5 @@ const CopyrightText = styled.p`
   margin-bottom: 0px;
   @media (max-width: 768px) {
     text-align: center;
-  
   }
 `;

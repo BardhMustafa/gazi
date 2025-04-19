@@ -19,7 +19,8 @@ const Products = () => {
               veçantë: veshje me definicion të lartë.
             </ProductDescription>
           </Product>
-          <Product onClick={() => navigate(generatePath('/products/alumin'))}>
+          {/* <Product onClick={() => navigate(generatePath('/products/alumin'))}> */}
+          <Product>
             <ProductHeading>ALUMIN</ProductHeading>
             <ProductDescription>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.

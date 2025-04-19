@@ -11,7 +11,6 @@ import AboutUs from '../pages/AboutUs';
 import Rehau from '../pages/Rehau';
 import Contact from '../pages/Contact';
 import Pvc from '../pages/Products/Pvc';
-import Alumin from '../pages/Products/Alumin';
 import Showroom from '../pages/Showroom';
 import Products from '../pages/Products';
 import { Artevo } from '../pages/Products/Artevo';
@@ -48,10 +47,10 @@ const router = createBrowserRouter([
         path: '/products/pvc',
         element: <Pvc />,
       },
-      {
-        path: '/products/alumin',
-        element: <Alumin />,
-      },
+      // {
+      //   path: '/products/alumin',
+      //   element: <Alumin />,
+      // },
       { path: '/projects', element: <Projects /> },
       {
         path: '/projects/showroom',
