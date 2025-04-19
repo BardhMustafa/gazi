@@ -11,7 +11,7 @@ export default function SlideShow() {
 
   const slideImageFromCloudinary = (i: number) => {
     if (i === 1) {
-      return 'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956394/background1_zvpsvk.jpg';
+      return 'https://res.cloudinary.com/dvnpbobxy/image/upload/v1745062113/facebook_cover_npemiv.png';
     }
 
     if (i === 2) {
