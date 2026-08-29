@@ -26,15 +26,17 @@ interface StyledContainerProps extends ContainerProps {
 const StyledContainer = styled.div<StyledContainerProps>`
   width: 100%;
   height: ${({ height }) => height ? `${height}px` : '400px'};
-  background: ${({ background }) =>    `linear-gradient(0deg, rgba(38,28,29,1) 14%, rgba(126,109,112,0.517266281512605) 87%, rgba(237,230,230,0.2539609593837535) 98%), url(${background})  no-repeat center center/cover`};
+  background: ${({ background }) => `linear-gradient(90deg, rgba(8, 29, 50, .94), rgba(17, 51, 85, .58)), url(${background}) no-repeat center center/cover`};
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items:center;
   justify-content:center;
-  padding:20rem 10rem;
-  margin-bottom: 5rem;
+  padding: clamp(6rem, 10vw, 12rem);
+  margin-bottom: clamp(8rem, 10vw, 13rem);
+  border-radius: 2.4rem;
+  overflow: hidden;
   @media (max-width: 768px) {
     height:85%;
   }

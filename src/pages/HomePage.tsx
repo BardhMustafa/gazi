@@ -138,7 +138,9 @@ const SponsorImg = styled.div<{ src: string }>`
 const Image = styled.img`
   object-fit: cover;
   width: 100%;
-  height: 30rem;
+  height: 34rem;
+  border-radius: 2rem;
+  box-shadow: 0 24px 60px rgba(17, 51, 85, 0.18);
 
   @media (min-width: 768px) {
     width: 35rem;
@@ -150,7 +152,8 @@ const Image2 = styled(Image)`
   transform: translate(0, 0);
 
   @media (min-width: 1200px) {
-    transform: translate(65%, -35%);
+    transform: translate(58%, -28%);
+    border: 8px solid #f2f2f2;
   }
 `;
 
@@ -174,8 +177,9 @@ const ImageSection = styled.div`
 `;
 
 const TextSelectionHeading = styled.h2`
-  font-size: 4rem;
-  line-height: 1.2;
+  font-size: clamp(4rem, 6vw, 7rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
   margin-bottom: 2rem;
 `;
 
@@ -183,6 +187,8 @@ const TextSection = styled.div`
   flex-basis: 100%;
   margin: 0;
   padding: 5rem 0;
+  max-width: 112rem;
+  margin: 0 auto;
   @media (min-width: 768px) {
     padding-left: 2rem;
   }

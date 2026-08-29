@@ -59,7 +59,7 @@ export const ContactInfo = ({ phone, email, address }: ContactInfoProps) => {
 };
 
 const Section = styled.section`
-  padding: 4rem 2rem;
+  padding: clamp(7rem, 10vw, 12rem) 0;
   display: flex;
   flex-direction: column;
 
@@ -70,7 +70,7 @@ const Section = styled.section`
 `;
 
 const InfoSection = styled.div`
-  flex-basis: 30%;
+  flex-basis: 42%;
   margin-bottom: 4rem;
 
   @media (min-width: 768px) {
@@ -79,13 +79,19 @@ const InfoSection = styled.div`
 `;
 
 const InfoSectionHeading = styled.h2`
-  font-size: 3rem;
+  font-size: clamp(3.4rem, 5vw, 5.2rem);
+  line-height: 1.08;
+  letter-spacing: -.045em;
+  color: #113355;
   width: 90%;
 `;
 
 const InfoSectionDescription = styled.p`
   margin-top: 2rem;
   width: 85%;
+  color: #647383;
+  font-size: 1.6rem;
+  line-height: 1.7;
 
   @media (min-width: 768px) {
     width: 65%;
@@ -103,16 +109,19 @@ const Box = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
+  padding: 1.6rem 0;
 `;
 
 const BoxInfo = styled.div`
   & > h3 {
     font-size: 1.8rem;
     font-weight: 600;
+    color: #113355;
   }
 
   & > p {
     font-size: 1.4rem;
+    color: #647383;
   }
 `;
 
@@ -137,5 +146,9 @@ const Divider = styled.div`
 `;
 
 const FormSection = styled.div`
-  flex-basis: 70%;
+  flex-basis: 58%;
+  background: #f5f7f9;
+  border: 1px solid #e5e9ed;
+  padding: clamp(2.4rem, 5vw, 5rem);
+  border-radius: 2.4rem;
 `;

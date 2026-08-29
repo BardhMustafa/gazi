@@ -3,8 +3,7 @@ import { FixedWrapper } from '../../shared/components/FixedWrapper';
 import { Link } from 'react-router-dom';
 import { useTranslations } from '../../hooks/useTranslations';
 import { NavLinks, NestedMenuLink } from './NavLinks';
-import { AdvancedImage } from '@cloudinary/react';
-import { cld } from '../../App';
+import logo from '../../assets/gazi-logo.png';
 
 export const NavBar = () => {
   const { t, translations } = useTranslations();
@@ -50,7 +49,7 @@ export const NavBar = () => {
         <HeaderWrapper>
           <LogoWrapper>
             <Link to="/">
-              <Logo cldImg={cld.image('gazi-logo_vqovqx')} />
+              <Logo src={logo} alt="Gazi" />
             </Link>
           </LogoWrapper>
           <Actions>
@@ -62,20 +61,24 @@ export const NavBar = () => {
   );
 };
 
-const Logo = styled(AdvancedImage)`
-  width: 120px;
+const Logo = styled.img`
+  width: 11.5rem;
+  height: auto;
 `;
 
 const Header = styled.header`
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 7rem;
-  background-color: #fff;
+  height: 8.8rem;
+  background-color: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid rgba(17, 51, 85, 0.08);
+  box-shadow: 0 10px 40px rgba(17, 51, 85, 0.06);
+  backdrop-filter: blur(18px);
 `;
 
 const HeaderWrapper = styled.div`
-  padding: 0 1rem;
+  padding: 0 clamp(1.6rem, 4vw, 4rem);
   max-width: 1400px;
   width: 100%;
   height: 100%;
@@ -89,7 +92,7 @@ const HeaderWrapper = styled.div`
 const Actions = styled.nav`
   a {
     text-decoration: none;
-    color: #d42539;
+    color: #113355;
   }
 
   p {
@@ -98,7 +101,8 @@ const Actions = styled.nav`
 `;
 
 const LogoWrapper = styled.div`
-  margin-top: 0.7rem;
+  display: flex;
+  align-items: center;
   a {
     text-decoration: none;
   }

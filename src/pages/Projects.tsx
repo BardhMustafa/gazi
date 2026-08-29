@@ -1,14 +1,21 @@
 import styled from 'styled-components';
 import { generatePath, useNavigate } from 'react-router';
+import { PageHero } from '../shared/components/PageHero';
+import { useTranslations } from '../hooks/useTranslations';
 
 const Projects = () => {
   const navigate = useNavigate();
+  const { t, translations } = useTranslations();
 
   return (
-    <div>
+    <>
+      <PageHero
+        title={t(translations.common.projects)}
+        backgroundImagePath="https://res.cloudinary.com/dqtfurml7/image/upload/v1703975250/images/pic1_kn4snv_ajd6bl_atb3bd.jpg"
+      />
       <Section>
         <ProductsContainer>
-          <Product onClick={() => navigate(generatePath('/projects/showroom'))}>
+          <Product type="button" onClick={() => navigate(generatePath('/projects/showroom'))}>
             <ProductHeading>Showroom</ProductHeading>
             <ProductImageContainer>
               <ProductImage
@@ -17,7 +24,7 @@ const Projects = () => {
               />
             </ProductImageContainer>
           </Product>
-          <Product onClick={() => navigate(generatePath('/projects/factory'))}>
+          <Product type="button" onClick={() => navigate(generatePath('/projects/factory'))}>
             <ProductHeading>Factory</ProductHeading>
 
             <ProductImageContainer>
@@ -29,30 +36,35 @@ const Projects = () => {
           </Product>
         </ProductsContainer>
       </Section>
-    </div>
+    </>
   );
 };
 
 export default Projects;
 
 const Section = styled.section`
-  margin-top: 2rem;
+  padding-top: clamp(7rem, 10vw, 12rem);
 `;
 
 const ProductsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2.4rem;
 `;
 
-const Product = styled.div`
+const Product = styled.button`
   flex-basis: 100%;
+  text-align: left;
+  font: inherit;
+  color: inherit;
 
-  background-color: #fbfbfd;
-  padding: 2rem;
-  border-radius: 1.2rem;
-  border: 1px solid #e0e0e0;
+  background-color: #f5f7f9;
+  padding: 2rem 2rem 3rem;
+  border-radius: 2.4rem;
+  border: 1px solid #e5e9ed;
+  overflow: hidden;
+  transition: transform 220ms ease, box-shadow 220ms ease;
 
   &:active {
     border: 1px solid #c4c4c4;
@@ -63,20 +75,21 @@ const Product = styled.div`
     flex-basis: calc(50% - 1rem);
     &:hover,
     &:active {
-      border: 1px solid #c4c4c4;
+      transform: translateY(-6px);
+      box-shadow: 0 26px 60px rgba(17, 51, 85, .14);
       cursor: pointer;
 
       & > h2 {
-        background: -webkit-linear-gradient(0deg, #d42539, #fa21b2);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: #d42539;
       }
     }
   }
 `;
 
 const ProductHeading = styled.h2`
-  font-size: 4rem;
+  font-size: clamp(3.5rem, 5vw, 5rem);
+  color: #113355;
+  letter-spacing: -.045em;
   margin-left: 5%;
   margin-bottom: 1rem;
 `;
@@ -85,6 +98,8 @@ const ProductImage = styled.img`
   width: 90%;
   mix-blend-mode: multiply;
   border-radius: 1.2rem;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 `;
 
 const ProductImageContainer = styled.div`

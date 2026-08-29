@@ -13,7 +13,7 @@ interface ItemProps {
   src: string;
 }
 
-const StyledItem = styled(Paper)<ItemProps>(({ theme, src }) => ({
+const StyledItem = styled(Paper)<ItemProps>(({ src }) => ({
   position: 'relative',
   backgroundSize: 'cover',
   backgroundImage: `url(${src})`,
@@ -21,9 +21,11 @@ const StyledItem = styled(Paper)<ItemProps>(({ theme, src }) => ({
   backgroundPosition: 'center',
   cursor: 'pointer',
   transition: 'all 0.3s ease-in-out',
+  borderRadius: 20,
+  boxShadow: '0 14px 40px rgba(17,51,85,.10)',
   '&:hover': {
     transform: 'scale(1.02)',
-    boxShadow: theme.shadows[8],
+    boxShadow: '0 24px 55px rgba(17,51,85,.22)',
     '& .overlay': {
       opacity: 1,
     },

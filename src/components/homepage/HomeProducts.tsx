@@ -60,18 +60,19 @@ export const HomeProducts = () => {
 };
 
 const Section = styled.section<{ sectionImage: string }>`
-  padding: 3rem 0;
+  padding: clamp(6rem, 9vw, 11rem) clamp(2rem, 5vw, 6rem);
   background:
     linear-gradient(rgba(8, 33, 90, 0.8), rgba(8, 33, 90)),
     url(${({ sectionImage }) => sectionImage}) no-repeat center center/cover;
-  min-height: 50rem;
-  margin-bottom: 40rem;
+  min-height: 56rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: clamp(8rem, 10vw, 13rem);
+  border-radius: 2.4rem;
+  overflow: hidden;
 
   @media (min-width: 1200px) {
     padding: 0;
@@ -79,9 +80,10 @@ const Section = styled.section<{ sectionImage: string }>`
 `;
 
 const SectionHeading = styled.h2`
-  font-size: 2rem;
+  font-size: clamp(3.2rem, 5vw, 5.4rem);
   color: white;
   text-align: center;
+  letter-spacing: -0.04em;
 
   @media (min-width: 1200px) {
     font-size: 3rem;
@@ -94,7 +96,8 @@ const Boxes = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.4rem;
+  width: 100%;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -102,26 +105,29 @@ const Boxes = styled.div`
 `;
 
 const Box = styled.div<{ image: string }>`
-  width: 35rem;
-  height: 25rem;
+  width: min(35rem, 100%);
+  height: 32rem;
   background: url(${({ image }) => image}) no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 1.8rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 24px 45px rgba(0, 0, 0, 0.18);
+  transition: transform 240ms ease, box-shadow 240ms ease;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(7, 27, 47, .8), transparent 65%);
+  }
 
   &:hover {
-    &::after {
-      content: '';
-      width: 35rem;
-      height: 25rem;
-      position: absolute;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    h2 {
-      opacity: 1;
-    }
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.28);
   }
 
   @media (max-width: 456px) {
@@ -142,11 +148,14 @@ const Box = styled.div<{ image: string }>`
 const BoxHeading = styled.h2`
   opacity: 1;
   color: white;
-  font-size: 2rem;
+  font-size: 2.8rem;
   z-index: 2;
+  position: absolute;
+  left: 2.4rem;
+  bottom: 2.4rem;
 
   @media (min-width: 1200px) {
-    opacity: 0;
+    opacity: 1;
     font-size: 2.8rem;
   }
 `;
@@ -154,13 +163,15 @@ const BoxHeading = styled.h2`
 const SeeMoreButton = styled.button`
   background-color: transparent;
   border: none;
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 0.5rem;
 
   &:hover {
     cursor: pointer;

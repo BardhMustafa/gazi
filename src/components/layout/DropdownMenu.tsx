@@ -84,9 +84,9 @@ export const DropdownMenu = ({
 
 const StyledMenuItem = styled(MenuItem)`
   text-decoration: none;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #d42539;
+  font-size: 1.5rem;
+  font-weight: 650;
+  color: #113355;
   cursor: pointer;
 
   @media (max-width: 768px) {
@@ -99,7 +99,7 @@ const MobileStyledMenuItem = styled.li`
   text-decoration: none;
   font-size: 1.8rem;
   font-weight: 700;
-  color: #d42539;
+  color: #647383;
   cursor: pointer;
 
   @media (max-width: 1024px) {

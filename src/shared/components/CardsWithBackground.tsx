@@ -48,16 +48,13 @@ const Section = styled.section<{ sectionImage: string }>`
   background:
     linear-gradient(rgba(8, 33, 90, 0.8), rgba(8, 33, 90)),
     url(${({ sectionImage }) => sectionImage}) no-repeat center center/cover;
-  height: 50rem;
-  margin-bottom: 40rem;
-
-  @media (max-width: 768px) {
-    margin-bottom: 150rem;
-  }
+  min-height: 72rem;
+  padding: clamp(6rem, 9vw, 10rem) clamp(2rem, 5vw, 6rem);
+  border-radius: 2.4rem;
 `;
 
 const InfoSection = styled.div`
-  height: 30rem;
+  min-height: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,15 +68,16 @@ const InfoSection = styled.div`
 `;
 
 const InfoSectionHeading = styled.h3`
-  font-size: 3rem;
+  font-size: clamp(3.2rem, 5vw, 5.2rem);
   line-height: 1.2;
   margin-bottom: 2rem;
 `;
 
 const InfoSectionDesc = styled.p`
   width: 80%;
-  font-size: 1.4rem;
-  line-height: 1.6;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,.72);
 
   @media (min-width: 768px) {
     width: 60%;
@@ -91,7 +89,8 @@ const Boxes = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.4rem;
+  margin-top: 4rem;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -99,13 +98,17 @@ const Boxes = styled.div`
 `;
 
 const Box = styled.div<{ description: boolean }>`
-  height: ${props => (props.description ? '50rem' : '30rem')};
-
-  width: 35rem;
+  min-height: ${props => (props.description ? '48rem' : '30rem')};
+  width: min(35rem, 100%);
   background-color: white;
-  border: 1px solid #ddd;
+  border: 1px solid rgba(255,255,255,.3);
   display: flex;
   flex-direction: column;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 28px 60px rgba(0,0,0,.22);
+  transition: transform 220ms ease;
+  &:hover { transform: translateY(-7px); }
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -113,7 +116,7 @@ const Box = styled.div<{ description: boolean }>`
 
 const BoxImage = styled.div`
   background-color: white;
-  height: 20rem;
+  height: 22rem;
 `;
 
 const Image = styled.img`
@@ -126,20 +129,20 @@ const BoxInfo = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 2rem;
+  align-items: flex-start;
+  padding: 3rem;
 `;
 
 const BoxInfoTitle = styled.h4`
   font-size: 2rem;
   line-height: 1.2;
   margin-bottom: 1rem;
-  color: #272002;
+  color: #113355;
 `;
 
 const BoxInfoDesc = styled.p`
   font-size: 1.4rem;
-  color: #858585;
+  color: #647383;
   line-height: 1.8;
-  padding: 0 1rem;
+  padding: 0;
 `;

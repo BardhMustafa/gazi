@@ -23,6 +23,15 @@ export const MenuLinks = ({
         value={language}
         onChange={handleLanguageChange}
         MenuProps={{ disableScrollLock: true }}
+        variant="standard"
+        disableUnderline
+        sx={{
+          minWidth: 84,
+          color: '#113355',
+          fontSize: '1.4rem',
+          fontWeight: 650,
+          '& .MuiSelect-select': { padding: '0.8rem 2.8rem 0.8rem 1rem' },
+        }}
       >
         <MenuItem value="shq">🇦🇱 Shq</MenuItem>
         <MenuItem value="en">🇺🇸 En</MenuItem>

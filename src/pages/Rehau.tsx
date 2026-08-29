@@ -108,6 +108,8 @@ const Image = styled(AdvancedImage)`
   object-fit: cover;
   width: 100%;
   height: 30rem;
+  border-radius: 2rem;
+  box-shadow: 0 24px 60px rgba(17, 51, 85, .16);
 
   @media (min-width: 768px) {
     width: 35rem;
@@ -120,11 +122,14 @@ const Image2 = styled(Image)`
 
   @media (min-width: 1200px) {
     transform: translate(65%, -35%);
+    border: 8px solid #fff;
   }
 `;
 
 const TextSelectionHeading = styled.h2`
-  font-size: 4rem;
-  line-height: 1.2;
+  font-size: clamp(3.6rem, 5vw, 5.4rem);
+  line-height: 1.08;
+  letter-spacing: -.045em;
+  color: #113355;
   margin-bottom: 2rem;
 `;

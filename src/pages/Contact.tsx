@@ -18,7 +18,7 @@ const Contact = () => {
       />
       <ContactInfo
         phone="(+383)44-177-222"
-        email="contact@gazi.com"
+        email="contact@gazi.shpk"
         address="Vëllezrit Maliqi 7, Gjilan, Kosovë"
       />
       <Suspense fallback={<div>Loading Map</div>}>

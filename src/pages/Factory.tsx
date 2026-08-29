@@ -40,9 +40,9 @@ const Factory = () => {
 const Container = styled.div`
   flex-basis: 100%;
   min-height: 50rem;
-  background-color: #fbfbfd;
-  padding: 2rem;
-  border-radius: 1.2rem;
-  border: 1px solid #e0e0e0;
+  background-color: #f5f7f9;
+  padding: clamp(3rem, 6vw, 7rem);
+  border-radius: 2.4rem;
+  border: 1px solid #e5e9ed;
 `;
 export default Factory;

@@ -33,16 +33,17 @@ export const PageHero = ({ title, backgroundImagePath }: PageHeroProps) => {
 
 export const Container = styled.div<{ bgImage: string }>`
   width: 100%;
-  height: 40rem;
-  margin-top: 7.5rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5)),
+  height: clamp(38rem, 52vw, 58rem);
+  margin-top: 8.8rem;
+  background: linear-gradient(110deg, rgba(17, 51, 85, 0.94), rgba(17, 51, 85, 0.35) 58%, rgba(212, 37, 57, 0.32)),
     url(${props => props.bgImage});
   background-position: center 30%;
   background-size: cover;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   color: white;
+  padding: 0 max(5vw, calc((100vw - 1400px) / 2));
 
   @media (min-width: 768px) {
     height: 40rem;
@@ -54,5 +55,9 @@ export const Container = styled.div<{ bgImage: string }>`
 `;
 
 const ContactHeading = styled.h1`
-  font-size: 4rem;
+  font-size: clamp(4.5rem, 8vw, 8.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  max-width: 900px;
+  text-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
 `;

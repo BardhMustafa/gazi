@@ -136,7 +136,7 @@ export const NavLinks = ({ menuLinks }: NavLinks) => {
 
 const ActionList = styled.ul`
   width: 300px;
-  padding: 1rem;
+  padding: 2.4rem;
   list-style: none;
   margin: 0;
   display: flex;
@@ -160,7 +160,7 @@ const ActionList = styled.ul`
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 5rem;
+    gap: clamp(2.2rem, 2.6vw, 4rem);
     list-style: none;
   }
 `;
@@ -168,7 +168,7 @@ const ActionList = styled.ul`
 const StyledMenuIcon = styled(MenuIcon)`
   font-family: 'Poppins', sans-serif;
   font-size: 2.6rem;
-  color: #d42539;
+  color: #113355;
 `;
 
 const StyledIconButton = styled(IconButton)`
@@ -178,15 +178,37 @@ const StyledIconButton = styled(IconButton)`
 
 export const ActionListItem = styled.li`
   text-decoration: none;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #d42539;
+  font-size: 1.45rem;
+  font-weight: 650;
+  color: #113355;
   cursor: pointer;
   display: flex;
   align-items: center;
+  position: relative;
+  transition: color 180ms ease;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: -0.8rem;
+    height: 2px;
+    background: #d42539;
+    transition: right 180ms ease;
+  }
+
+  &:hover {
+    color: #d42539;
+
+    &::after {
+      right: 0;
+    }
+  }
 
   @media (max-width: 768px) {
-    padding: 1rem 0;
+    padding: 1.2rem 0;
+    font-size: 1.7rem;
     width: 100%;
   }
 `;
