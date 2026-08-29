@@ -43,12 +43,9 @@ const Geneo = () => {
       <TechnologyBanner>
         <BannerNumber>01</BannerNumber>
         <div>
-          <Eyebrow>TEKNOLOGJIA E SISTEMIT</Eyebrow>
+          <Eyebrow>{t(translations.redesign.geneo_system_technology)}</Eyebrow>
           <h2>{t(translations.geneo['general-table-value1'])}</h2>
-          <p>
-            Stabilitet i lartë, peshë më e ulët dhe performancë termike premium
-            në një sistem të vetëm.
-          </p>
+          <p>{t(translations.redesign.geneo_technology_summary)}</p>
         </div>
       </TechnologyBanner>
 
@@ -57,7 +54,7 @@ const Geneo = () => {
           <SectionNumber>02</SectionNumber>
           <div>
             <Eyebrow>{t(translations.geneo['advantages-table'])}</Eyebrow>
-            <h2>Komoditet dhe performancë pa kompromis.</h2>
+            <h2>{t(translations.redesign.geneo_advantages_title)}</h2>
           </div>
         </SectionHeading>
         <AdvantagesGrid>
@@ -74,11 +71,10 @@ const Geneo = () => {
         <SectionHeading>
           <SectionNumber>03</SectionNumber>
           <div>
-            <Eyebrow>TË DHËNAT TEKNIKE</Eyebrow>
-            <h2>GENEO në detaje.</h2>
+            <Eyebrow>{t(translations.redesign.technical_data)}</Eyebrow>
+            <h2>{t(translations.redesign.geneo_details_title)}</h2>
             <SectionDescription>
-              Specifikimet kryesore të sistemit, të organizuara për lexim dhe
-              krahasim të shpejtë.
+              {t(translations.redesign.geneo_details_summary)}
             </SectionDescription>
           </div>
         </SectionHeading>

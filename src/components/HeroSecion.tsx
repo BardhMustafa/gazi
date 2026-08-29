@@ -2,6 +2,7 @@
 import  { ContainerProps } from '@mui/material/Container';
 
 import styled from 'styled-components';
+import { cloudinaryImage } from '../utils/cloudinaryImage';
 
 type Props = {
   background: string;
@@ -12,7 +13,10 @@ type Props = {
 
 const HeroSection = (props: Props) => {
   return (
-    <StyledContainer background={props.background} height={props.height}>
+    <StyledContainer
+      background={cloudinaryImage(props.background, 1800)}
+      height={props.height}
+    >
       {props.children}
     </StyledContainer> 
   );

@@ -94,14 +94,14 @@ const Synego = () => {
           <SectionHeading>
             <SectionIndex>01</SectionIndex>
             <div>
-              <Eyebrow>TË DHËNAT TEKNIKE</Eyebrow>
-              <h2>Dritaret Synego</h2>
-              <p>Përmbledhje e dimensioneve, performancës dhe klasifikimeve teknike të sistemit standard Synego.</p>
+              <Eyebrow>{t(translations.redesign.technical_data)}</Eyebrow>
+              <h2>{t(translations.synego['synego-window'])}</h2>
+              <p>{t(translations.redesign.synego_standard_summary)}</p>
             </div>
           </SectionHeading>
           <TablesGrid>
-            <CustomizedTables title="Të përgjithshme" data={synegoWindowGeneral} />
-            <CustomizedTables title="Karakteristikat" data={synegoWindowCharacteristics} />
+            <CustomizedTables title={t(translations.synego['general-table'])} data={synegoWindowGeneral} />
+            <CustomizedTables title={t(translations.synego['characteristic-table'])} data={synegoWindowCharacteristics} />
           </TablesGrid>
         </SpecificationGroup>
 
@@ -109,14 +109,14 @@ const Synego = () => {
           <SectionHeading>
             <SectionIndex>02</SectionIndex>
             <div>
-              <Eyebrow>TË DHËNAT TEKNIKE</Eyebrow>
+              <Eyebrow>{t(translations.redesign.technical_data)}</Eyebrow>
               <h2>Brillant Design</h2>
-              <p>Specifikimet kryesore për variantin Brillant Design, të organizuara për krahasim të shpejtë.</p>
+              <p>{t(translations.redesign.brilliant_summary)}</p>
             </div>
           </SectionHeading>
           <TablesGrid>
-            <CustomizedTables title="Të përgjithshme" data={brilliantGeneral} />
-            <CustomizedTables title="Karakteristikat" data={brilliantCharacteristics} />
+            <CustomizedTables title={t(translations.synego['general-table'])} data={brilliantGeneral} />
+            <CustomizedTables title={t(translations.synego['characteristic-table'])} data={brilliantCharacteristics} />
           </TablesGrid>
         </SpecificationGroup>
       </Specifications>

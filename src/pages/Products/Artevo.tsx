@@ -1,6 +1,7 @@
 import { InfoSection } from '../../components/homepage/InfoSection';
 import { useTranslations } from '../../hooks/useTranslations';
 import styled from 'styled-components';
+import { cloudinaryImage } from '../../utils/cloudinaryImage';
 
 export const Artevo = () => {
   const { t, translations } = useTranslations();
@@ -8,27 +9,23 @@ export const Artevo = () => {
   const pillars = [
     {
       number: '01',
-      title: 'Dritë natyrale',
-      description:
-        'Sipërfaqe më të mëdha xhami që hapin ambientin dhe maksimizojnë ndriçimin natyral.',
+      title: t(translations.redesign.artevo_natural_light),
+      description: t(translations.redesign.artevo_natural_light_desc),
     },
     {
       number: '02',
-      title: 'Liri arkitekturore',
-      description:
-        'Përmasa dhe konfigurime fleksibile për projekte bashkëkohore me identitet unik.',
+      title: t(translations.redesign.artevo_architectural_freedom),
+      description: t(translations.redesign.artevo_architectural_freedom_desc),
     },
     {
       number: '03',
-      title: 'Dizajn i rafinuar',
-      description:
-        'Profile me linja të pastra që e vendosin pamjen, funksionin dhe komoditetin në ekuilibër.',
+      title: t(translations.redesign.artevo_refined_design),
+      description: t(translations.redesign.artevo_refined_design_desc),
     },
     {
       number: '04',
-      title: 'Qëndrueshmëri',
-      description:
-        'Një sistem i menduar për efikasitet, jetëgjatësi dhe përdorim të përgjegjshëm të materialeve.',
+      title: t(translations.redesign.artevo_sustainability),
+      description: t(translations.redesign.artevo_sustainability_desc),
     },
   ];
 
@@ -47,12 +44,9 @@ export const Artevo = () => {
       <Statement>
         <StatementNumber>01</StatementNumber>
         <div>
-          <Eyebrow>NJË DIMENSION I RI</Eyebrow>
-          <h2>Më shumë hapësirë. Më shumë dritë. Më shumë liri.</h2>
-          <p>
-            ARTEVO kombinon sipërfaqe bujare xhami me një profil modern për të
-            krijuar ambiente të hapura, të ndritshme dhe të qeta.
-          </p>
+          <Eyebrow>{t(translations.redesign.artevo_new_dimension)}</Eyebrow>
+          <h2>{t(translations.redesign.artevo_statement_title)}</h2>
+          <p>{t(translations.redesign.artevo_statement_summary)}</p>
         </div>
       </Statement>
 
@@ -60,8 +54,8 @@ export const Artevo = () => {
         <SectionHeading>
           <SectionNumber>02</SectionNumber>
           <div>
-            <Eyebrow>PARIMET E ARTEVO</Eyebrow>
-            <h2>Projektuar rreth mënyrës moderne të jetesës.</h2>
+            <Eyebrow>{t(translations.redesign.artevo_principles)}</Eyebrow>
+            <h2>{t(translations.redesign.artevo_principles_title)}</h2>
           </div>
         </SectionHeading>
         <PillarsGrid>
@@ -77,16 +71,18 @@ export const Artevo = () => {
 
       <ImageFeature>
         <ImagePanel
-          src="https://res.cloudinary.com/dqtfurml7/image/upload/v1703956017/images/artevo_kezr7o_iyu2of.jpg"
+          src={cloudinaryImage(
+            'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956017/images/artevo_kezr7o_iyu2of.jpg',
+            1200
+          )}
           alt="REHAU Artevo window system"
+          loading="lazy"
+          decoding="async"
         />
         <ImageCopy>
           <Eyebrow>ARTEVO BY REHAU</Eyebrow>
-          <h2>Elegancë që ndihet në çdo detaj.</h2>
-          <p>
-            Një zgjidhje premium për projekte ku arkitektura, drita dhe
-            performanca duhet të funksionojnë si një tërësi.
-          </p>
+          <h2>{t(translations.redesign.artevo_closing_title)}</h2>
+          <p>{t(translations.redesign.artevo_closing_summary)}</p>
         </ImageCopy>
       </ImageFeature>
     </Page>

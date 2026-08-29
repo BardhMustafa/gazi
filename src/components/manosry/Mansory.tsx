@@ -8,6 +8,7 @@ import Fade from '@mui/material/Fade';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import ZoomInIcon from '@mui/icons-material/ZoomIn';
+import { cloudinaryImage } from '../../utils/cloudinaryImage';
 
 interface ItemProps {
   src: string;
@@ -83,23 +84,26 @@ export default function Mansory({
   return (
     <Box sx={{ width: '100%', minHeight: 829 }}>
       <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={3}>
-        {heights.map((height, index) => (
-          <StyledItem
-            key={index}
-            sx={{
-              height,
-              borderRadius: 2,
-              overflow: 'hidden',
-            }}
-            src={pics[index]}
-            elevation={3}
-            onClick={() => handleOpen(pics[index])}
-          >
-            <Overlay className="overlay">
-              <ZoomInIcon sx={{ color: 'white', fontSize: 40 }} />
-            </Overlay>
-          </StyledItem>
-        ))}
+        {heights.map((height, index) => {
+          const originalImage = pics[index];
+          return (
+            <StyledItem
+              key={index}
+              sx={{
+                height,
+                borderRadius: 2,
+                overflow: 'hidden',
+              }}
+              src={cloudinaryImage(originalImage, 850)}
+              elevation={3}
+              onClick={() => handleOpen(originalImage)}
+            >
+              <Overlay className="overlay">
+                <ZoomInIcon sx={{ color: 'white', fontSize: 40 }} />
+              </Overlay>
+            </StyledItem>
+          );
+        })}
       </Masonry>
 
       <Modal
@@ -115,7 +119,13 @@ export default function Mansory({
             <CloseButton onClick={handleClose}>
               <CloseIcon />
             </CloseButton>
-            {selectedImage && <img src={selectedImage} alt="Preview" />}
+            {selectedImage && (
+              <img
+                src={cloudinaryImage(selectedImage, 1800)}
+                alt="Preview"
+                decoding="async"
+              />
+            )}
           </ModalContent>
         </Fade>
       </Modal>

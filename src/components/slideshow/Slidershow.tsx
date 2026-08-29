@@ -5,20 +5,30 @@ import { Stack } from '@mui/material';
 import { Button } from '../../shared/components/Button';
 import { generatePath, useNavigate } from 'react-router';
 import { useTranslations } from '../../hooks/useTranslations';
+import { cloudinaryImage } from '../../utils/cloudinaryImage';
 
 export default function SlideShow() {
   const array = [Slide1, Slide2, Slide3];
 
   const slideImageFromCloudinary = (i: number) => {
     if (i === 1) {
-      return 'https://res.cloudinary.com/dvnpbobxy/image/upload/v1745062113/facebook_cover_npemiv.png';
+      return cloudinaryImage(
+        'https://res.cloudinary.com/dvnpbobxy/image/upload/v1745062113/facebook_cover_npemiv.png',
+        1920
+      );
     }
 
     if (i === 2) {
-      return 'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956395/background2_dhigry.jpg';
+      return cloudinaryImage(
+        'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956395/background2_dhigry.jpg',
+        1920
+      );
     }
 
-    return 'https://res.cloudinary.com/dqtfurml7/image/upload/v1703974234/image_1_compressed_z6ozta.jpg';
+    return cloudinaryImage(
+      'https://res.cloudinary.com/dqtfurml7/image/upload/v1703974234/image_1_compressed_z6ozta.jpg',
+      1920
+    );
   };
 
   return (

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Heading2 } from '../../shared/components/Heading2';
+import { cloudinaryImage } from '../../utils/cloudinaryImage';
 
 interface InfoSectionProps {
   title: string;
@@ -10,7 +11,12 @@ export const InfoSection = ({ title, imageSrc }: InfoSectionProps) => {
   return (
     <Section>
       <Heading2>{title}</Heading2>
-      <InfoSectionImg src={imageSrc} alt="info-section-image" />
+      <InfoSectionImg
+        src={cloudinaryImage(imageSrc, 1100)}
+        alt={`${title} system profile`}
+        decoding="async"
+        loading="eager"
+      />
     </Section>
   );
 };

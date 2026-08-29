@@ -17,7 +17,7 @@ const Products = () => {
       <Section>
         <SectionIntro>
           <Eyebrow>GAZI SYSTEMS</Eyebrow>
-          <h2>Materiale të zgjedhura për performancë afatgjatë.</h2>
+          <h2>{t(translations.redesign.products_intro_title)}</h2>
         </SectionIntro>
         <ProductsContainer>
           <Product
@@ -34,25 +34,22 @@ const Products = () => {
             <ProductNumber>01</ProductNumber>
             <ProductHeading>PVC</ProductHeading>
             <ProductDescription>
-              PVC: e qëndrueshme, rezistente ndaj motit dhe pa nevojë për
-              mirëmbajtje Formësim i shkëlqyeshëm, liri absolute dizajni dhe
-              raport optimal çmim-performancë, të gjitha këto tregojnë se
-              dritaret dhe dyert e prodhuara me PVC kanë cilësi të lartë. Ne
-              gjithashtu i pajisim profilet tona me një sipërfaqe shumë të
-              veçantë: veshje me definicion të lartë.
+              {t(translations.redesign.products_pvc_description)}
             </ProductDescription>
-            <ProductLink>Eksploro sistemet <ArrowForwardRoundedIcon /></ProductLink>
+            <ProductLink>
+              {t(translations.redesign.products_explore)}
+              <ArrowForwardRoundedIcon />
+            </ProductLink>
           </Product>
           <Product>
             <ProductNumber>02</ProductNumber>
             <ProductHeading>ALUMIN</ProductHeading>
             <ProductDescription>
-              Sisteme alumini me linja të pastra, qëndrueshmëri të lartë dhe
-              fleksibilitet arkitektonik. Një zgjidhje premium për hapësira të
-              mëdha, fasada moderne dhe projekte që kërkojnë dritë, elegancë
-              dhe performancë të besueshme.
+              {t(translations.redesign.products_aluminum_description)}
             </ProductDescription>
-            <ProductStatus>Së shpejti online</ProductStatus>
+            <ProductStatus>
+              {t(translations.redesign.products_coming_soon)}
+            </ProductStatus>
           </Product>
         </ProductsContainer>
       </Section>

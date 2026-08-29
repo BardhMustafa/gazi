@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import styled from 'styled-components';
+import { cloudinaryImage } from '../../utils/cloudinaryImage';
 
 interface PageHeroProps {
   title: string;
@@ -9,6 +10,7 @@ interface PageHeroProps {
 
 export const PageHero = ({ title, backgroundImagePath }: PageHeroProps) => {
   const [portalRoot, setPortalRoot] = useState<HTMLElement | null>(null);
+  const optimizedImage = cloudinaryImage(backgroundImagePath, 1920);
 
   useEffect(() => {
     const root = document.getElementById('page-hero-container') as HTMLElement;
@@ -17,7 +19,7 @@ export const PageHero = ({ title, backgroundImagePath }: PageHeroProps) => {
 
   if (portalRoot) {
     return createPortal(
-      <Container bgImage={backgroundImagePath}>
+      <Container bgImage={optimizedImage}>
         <ContactHeading>{title}</ContactHeading>
       </Container>,
       portalRoot
@@ -25,7 +27,7 @@ export const PageHero = ({ title, backgroundImagePath }: PageHeroProps) => {
   }
 
   return (
-    <Container bgImage={backgroundImagePath}>
+    <Container bgImage={optimizedImage}>
       <ContactHeading>{title}</ContactHeading>
     </Container>
   );

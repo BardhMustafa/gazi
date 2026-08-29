@@ -48,7 +48,7 @@ export const Footer = () => {
         <ContactSection>
           <Logo src={logo} alt="Gazi" />
           <FooterStatement>
-            Dritare, dyer dhe sisteme arkitektonike premium, prodhuar në Kosovë që nga viti 1995.
+            {t(translations.redesign.footer_statement)}
           </FooterStatement>
           <MainContactLink href="mailto:contact@gazi.shpk">
             contact@gazi.shpk
@@ -86,6 +86,7 @@ const FooterStyles = styled.footer`
   background-color: #0d2b49;
   color: #fff;
   border-top: 4px solid #d42539;
+  margin-top: 2rem;
 `;
 
 const Container = styled.div`

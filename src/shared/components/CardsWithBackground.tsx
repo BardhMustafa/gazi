@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { cloudinaryImage } from '../../utils/cloudinaryImage';
 
 interface Box {
   id: number | string;
@@ -22,7 +23,7 @@ export const CardsWithBackground = ({
   sectionImage,
 }: CardsWithBackgroundProps) => {
   return (
-    <Section sectionImage={sectionImage}>
+    <Section sectionImage={cloudinaryImage(sectionImage, 1800)}>
       <InfoSection>
         <InfoSectionHeading>{title}</InfoSectionHeading>
         {subtitle && <InfoSectionDesc>{subtitle}</InfoSectionDesc>}
@@ -31,7 +32,12 @@ export const CardsWithBackground = ({
         {boxes?.map(box => (
           <Box description={!!box.description} key={box.id}>
             <BoxImage>
-              <Image src={box.imagePath} alt={box.imageAlt} />
+              <Image
+                src={cloudinaryImage(box.imagePath, 720)}
+                alt={box.imageAlt}
+                loading="lazy"
+                decoding="async"
+              />
             </BoxImage>
             <BoxInfo>
               <BoxInfoTitle>{box.title}</BoxInfoTitle>
