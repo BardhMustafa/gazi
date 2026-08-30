@@ -53,8 +53,8 @@ export const Footer = () => {
           <MainContactLink href="mailto:contact@gazi.shpk">
             contact@gazi.shpk
           </MainContactLink>
-          <MainContactLink href={'tel: 044177222'}>
-            (+383)44-177-222
+          <MainContactLink href="tel:+38344657531">
+            +383 44 657 531
           </MainContactLink>
           <MainContactLink>Vëllezrit Maliqi 7, Gjilan, Kosovë</MainContactLink>
           <LogoLink href="https://www.facebook.com/GaziGjilan" target="_blank" rel="noreferrer" aria-label="Gazi on Facebook">
