@@ -23,8 +23,8 @@ export const Layout = ({ children }: { children?: React.ReactNode }) => {
 
 const LayoutContainer = styled.div`
   margin: 0 auto;
-  padding-top: 7.5rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  max-width: 1400px;
+  padding-top: 8.8rem;
+  padding-right: clamp(1.6rem, 4vw, 4rem);
+  padding-left: clamp(1.6rem, 4vw, 4rem);
+  max-width: 1480px;
 `;

@@ -17,8 +17,8 @@ const Contact = () => {
         backgroundImagePath="https://res.cloudinary.com/dqtfurml7/image/upload/v1703956019/images/contact_hero_ktmb1n_prlbdf.jpg"
       />
       <ContactInfo
-        phone="(+383)44-177-222"
-        email="contact@gazi.com"
+        phone="+383 44 657 531"
+        email="contact@gazi.shpk"
         address="Vëllezrit Maliqi 7, Gjilan, Kosovë"
       />
       <Suspense fallback={<div>Loading Map</div>}>

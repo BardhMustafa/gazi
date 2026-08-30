@@ -15,9 +15,14 @@ const ErrorContainer = styled.div`
   align-items: center;
   height: 40rem;
   color: #d42539;
+  flex-direction: column;
+  background: #f5f7f9;
+  border-radius: 2.4rem;
 
   h1 {
     font-size: 10rem;
+    line-height: 1;
+    letter-spacing: -.06em;
   }
 
   p {

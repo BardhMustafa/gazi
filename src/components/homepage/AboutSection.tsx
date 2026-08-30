@@ -28,7 +28,8 @@ export const AboutSection = () => {
 const Section = styled.section`
   display: flex;
   align-items: center;
-  padding-top: 10rem;
+  padding: clamp(4rem, 8vw, 10rem) 0;
+  gap: clamp(4rem, 8vw, 10rem);
   margin-bottom: 0;
 
   @media (max-width: 768px) {
@@ -59,6 +60,8 @@ const Image = styled(AdvancedImage)`
   object-fit: cover;
   width: 40rem;
   height: 50rem;
+  border-radius: 2rem;
+  box-shadow: 0 25px 60px rgba(17, 51, 85, 0.16);
 
   @media (max-width: 768px) {
     margin-bottom: 1rem;
@@ -78,6 +81,8 @@ const YearsOfExperience = styled.div`
   background-color: rgba(30, 30, 33, 0.8);
   backdrop-filter: saturate(180%) blur(10px);
   color: white;
+  border-radius: 1.6rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
 
   & > h3 {
     font-size: 5rem;
@@ -141,6 +146,8 @@ export const TextSectionAbout = styled.h3`
   font-weight: 700;
   text-transform: uppercase;
   color: #d42539;
+  letter-spacing: 0.16em;
+  margin-bottom: 1.2rem;
 
   @media (max-width: 768px) {
     margin-bottom: 1rem;

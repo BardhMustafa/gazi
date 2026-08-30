@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import { AdvancedImage } from '@cloudinary/react';
-import { cld } from '../App';
+import logo from '../assets/gazi-logo.png';
 import { useTranslations } from '../hooks/useTranslations';
 import { NestedMenuLink } from './layout/NavLinks';
 
@@ -47,16 +46,19 @@ export const Footer = () => {
     <FooterStyles>
       <Container>
         <ContactSection>
-          <Logo cldImg={cld.image('images/gazi_logo_eupb5e_iqnoff')} />
-          <MainContactLink href="mailto: contact@gazi.shpk">
-            contact@gazi.shpk ntpgazi@hotmail.com
+          <Logo src={logo} alt="Gazi" />
+          <FooterStatement>
+            {t(translations.redesign.footer_statement)}
+          </FooterStatement>
+          <MainContactLink href="mailto:contact@gazi.shpk">
+            contact@gazi.shpk
           </MainContactLink>
-          <MainContactLink href={'tel: 044177222'}>
-            (+383)44-177-222
+          <MainContactLink href="tel:+38344657531">
+            +383 44 657 531
           </MainContactLink>
           <MainContactLink>Vëllezrit Maliqi 7, Gjilan, Kosovë</MainContactLink>
-          <LogoLink href="https://www.facebook.com/GaziGjilan" target="_blank">
-            <FacebookIcon style={{ color: '#1122dd', fontSize: '3.6rem' }} />
+          <LogoLink href="https://www.facebook.com/GaziGjilan" target="_blank" rel="noreferrer" aria-label="Gazi on Facebook">
+            <FacebookIcon style={{ color: '#fff', fontSize: '2.4rem' }} />
           </LogoLink>
         </ContactSection>
 
@@ -81,17 +83,21 @@ export const Footer = () => {
 };
 
 const FooterStyles = styled.footer`
-  background-color: #f4f4f4;
+  background-color: #0d2b49;
+  color: #fff;
+  border-top: 4px solid #d42539;
+  margin-top: 2rem;
 `;
 
 const Container = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: row;
   gap: 8px;
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
   margin-top: 10rem;
+  padding: 7rem clamp(2rem, 5vw, 5rem) 5rem;
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 0px;
@@ -101,9 +107,8 @@ const Container = styled.div`
 const ContactSection = styled.div`
   display: flex;
   flex-direction: column;
-  width: 30%;
-  gap: 16px;
-  padding: 2rem;
+  width: 42%;
+  gap: 1.4rem;
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -116,6 +121,10 @@ const CopyrightSection = styled.div`
   justify-content: center;
   align-items: center;
   padding-bottom: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 2.4rem;
 
   @media (max-width: 768px) {
     grid-column: 1 / span 2;
@@ -130,16 +139,35 @@ const MainContactLink = styled.a`
   font-weight: 700;
   width: fit-content;
   text-decoration: none;
-  color: #333333;
+  color: rgba(255, 255, 255, 0.82);
+  transition: color 180ms ease;
+
+  &:hover { color: #fff; }
 `;
 
 const LogoLink = styled.a`
-  width: fit-content;
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  background: #d42539;
+  display: grid;
+  place-items: center;
+  margin-top: 0.8rem;
 `;
 
-const Logo = styled(AdvancedImage)`
-  width: 5rem;
-  height: 6rem;
+const Logo = styled.img`
+  width: 11rem;
+  height: auto;
+  filter: brightness(0) invert(1);
+  margin-bottom: 1rem;
+`;
+
+const FooterStatement = styled.p`
+  max-width: 44rem;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 1.5rem;
+  line-height: 1.7;
+  margin-bottom: 0.6rem;
 `;
 
 const LinkText = styled(Link)`
@@ -148,12 +176,18 @@ const LinkText = styled(Link)`
   font-weight: 600;
   width: fit-content;
   text-decoration: none;
-  color: #333333;
+  color: rgba(255, 255, 255, 0.72);
+  transition: color 180ms ease, transform 180ms ease;
+
+  &:hover {
+    color: #fff;
+    transform: translateX(3px);
+  }
 ` as typeof Link;
 
 const LinkColumnContainer = styled.div`
   display: flex;
-  width: 70%;
+  width: 50%;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
@@ -166,7 +200,7 @@ const CopyrightText = styled.p`
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  color: #333333;
+  color: rgba(255, 255, 255, 0.55);
   margin-bottom: 0px;
   @media (max-width: 768px) {
     text-align: center;

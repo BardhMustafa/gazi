@@ -4,13 +4,17 @@ import { createTheme, ThemeProvider } from '@mui/material';
 const Theme = ({ children }: { children: React.ReactNode }) => {
   const theme = createTheme({
     palette: {
+      primary: {
+        main: '#d42539',
+        contrastText: '#ffffff',
+      },
       secondary: {
         main: '#113355',
         contrastText: '#ffffff',
       },
     },
     typography: {
-
+      fontFamily: 'Poppins, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
       h1: {
         fontSize: '3.2rem',
         fontWeight: 700,
@@ -20,7 +24,7 @@ const Theme = ({ children }: { children: React.ReactNode }) => {
         fontWeight: 600,
       },
       h3: {
-        fontSize: '2,2rem',
+        fontSize: '2.2rem',
         fontWeight: 500,
       },
       h4: {
@@ -61,6 +65,13 @@ const Theme = ({ children }: { children: React.ReactNode }) => {
             fontSize: '1.4rem',
             fontWeight: 500,
             textTransform: 'none',
+          },
+        },
+      },
+      MuiPaper: {
+        styleOverrides: {
+          root: {
+            backgroundImage: 'none',
           },
         },
       },

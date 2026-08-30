@@ -3,8 +3,7 @@ import { FixedWrapper } from '../../shared/components/FixedWrapper';
 import { Link } from 'react-router-dom';
 import { useTranslations } from '../../hooks/useTranslations';
 import { NavLinks, NestedMenuLink } from './NavLinks';
-import { AdvancedImage } from '@cloudinary/react';
-import { cld } from '../../App';
+import logo from '../../assets/gazi-logo.png';
 
 export const NavBar = () => {
   const { t, translations } = useTranslations();
@@ -19,7 +18,7 @@ export const NavBar = () => {
       nestedLinks: [
         {
           path: '/products/pvc',
-          label: 'pvc',
+          label: 'PVC',
         },
         // {
         //   path: '/products/alumin',
@@ -33,11 +32,11 @@ export const NavBar = () => {
       nestedLinks: [
         {
           path: '/projects/showroom',
-          label: 'showroom',
+          label: t(translations.common.showroom),
         },
         {
           path: '/projects/factory',
-          label: 'factory',
+          label: t(translations.common['prod-sec']),
         },
       ],
     },
@@ -50,10 +49,10 @@ export const NavBar = () => {
         <HeaderWrapper>
           <LogoWrapper>
             <Link to="/">
-              <Logo cldImg={cld.image('gazi-logo_vqovqx')} />
+              <Logo src={logo} alt="Gazi" />
             </Link>
           </LogoWrapper>
-          <Actions>
+          <Actions aria-label={t(translations.redesign.nav_main)}>
             <NavLinks menuLinks={menuLinks} />
           </Actions>
         </HeaderWrapper>
@@ -62,20 +61,34 @@ export const NavBar = () => {
   );
 };
 
-const Logo = styled(AdvancedImage)`
-  width: 120px;
+const Logo = styled.img`
+  width: 10.4rem;
+  height: auto;
 `;
 
 const Header = styled.header`
   display: flex;
   justify-content: center;
-  width: 100%;
-  height: 7rem;
-  background-color: #fff;
+  width: calc(100% - 2 * clamp(1.6rem, 4vw, 4rem));
+  max-width: 1400px;
+  height: 7.2rem;
+  margin: 1.2rem auto 0;
+  background-color: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(17, 51, 85, 0.1);
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px rgba(17, 51, 85, 0.09);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  @media (max-width: 1023px) {
+    height: 6.8rem;
+    margin-top: 1rem;
+    border-radius: 1.8rem;
+  }
 `;
 
 const HeaderWrapper = styled.div`
-  padding: 0 1rem;
+  padding: 0 clamp(1.4rem, 2vw, 2.4rem);
   max-width: 1400px;
   width: 100%;
   height: 100%;
@@ -84,21 +97,17 @@ const HeaderWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  gap: 1.6rem;
 `;
 
 const Actions = styled.nav`
-  a {
-    text-decoration: none;
-    color: #d42539;
-  }
-
-  p {
-    font-weight: 700;
-  }
+  min-width: 0;
 `;
 
 const LogoWrapper = styled.div`
-  margin-top: 0.7rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
   a {
     text-decoration: none;
   }

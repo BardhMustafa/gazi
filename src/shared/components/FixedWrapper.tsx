@@ -10,5 +10,5 @@ const Fixed = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  z-index: ${({ theme }) => theme.zIndex.appBar};
+  z-index: 1200;
 `;

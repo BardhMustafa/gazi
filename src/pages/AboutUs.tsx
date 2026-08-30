@@ -57,6 +57,8 @@ const Image = styled(AdvancedImage)`
   object-fit: cover;
   width: 100%;
   height: 50rem;
+  border-radius: 2rem;
+  box-shadow: 0 24px 60px rgba(17, 51, 85, .14);
 
   @media (min-width: 768px) {
     width: 40rem;
@@ -64,8 +66,10 @@ const Image = styled(AdvancedImage)`
 `;
 
 const TextSelectionHeading = styled.h2`
-  font-size: 4rem;
-  line-height: 1.2;
+  font-size: clamp(3.6rem, 5vw, 5.4rem);
+  line-height: 1.08;
+  letter-spacing: -.045em;
+  color: #113355;
   margin-bottom: 2rem;
 `;
 
@@ -73,7 +77,7 @@ const StyledTextSection = styled(TextSection)`
   margin-top: 0;
 
   @media (min-width: 768px) {
-    margin-left: 14.5rem;
+    margin-left: 8rem;
     width: 80%;
   }
 `;

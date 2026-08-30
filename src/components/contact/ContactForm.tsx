@@ -77,7 +77,7 @@ export const ContactForm = () => {
 };
 
 const Form = styled.form`
-  padding-top: 1rem;
+  padding-top: 0;
 `;
 
 const FormContainer = styled.div`
@@ -90,10 +90,11 @@ const FormControl = styled.div``;
 
 const Input = styled.input<{ error: FieldError | undefined }>`
   width: 100%;
-  padding: 1rem;
+  padding: 1.6rem 1.8rem;
   font-size: 1.6rem;
-  border: 1px solid ${({ error }) => (error ? '#d42539' : '#bbb')};
-  font-family: 'Poppins', sans-serif;
+  border: 1px solid ${({ error }) => (error ? '#d42539' : '#dce2e7')};
+  border-radius: 1.2rem;
+  background: #fff;
 
   &::placeholder {
     color: ${({ error }) => (error ? '#d42539' : '#aaa')};
@@ -107,10 +108,11 @@ const Input = styled.input<{ error: FieldError | undefined }>`
 
 const Textarea = styled.textarea<{ error: FieldError | undefined }>`
   width: 100%;
-  padding: 1rem;
+  padding: 1.6rem 1.8rem;
   font-size: 1.6rem;
-  border: 1px solid ${({ error }) => (error ? '#d42539' : '#bbb')};
-  font-family: 'Poppins', sans-serif;
+  border: 1px solid ${({ error }) => (error ? '#d42539' : '#dce2e7')};
+  border-radius: 1.2rem;
+  background: #fff;
   resize: none;
 
   &::placeholder {

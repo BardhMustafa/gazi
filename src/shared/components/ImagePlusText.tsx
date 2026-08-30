@@ -23,8 +23,12 @@ export const ImagePlusText = ({
 
 const Section = styled.section<{ bgColor: string | undefined }>`
   display: flex;
-  padding: 1rem;
+  align-items: center;
+  gap: clamp(4rem, 8vw, 10rem);
+  padding: clamp(3rem, 7vw, 8rem);
   background-color: ${({ bgColor }) => (bgColor ? bgColor : 'white')};
+  border-radius: 2.4rem;
+  overflow: hidden;
   @media (max-width: 1200px) {
     flex-direction: column;
   }
@@ -35,7 +39,7 @@ const ImageSection = styled.div<{ order: number }>`
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   order: ${({ order }) => (order === 1 ? 1 : 2)};
 
   @media (min-width: 1200px) {
@@ -50,18 +54,18 @@ const ImageSection = styled.div<{ order: number }>`
 const TextSection = styled.div<{ order: number }>`
   flex-basis: 50%;
   margin: 0;
-  margin-top: 4rem;
+  margin-top: 0;
   order: ${({ order }) => (order === 1 ? 2 : 1)};
 
   @media (min-width: 768px) {
     order: ${({ order }) => (order === 1 ? 1 : 2)};
-    padding-left: 2rem;
-    margin-top: 4rem;
+    padding-left: 0;
+    margin-top: 0;
   }
 
   @media (min-width: 1024px) {
     order: ${({ order }) => (order === 1 ? 1 : 2)};
     padding-left: 0;
-    margin-top: 15rem;
+    margin-top: 0;
   }
 `;

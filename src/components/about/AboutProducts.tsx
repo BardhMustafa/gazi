@@ -27,10 +27,12 @@ const Section = styled.section<{ sectionImage: string }>`
     linear-gradient(rgba(8, 33, 90, 0.8), rgba(8, 33, 90)),
     url(${({ sectionImage }) => sectionImage}) no-repeat center center/cover;
   display: flex;
-  padding: 3rem 1rem;
+  padding: clamp(6rem, 10vw, 12rem) clamp(2rem, 8vw, 10rem);
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 2.4rem;
+  overflow: hidden;
 
   @media (min-width: 768px) {
     height: 50rem;
@@ -39,7 +41,9 @@ const Section = styled.section<{ sectionImage: string }>`
 
 const AboutProductsHeading = styled.h2`
   color: white;
-  font-size: 3rem;
+  font-size: clamp(3.5rem, 6vw, 6rem);
+  letter-spacing: -.05em;
+  line-height: 1.05;
   text-align: center;
   margin-bottom: 2rem;
 
@@ -54,5 +58,6 @@ const AboutProductsDesc = styled.p`
   line-height: 1.9;
   text-align: center;
   width: 90%;
+  max-width: 90rem;
   margin: 0 auto;
 `;

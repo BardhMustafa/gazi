@@ -12,6 +12,7 @@ import { Button } from '../shared/components/Button';
 import { generatePath, useNavigate } from 'react-router';
 
 import { HomeProducts } from '../components/homepage/HomeProducts';
+import { cloudinaryImage } from '../utils/cloudinaryImage';
 
 const HomePage = () => {
   const { t, translations } = useTranslations();
@@ -25,12 +26,22 @@ const HomePage = () => {
         imageSection={
           <ImageSection>
             <Image
-              src="https://res.cloudinary.com/dqtfurml7/image/upload/v1703977377/images/homepage_2_ngqu3o.jpg"
+              src={cloudinaryImage(
+                'https://res.cloudinary.com/dqtfurml7/image/upload/v1703977377/images/homepage_2_ngqu3o.jpg',
+                900
+              )}
               alt="home-about-us-image-1"
+              loading="lazy"
+              decoding="async"
             />
             <Image2
-              src="https://res.cloudinary.com/dqtfurml7/image/upload/v1703977376/images/gazi_front_jif88b.jpg"
+              src={cloudinaryImage(
+                'https://res.cloudinary.com/dqtfurml7/image/upload/v1703977376/images/gazi_front_jif88b.jpg',
+                900
+              )}
               alt="rehau-image"
+              loading="lazy"
+              decoding="async"
             />
           </ImageSection>
         }
@@ -104,41 +115,154 @@ const HomePage = () => {
       />
       <HomeProducts />
 
-      <GridLayout
-        title={t(translations.homepage['our-partners'])}
-        backgroundColor="#f2f2f2"
-        items={[
-          <SponsorImg
-            src="https://res.cloudinary.com/dqtfurml7/image/upload/v1703956150/images/alumil_uaiwz8.png"
-            key="alumil"
-          />,
-          <SponsorImg
-            src="https://res.cloudinary.com/dqtfurml7/image/upload/v1703956150/images/rehau_whgfvy.png"
-            key="rehau"
-          />,
-          <SponsorImg
-            src="https://res.cloudinary.com/dqtfurml7/image/upload/v1703956150/images/wurth_qx1mbn.png"
-            key="wurth"
-          />,
-        ]}
-      />
+      <PartnersSection>
+        <PartnersHeader>
+          <PartnersEyebrow>GAZI NETWORK</PartnersEyebrow>
+          <PartnersTitle>
+            {t(translations.homepage['our-partners'])}
+          </PartnersTitle>
+        </PartnersHeader>
+        <PartnersGrid>
+          <PartnerCard>
+            <PartnerLogoWrap>
+              <PartnerLogo
+                src={cloudinaryImage(
+                  'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956150/images/alumil_uaiwz8.png',
+                  420
+                )}
+                alt="Alumil"
+                loading="lazy"
+                decoding="async"
+              />
+            </PartnerLogoWrap>
+            <PartnerName>Alumil</PartnerName>
+          </PartnerCard>
+          <PartnerCard>
+            <PartnerLogoWrap>
+              <PartnerLogo
+                src={cloudinaryImage(
+                  'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956150/images/rehau_whgfvy.png',
+                  420
+                )}
+                alt="REHAU"
+                loading="lazy"
+                decoding="async"
+              />
+            </PartnerLogoWrap>
+            <PartnerName>REHAU</PartnerName>
+          </PartnerCard>
+          <PartnerCard>
+            <PartnerLogoWrap>
+              <PartnerLogo
+                src={cloudinaryImage(
+                  'https://res.cloudinary.com/dqtfurml7/image/upload/v1703956150/images/wurth_qx1mbn.png',
+                  420
+                )}
+                alt="Würth"
+                loading="lazy"
+                decoding="async"
+              />
+            </PartnerLogoWrap>
+            <PartnerName>Würth</PartnerName>
+          </PartnerCard>
+        </PartnersGrid>
+      </PartnersSection>
     </>
   );
 };
 
-const SponsorImg = styled.div<{ src: string }>`
-  width: 100%;
-  height: 100px;
-  background-image: ${({ src }: { src: string }) => `url(${src})`};
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+const PartnersSection = styled.section`
+  position: relative;
+  overflow: hidden;
+  padding: clamp(6rem, 9vw, 10rem) clamp(2rem, 5vw, 6rem);
+  border-radius: 2.4rem;
+  background:
+    radial-gradient(circle at 85% 10%, rgba(212, 37, 57, .18), transparent 30%),
+    linear-gradient(145deg, #113355, #0a2947);
+  color: #fff;
+  box-shadow: 0 28px 70px rgba(17, 51, 85, .2);
+`;
+
+const PartnersHeader = styled.div`
+  max-width: 72rem;
+  margin: 0 auto clamp(4rem, 6vw, 6rem);
+  text-align: center;
+`;
+
+const PartnersEyebrow = styled.p`
+  color: #ef5365;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: .2em;
+  margin-bottom: 1.4rem;
+`;
+
+const PartnersTitle = styled.h2`
+  font-size: clamp(3.8rem, 5vw, 5.8rem);
+  line-height: 1.08;
+  letter-spacing: -.05em;
+`;
+
+const PartnersGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  max-width: 112rem;
+  margin: 0 auto;
+
+  @media (max-width: 740px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const PartnerCard = styled.article`
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, .08);
+  transition: transform 220ms ease, background-color 220ms ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, .13);
+  }
+`;
+
+const PartnerLogoWrap = styled.div`
+  display: grid;
+  place-items: center;
+  min-height: 18rem;
+  padding: 3rem;
+  border-radius: 1.4rem;
+  background: #fff;
+`;
+
+const PartnerLogo = styled.img`
+  display: block;
+  width: min(100%, 20rem);
+  height: 8rem;
+  object-fit: contain;
+`;
+
+const PartnerName = styled.h3`
+  padding: 2rem 1.2rem 1.2rem;
+  color: rgba(255, 255, 255, .82);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-align: center;
+  text-transform: uppercase;
 `;
 
 const Image = styled.img`
   object-fit: cover;
   width: 100%;
-  height: 30rem;
+  height: 34rem;
+  border-radius: 2rem;
+  box-shadow: 0 24px 60px rgba(17, 51, 85, 0.18);
 
   @media (min-width: 768px) {
     width: 35rem;
@@ -150,7 +274,8 @@ const Image2 = styled(Image)`
   transform: translate(0, 0);
 
   @media (min-width: 1200px) {
-    transform: translate(65%, -35%);
+    transform: translate(58%, -28%);
+    border: 8px solid #f2f2f2;
   }
 `;
 
@@ -174,8 +299,9 @@ const ImageSection = styled.div`
 `;
 
 const TextSelectionHeading = styled.h2`
-  font-size: 4rem;
-  line-height: 1.2;
+  font-size: clamp(4rem, 6vw, 7rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
   margin-bottom: 2rem;
 `;
 
@@ -183,6 +309,8 @@ const TextSection = styled.div`
   flex-basis: 100%;
   margin: 0;
   padding: 5rem 0;
+  max-width: 112rem;
+  margin: 0 auto;
   @media (min-width: 768px) {
     padding-left: 2rem;
   }
