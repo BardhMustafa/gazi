@@ -186,7 +186,8 @@ const SlideShowContainer = styled.div<{ image: string }>`
 const HeroFrame = styled(Box)`
   position: relative;
   overflow: hidden;
-  border-radius: 0 0 2.8rem 2.8rem;
+  margin-top: 20px;
+  border-radius: 2.8rem;
   box-shadow: 0 24px 70px rgba(17, 51, 85, 0.16);
   margin-bottom: clamp(8rem, 10vw, 13rem);
 `;
