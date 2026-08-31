@@ -67,10 +67,11 @@ const Logo = styled.img`
 `;
 
 const Header = styled.header`
+  --nav-inset: 2rem;
   display: flex;
   justify-content: center;
-  width: calc(100% - 2 * clamp(1.6rem, 4vw, 4rem));
-  max-width: 1400px;
+  width: calc(100% - 2 * clamp(1.6rem, 4vw, 4rem) - 2 * var(--nav-inset));
+  max-width: calc(1400px - 2 * var(--nav-inset));
   height: 7.2rem;
   margin: 1.2rem auto 0;
   background-color: rgba(255, 255, 255, 0.96);
@@ -81,6 +82,7 @@ const Header = styled.header`
   -webkit-backdrop-filter: blur(18px);
 
   @media (max-width: 1023px) {
+    --nav-inset: 0.8rem;
     height: 6.8rem;
     margin-top: 1rem;
     border-radius: 1.8rem;
