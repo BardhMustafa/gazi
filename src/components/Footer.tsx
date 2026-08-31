@@ -77,6 +77,12 @@ export const Footer = () => {
           © 1995 – {new Date(Date.now()).getFullYear()} | Gazi Shpk®{' '}
           {t(translations.common.all_rights_reserved)}
         </CopyrightText>
+        <SiteCredit lang="en">
+          Powered by{' '}
+          <a href="https://treforge.com" target="_blank" rel="noopener noreferrer">
+            Treforge
+          </a>
+        </SiteCredit>
       </CopyrightSection>
     </FooterStyles>
   );
@@ -204,5 +210,30 @@ const CopyrightText = styled.p`
   margin-bottom: 0px;
   @media (max-width: 768px) {
     text-align: center;
+  }
+`;
+
+const SiteCredit = styled.p`
+  margin: 0.8rem 0 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+  line-height: 24px;
+  text-align: center;
+
+  a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  a:hover {
+    text-decoration-thickness: 2px;
+  }
+
+  a:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+    border-radius: 2px;
   }
 `;
